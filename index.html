@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPO 대시보드</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0a0f1e;
+      --surface:  #111827;
+      --card:     #1a2236;
+      --border:   #1e2d47;
+      --text:     #e2e8f0;
+      --muted:    #64748b;
+      --accent:   #6366f1;
+      --accent2:  #8b5cf6;
+      --green:    #10b981;
+      --yellow:   #f59e0b;
+      --orange:   #f97316;
+      --red:      #ef4444;
+      --blue:     #3b82f6;
+      --cyan:     #06b6d4;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Pretendard', 'Apple SD Gothic Neo', BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+    }
+
+    /* ─── Header ─────────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, #0d1b3e 0%, #1a0e3d 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 800; color: #fff;
+    }
+    .logo-text { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; }
+    .logo-sub { font-size: 12px; color: var(--muted); margin-top: 1px; }
+    .updated-badge {
+      font-size: 12px;
+      color: var(--muted);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+    .updated-badge span { color: var(--cyan); font-weight: 600; }
+
+    /* ─── Stats Bar ───────────────────────────────── */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .stat-item {
+      background: var(--surface);
+      padding: 16px 24px;
+      text-align: center;
+    }
+    .stat-value { font-size: 26px; font-weight: 800; line-height: 1; }
+    .stat-label { font-size: 11px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* ─── Main Layout ─────────────────────────────── */
+    main { max-width: 1280px; margin: 0 auto; padding: 28px 24px; }
+
+    /* ─── Tabs ────────────────────────────────────── */
+    .tabs {
+      display: flex;
+      gap: 4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 4px;
+      width: fit-content;
+      margin-bottom: 20px;
+    }
+    .tab-btn {
+      padding: 8px 20px;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all .15s;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .tab-btn.active {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+    }
+    .tab-count {
+      background: rgba(255,255,255,0.15);
+      border-radius: 10px;
+      padding: 1px 7px;
+      font-size: 11px;
+    }
+
+    /* ─── Filter Pills ────────────────────────────── */
+    .filters {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .filter-pill {
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .filter-pill:hover { border-color: var(--accent); color: var(--text); }
+    .filter-pill.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* ─── Grid ────────────────────────────────────── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    /* ─── Card ────────────────────────────────────── */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      transition: border-color .2s, transform .2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    }
+    .card.status-subscribing::before { background: linear-gradient(90deg, var(--green), #34d399); }
+    .card.status-upcoming::before    { background: linear-gradient(90deg, var(--blue), var(--cyan)); }
+    .card.status-pre-listing::before { background: linear-gradient(90deg, var(--yellow), var(--orange)); }
+    .card.status-listed::before      { background: linear-gradient(90deg, var(--muted), #475569); }
+    .card.status-expected::before    { background: linear-gradient(90deg, var(--accent), var(--accent2)); }
+
+    .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+    .card-title { font-size: 18px; font-weight: 700; }
+    .card-market {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(99,102,241,0.15);
+      color: var(--accent);
+      border: 1px solid rgba(99,102,241,0.3);
+    }
+    .card-market.kospi  { background: rgba(59,130,246,0.15); color: var(--blue);   border-color: rgba(59,130,246,0.3); }
+    .card-market.kosdaq { background: rgba(99,102,241,0.15); color: var(--accent); border-color: rgba(99,102,241,0.3); }
+    .card-market.nasdaq { background: rgba(6,182,212,0.15);  color: var(--cyan);   border-color: rgba(6,182,212,0.3); }
+    .card-market.nyse   { background: rgba(16,185,129,0.15); color: var(--green);  border-color: rgba(16,185,129,0.3); }
+    .card-market.spac   { background: rgba(100,116,139,0.15);color: var(--muted);  border-color: rgba(100,116,139,0.3); }
+    .card-market.tbd    { background: rgba(139,92,246,0.15); color: var(--accent2);border-color: rgba(139,92,246,0.3); }
+
+    .card-sector {
+      font-size: 12px; color: var(--muted); margin-bottom: 14px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .card-sector::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--muted); flex-shrink: 0; }
+
+    .card-rows { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+    .card-row { display: flex; justify-content: space-between; align-items: center; }
+    .row-label { font-size: 12px; color: var(--muted); }
+    .row-value { font-size: 13px; font-weight: 600; }
+
+    .price-value { color: var(--yellow); }
+    .valuation-value { color: var(--cyan); }
+
+    .note-badge {
+      font-size: 11px; color: var(--orange);
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.2);
+      padding: 3px 8px; border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .card-footer { border-top: 1px solid var(--border); padding-top: 12px; }
+    .status-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 12px; font-weight: 700;
+      padding: 4px 10px; border-radius: 20px;
+    }
+    .status-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; }
+
+    .status-subscribing { background: rgba(16,185,129,0.12); color: var(--green);   border: 1px solid rgba(16,185,129,0.3); }
+    .status-subscribing::before { background: var(--green); box-shadow: 0 0 6px var(--green); animation: pulse 1.5s infinite; }
+    .status-upcoming    { background: rgba(59,130,246,0.12);  color: var(--blue);   border: 1px solid rgba(59,130,246,0.3); }
+    .status-upcoming::before { background: var(--blue); }
+    .status-pre-listing { background: rgba(245,158,11,0.12); color: var(--yellow);  border: 1px solid rgba(245,158,11,0.3); }
+    .status-pre-listing::before { background: var(--yellow); }
+    .status-listed      { background: rgba(100,116,139,0.12); color: var(--muted);  border: 1px solid rgba(100,116,139,0.3); }
+    .status-listed::before { background: var(--muted); }
+    .status-expected    { background: rgba(139,92,246,0.12);  color: var(--accent2);border: 1px solid rgba(139,92,246,0.3); }
+    .status-expected::before { background: var(--accent2); }
+
+    .source-link { font-size: 11px; color: var(--muted); text-decoration: none; float: right; }
+    .source-link:hover { color: var(--accent); }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ─── Empty State ─────────────────────────────── */
+    .empty { text-align: center; padding: 60px; color: var(--muted); }
+    .empty-icon { font-size: 48px; margin-bottom: 12px; }
+    .empty-text { font-size: 15px; }
+
+    /* ─── Footer ──────────────────────────────────── */
+    footer {
+      margin-top: 60px;
+      border-top: 1px solid var(--border);
+      padding: 20px 24px;
+      max-width: 1280px;
+      margin-left: auto; margin-right: auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 8px;
+    }
+    .footer-text { font-size: 12px; color: var(--muted); }
+    .footer-sources { display: flex; gap: 16px; }
+    .footer-sources a { font-size: 12px; color: var(--muted); text-decoration: none; }
+    .footer-sources a:hover { color: var(--accent); }
+
+    /* ─── Loading ─────────────────────────────────── */
+    .loading {
+      display: flex; align-items: center; justify-content: center;
+      gap: 10px; color: var(--muted); padding: 60px;
+    }
+    .spinner {
+      width: 20px; height: 20px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ─── Responsive ──────────────────────────────── */
+    @media (max-width: 640px) {
+      header { padding: 16px; flex-direction: column; gap: 12px; }
+      .stats-bar { grid-template-columns: repeat(2, 1fr); }
+      main { padding: 16px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">I</div>
+    <div>
+      <div class="logo-text">IPO 대시보드</div>
+      <div class="logo-sub">국내외 공모주 일정 모아보기</div>
+    </div>
+  </div>
+  <div class="updated-badge">마지막 업데이트 <span id="updated-time">—</span></div>
+</header>
+
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-value" id="stat-total" style="color: var(--text)">—</div>
+    <div class="stat-label">전체 IPO</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-value" id="stat-subscribing" style="color: var(--green)">—</div>
+    <div class="stat-label">청약 진행중</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-value" id="stat-upcoming" style="color: var(--blue)">—</div>
+    <div class="stat-label">청약 예정</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-value" id="stat-listed" style="color: var(--muted)">—</div>
+    <div class="stat-label">상장 완료</div>
+  </div>
+</div>
+
+<main>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="domestic" onclick="switchTab('domestic')">
+      국내 KR <span class="tab-count" id="count-domestic">0</span>
+    </button>
+    <button class="tab-btn" data-tab="international" onclick="switchTab('international')">
+      해외 Global <span class="tab-count" id="count-international">0</span>
+    </button>
+  </div>
+
+  <div class="filters" id="filter-bar">
+    <button class="filter-pill active" data-filter="all" onclick="setFilter('all')">전체</button>
+    <button class="filter-pill" data-filter="subscribing" onclick="setFilter('subscribing')">청약중</button>
+    <button class="filter-pill" data-filter="upcoming" onclick="setFilter('upcoming')">청약예정</button>
+    <button class="filter-pill" data-filter="pre-listing" onclick="setFilter('pre-listing')">상장예정</button>
+    <button class="filter-pill" data-filter="listed" onclick="setFilter('listed')">완료</button>
+    <button class="filter-pill" data-filter="expected" onclick="setFilter('expected')">상장검토중</button>
+  </div>
+
+  <div id="grid-container">
+    <div class="loading"><div class="spinner"></div> 데이터 불러오는 중...</div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-text">데이터는 매일 자동 업데이트됩니다. 투자 판단의 최종 책임은 본인에게 있습니다.</div>
+  <div class="footer-sources">
+    <a href="http://www.38.co.kr/html/fund/?o=k" target="_blank">38커뮤니케이션</a>
+    <a href="https://kind.krx.co.kr" target="_blank">KIND</a>
+    <a href="https://stockanalysis.com/ipos/" target="_blank">StockAnalysis</a>
+    <a href="https://www.renaissancecapital.com/IPO-Center/Calendar" target="_blank">Renaissance Capital</a>
+  </div>
+</footer>
+
+<script>
+  let allData = { domestic: [], international: [] };
+  let currentTab = 'domestic';
+  let currentFilter = 'all';
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  function parseDate(str) {
+    if (!str) return null;
+    const d = new Date(str);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  }
+
+  function formatDate(str) {
+    if (!str) return '—';
+    const d = parseDate(str);
+    return `${d.getMonth() + 1}/${d.getDate()}`;
+  }
+
+  function formatFullDate(str) {
+    if (!str) return '미정';
+    const d = parseDate(str);
+    return `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
+  }
+
+  function getDomesticStatus(item) {
+    const subStart  = parseDate(item.subscription_start);
+    const subEnd    = parseDate(item.subscription_end);
+    const listing   = parseDate(item.listing_date);
+    if (listing && today > listing) return 'listed';
+    if (subEnd && today > subEnd)   return 'pre-listing';
+    if (subStart && today >= subStart && subEnd && today <= subEnd) return 'subscribing';
+    return 'upcoming';
+  }
+
+  function getIntlStatus(item) {
+    const ipoDate = parseDate(item.ipo_date);
+    if (!ipoDate) return 'expected';
+    if (today >= ipoDate) return 'listed';
+    const diff = (ipoDate - today) / (1000 * 60 * 60 * 24);
+    if (diff > 60) return 'expected';
+    return 'upcoming';
+  }
+
+  const STATUS_LABEL = {
+    subscribing:   '청약 진행중',
+    upcoming:      '청약 예정',
+    'pre-listing': '상장 예정',
+    listed:        '상장 완료',
+    expected:      '상장 검토중',
+  };
+
+  function daysUntil(str) {
+    const d = parseDate(str);
+    if (!d) return null;
+    const diff = Math.ceil((d - today) / (1000 * 60 * 60 * 24));
+    return diff;
+  }
+
+  function renderDomesticCard(item) {
+    const status = getDomesticStatus(item);
+    const marketKey = (item.market || '').toLowerCase();
+    const subRange = (item.subscription_start && item.subscription_end)
+      ? `${formatDate(item.subscription_start)} ~ ${formatDate(item.subscription_end)}`
+      : '—';
+
+    const note = item.note
+      ? `<div class="note-badge">⚠ ${item.note}</div>`
+      : '';
+
+    let countdownHtml = '';
+    if (status === 'upcoming') {
+      const d = daysUntil(item.subscription_start);
+      if (d !== null && d >= 0) countdownHtml = `<span style="font-size:11px;color:var(--blue);margin-left:8px">D-${d}</span>`;
+    } else if (status === 'pre-listing') {
+      const d = daysUntil(item.listing_date);
+      if (d !== null && d >= 0) countdownHtml = `<span style="font-size:11px;color:var(--yellow);margin-left:8px">상장 D-${d}</span>`;
+    }
+
+    return `
+    <div class="card status-${status}">
+      <div class="card-header">
+        <div class="card-title">${item.name}</div>
+        <div class="card-market ${marketKey}">${item.market}</div>
+      </div>
+      <div class="card-sector">${item.sector || '—'}</div>
+      ${note}
+      <div class="card-rows">
+        <div class="card-row">
+          <span class="row-label">청약일</span>
+          <span class="row-value">${subRange}</span>
+        </div>
+        <div class="card-row">
+          <span class="row-label">상장일</span>
+          <span class="row-value">${formatFullDate(item.listing_date)}</span>
+        </div>
+        <div class="card-row">
+          <span class="row-label">공모가 밴드</span>
+          <span class="row-value price-value">${item.offer_price || item.price_band || '—'} 원</span>
+        </div>
+        ${item.refund_date ? `<div class="card-row"><span class="row-label">환불일</span><span class="row-value">${formatFullDate(item.refund_date)}</span></div>` : ''}
+      </div>
+      <div class="card-footer">
+        <span class="status-badge status-${status}">${STATUS_LABEL[status]}${countdownHtml}</span>
+        <a class="source-link" href="${item.source_url || '#'}" target="_blank">출처 ↗</a>
+      </div>
+    </div>`;
+  }
+
+  function renderIntlCard(item) {
+    const status = getIntlStatus(item);
+    const exchange = (item.exchange || 'TBD').toUpperCase();
+    const exchangeKey = exchange === 'TBD' ? 'tbd' : exchange.toLowerCase();
+
+    let priceHtml = '—';
+    if (item.price) priceHtml = `$${item.price.toLocaleString()}`;
+
+    let countdownHtml = '';
+    if (status === 'upcoming' || status === 'expected') {
+      const d = daysUntil(item.ipo_date);
+      if (d !== null && d > 0) countdownHtml = `<span style="font-size:11px;color:var(--blue);margin-left:8px">D-${d}</span>`;
+    }
+
+    return `
+    <div class="card status-${status}">
+      <div class="card-header">
+        <div class="card-title">${item.name}${item.ticker ? ` <span style="font-size:13px;color:var(--muted)">(${item.ticker})</span>` : ''}</div>
+        <div class="card-market ${exchangeKey}">${exchange}</div>
+      </div>
+      <div class="card-sector">${item.sector || '—'}</div>
+      <div class="card-rows">
+        <div class="card-row">
+          <span class="row-label">IPO 일</span>
+          <span class="row-value">${formatFullDate(item.ipo_date)}</span>
+        </div>
+        <div class="card-row">
+          <span class="row-label">공모가</span>
+          <span class="row-value price-value">${priceHtml}</span>
+        </div>
+        ${item.valuation ? `<div class="card-row"><span class="row-label">기업가치</span><span class="row-value valuation-value">${item.valuation}</span></div>` : ''}
+        ${item.raised ? `<div class="card-row"><span class="row-label">조달 규모</span><span class="row-value" style="color:var(--green)">${item.raised}</span></div>` : ''}
+      </div>
+      ${item.description ? `<div style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.5">${item.description}</div>` : ''}
+      <div class="card-footer">
+        <span class="status-badge status-${status}">${STATUS_LABEL[status]}${countdownHtml}</span>
+        <a class="source-link" href="${item.source_url || '#'}" target="_blank">출처 ↗</a>
+      </div>
+    </div>`;
+  }
+
+  function getFilteredItems() {
+    const items = currentTab === 'domestic' ? allData.domestic : allData.international;
+    const getStatus = currentTab === 'domestic' ? getDomesticStatus : getIntlStatus;
+    if (currentFilter === 'all') return items;
+    return items.filter(item => getStatus(item) === currentFilter);
+  }
+
+  function renderGrid() {
+    const container = document.getElementById('grid-container');
+    const items = getFilteredItems();
+
+    if (items.length === 0) {
+      container.innerHTML = `
+        <div class="empty">
+          <div class="empty-icon">📭</div>
+          <div class="empty-text">해당 조건의 IPO가 없습니다</div>
+        </div>`;
+      return;
+    }
+
+    const renderCard = currentTab === 'domestic' ? renderDomesticCard : renderIntlCard;
+    container.innerHTML = `<div class="grid">${items.map(renderCard).join('')}</div>`;
+  }
+
+  function updateStats() {
+    const all = [...allData.domestic, ...allData.international];
+    const total = all.length;
+    let subscribing = 0, upcoming = 0, listed = 0;
+
+    allData.domestic.forEach(item => {
+      const s = getDomesticStatus(item);
+      if (s === 'subscribing') subscribing++;
+      else if (s === 'upcoming') upcoming++;
+      else if (s === 'listed') listed++;
+    });
+    allData.international.forEach(item => {
+      const s = getIntlStatus(item);
+      if (s === 'subscribing') subscribing++;
+      else if (s === 'upcoming' || s === 'expected') upcoming++;
+      else if (s === 'listed') listed++;
+    });
+
+    document.getElementById('stat-total').textContent = total;
+    document.getElementById('stat-subscribing').textContent = subscribing;
+    document.getElementById('stat-upcoming').textContent = upcoming;
+    document.getElementById('stat-listed').textContent = listed;
+
+    document.getElementById('count-domestic').textContent = allData.domestic.length;
+    document.getElementById('count-international').textContent = allData.international.length;
+  }
+
+  function switchTab(tab) {
+    currentTab = tab;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+    renderGrid();
+  }
+
+  function setFilter(filter) {
+    currentFilter = filter;
+    document.querySelectorAll('.filter-pill').forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
+    renderGrid();
+  }
+
+  function formatUpdatedTime(isoStr) {
+    const d = new Date(isoStr);
+    const yyyy = d.getFullYear();
+    const mm   = String(d.getMonth() + 1).padStart(2, '0');
+    const dd   = String(d.getDate()).padStart(2, '0');
+    const hh   = String(d.getHours()).padStart(2, '0');
+    const mi   = String(d.getMinutes()).padStart(2, '0');
+    return `${yyyy}.${mm}.${dd} ${hh}:${mi}`;
+  }
+
+  fetch('data/ipo_data.json')
+    .then(r => r.json())
+    .then(data => {
+      allData = data;
+      document.getElementById('updated-time').textContent = formatUpdatedTime(data.updated_at);
+      updateStats();
+      renderGrid();
+    })
+    .catch(() => {
+      document.getElementById('grid-container').innerHTML =
+        `<div class="empty"><div class="empty-icon">⚠️</div><div class="empty-text">데이터를 불러올 수 없습니다</div></div>`;
+    });
+</script>
+
+</body>
+</html>
