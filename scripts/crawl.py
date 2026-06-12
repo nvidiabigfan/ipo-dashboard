@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
 """
 IPO 데이터 자동 크롤러
-- 국내: 38커뮤니케이션 공모주 일정
-- 해외: StockAnalysis.com IPO Calendar
+- 국내: 38커뮤니케이션 (lxml + curl로 EUC-KR 안정 처리)
+- 해외: StockAnalysis.com / 기존 주목 종목 유지
 """
 
 import json
+import os
 import re
+import subprocess
 import sys
+import tempfile
 from datetime import datetime, date, timedelta
 from pathlib import Path
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -22,6 +26,7 @@ HEADERS = {
     "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8",
 }
 OUTPUT = Path(__file__).parent.parent / "data" / "ipo_data.json"
+SOURCE_38 = "http://www.38.co.kr/html/fund/?o=k"
 
 
 def load_existing():
@@ -31,75 +36,88 @@ def load_existing():
     return {"domestic": [], "international": []}
 
 
+def _fetch_euckr(url):
+    """curl로 EUC-KR 페이지를 안정적으로 가져옴"""
+    with tempfile.NamedTemporaryFile(suffix=".html", delete=False) as tmp:
+        tmppath = tmp.name
+    try:
+        subprocess.run(
+            [
+                "curl", "-s", "--max-time", "20",
+                "-H", "Accept-Encoding: identity",
+                "-H", f'User-Agent: {HEADERS["User-Agent"]}',
+                url, "-o", tmppath,
+            ],
+            check=True,
+        )
+        with open(tmppath, "rb") as f:
+            raw = f.read()
+        return raw.decode("euc-kr", errors="replace")
+    finally:
+        os.unlink(tmppath)
+
+
+def _infer_market(name):
+    if "(유가)" in name:
+        return "KOSPI"
+    lname = name.lower()
+    if "스팩" in name or "spac" in lname:
+        return "KOSDAQ"
+    return "KOSDAQ"
+
+
+def _clean_name(name):
+    return name.replace("(유가)", "").strip()
+
+
 def crawl_38comm():
-    """38커뮤니케이션 공모주 일정 (http://www.38.co.kr/html/fund/?o=k)"""
-    url = "http://www.38.co.kr/html/fund/?o=k"
+    """38커뮤니케이션 공모주 청약일정 파싱"""
     results = []
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=15)
-        resp.encoding = "euc-kr"
-        soup = BeautifulSoup(resp.text, "html.parser")
+        text = _fetch_euckr(SOURCE_38)
+        soup = BeautifulSoup(text, "lxml")
 
-        # 메인 테이블 탐색
-        tables = soup.find_all("table")
-        for table in tables:
-            rows = table.find_all("tr")
-            for row in rows:
-                cols = row.find_all("td")
-                if len(cols) < 8:
+        # 7-컬럼(종목명|청약일정|확정가|희망가|경쟁률|주간사|분석) 구조의 데이터 테이블 탐색
+        date_pat = re.compile(r"^\d{4}\.\d{2}\.\d{2}~\d{2}\.\d{2}$")
+
+        for table in soup.find_all("table"):
+            data_rows = []
+            for row in table.find_all("tr"):
+                cells = [td.get_text(strip=True) for td in row.find_all("td")]
+                if len(cells) == 7 and date_pat.match(cells[1]):
+                    data_rows.append(cells)
+
+            if len(data_rows) < 5:
+                continue
+
+            for cells in data_rows:
+                raw_name   = cells[0]
+                date_str   = cells[1]
+                offer_str  = cells[2]
+                band_str   = cells[3]
+                comp_ratio = cells[4] or None
+
+                m = re.match(r"(\d{4})\.(\d{2})\.(\d{2})~(\d{2})\.(\d{2})", date_str)
+                if not m:
                     continue
+                yr, ms, ds, me, de = m.groups()
+                sub_start = f"{yr}-{ms}-{ds}"
+                sub_end   = f"{yr}-{me}-{de}"
 
-                texts = [c.get_text(strip=True) for c in cols]
-                name_tag = cols[0].find("a")
-                if not name_tag:
-                    continue
-
-                name = name_tag.get_text(strip=True)
-                if not name or len(name) < 2:
-                    continue
-
-                # 시장구분
-                market = texts[1] if len(texts) > 1 else ""
-                if market not in ("KOSPI", "KOSDAQ", "코스피", "코스닥", "KONEX"):
-                    continue
-                market = market.replace("코스피", "KOSPI").replace("코스닥", "KOSDAQ")
-
-                # 공모가 밴드 / 확정공모가
-                price_band   = texts[3] if len(texts) > 3 else ""
-                offer_price  = texts[4] if len(texts) > 4 else ""
-
-                # 청약일정: "06/10~06/11" 형태
-                sub_raw = texts[5] if len(texts) > 5 else ""
-                sub_start = sub_end = None
-                m = re.search(r"(\d{2}/\d{2})[~\-~](\d{2}/\d{2})", sub_raw)
-                if m:
-                    yr = str(date.today().year)
-                    sub_start = f"{yr}-{m.group(1).replace('/', '-')}"
-                    sub_end   = f"{yr}-{m.group(2).replace('/', '-')}"
-
-                # 환불일 / 납입일 / 상장일
-                refund  = texts[6] if len(texts) > 6 else ""
-                listing = texts[8] if len(texts) > 8 else (texts[7] if len(texts) > 7 else "")
-
-                def parse_mmdd(s):
-                    m2 = re.search(r"(\d{2})[./](\d{2})", s)
-                    if m2:
-                        return f"{date.today().year}-{m2.group(1).zfill(2)}-{m2.group(2).zfill(2)}"
-                    return None
-
-                item = {
-                    "name": name,
-                    "market": market,
+                results.append({
+                    "name": _clean_name(raw_name),
+                    "market": _infer_market(raw_name),
                     "sector": "",
                     "subscription_start": sub_start,
                     "subscription_end": sub_end,
-                    "refund_date": parse_mmdd(refund),
-                    "listing_date": parse_mmdd(listing),
-                    "price_band": price_band or None,
-                    "offer_price": offer_price or None,
-                    "source_url": url,
-                }
-                results.append(item)
+                    "refund_date": None,
+                    "listing_date": None,
+                    "price_band": band_str if band_str and band_str != "-" else None,
+                    "offer_price": offer_str if offer_str and offer_str != "-" else None,
+                    "competition_ratio": comp_ratio,
+                    "source_url": SOURCE_38,
+                })
+            break  # 첫 번째 데이터 테이블만
 
         print(f"[38comm] {len(results)}건 수집", file=sys.stderr)
     except Exception as e:
@@ -109,59 +127,77 @@ def crawl_38comm():
 
 
 def crawl_stockanalysis():
-    """StockAnalysis.com IPO Calendar (Next.js __NEXT_DATA__ 파싱)"""
+    """StockAnalysis.com IPO 캘린더 — __NEXT_DATA__ 또는 API 시도"""
     url = "https://stockanalysis.com/ipos/calendar/"
     results = []
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
         soup = BeautifulSoup(resp.text, "html.parser")
 
+        # Next.js 데이터 시도
         script = soup.find("script", id="__NEXT_DATA__")
-        if not script:
-            print("[stockanalysis] __NEXT_DATA__ 없음", file=sys.stderr)
-            return results
+        if script:
+            data = json.loads(script.string)
+            page_props = data.get("props", {}).get("pageProps", {})
+            raw_list = (
+                page_props.get("data")
+                or page_props.get("ipos")
+                or page_props.get("calendar")
+                or []
+            )
+            if isinstance(raw_list, dict):
+                raw_list = raw_list.get("data", []) or raw_list.get("ipos", []) or []
 
-        data = json.loads(script.string)
-        # pageProps.data 또는 pageProps.ipos 위치 탐색
-        page_props = data.get("props", {}).get("pageProps", {})
-        raw_list = (
-            page_props.get("data")
-            or page_props.get("ipos")
-            or page_props.get("calendar")
-            or []
-        )
+            for row in raw_list[:60]:
+                name     = row.get("name") or row.get("company") or ""
+                ticker   = row.get("symbol") or row.get("ticker") or None
+                exchange = (row.get("exchange") or "").upper() or "TBD"
+                sector   = row.get("industry") or row.get("sector") or ""
+                ipo_date = row.get("ipoDate") or row.get("date") or None
+                price    = row.get("ipoPrice") or row.get("price") or None
+                if price:
+                    try:
+                        price = float(str(price).replace("$", "").replace(",", ""))
+                    except:
+                        price = None
+                if not name:
+                    continue
+                results.append({
+                    "name": name,
+                    "ticker": ticker,
+                    "exchange": exchange,
+                    "sector": sector,
+                    "ipo_date": ipo_date,
+                    "price": price,
+                    "valuation": None,
+                    "raised": None,
+                    "description": "",
+                    "source_url": url,
+                })
 
-        if isinstance(raw_list, dict):
-            raw_list = raw_list.get("data", []) or raw_list.get("ipos", []) or []
-
-        for row in raw_list[:40]:
-            name     = row.get("name") or row.get("company") or ""
-            ticker   = row.get("symbol") or row.get("ticker") or None
-            exchange = row.get("exchange") or ""
-            sector   = row.get("industry") or row.get("sector") or ""
-            ipo_date = row.get("ipoDate") or row.get("date") or None
-            price    = row.get("ipoPrice") or row.get("price") or None
-            valuation = row.get("marketCap") or None
-
-            if not name:
-                continue
-            if price:
-                try: price = float(str(price).replace("$", "").replace(",", ""))
-                except: price = None
-
-            item = {
-                "name": name,
-                "ticker": ticker,
-                "exchange": exchange.upper() if exchange else "TBD",
-                "sector": sector,
-                "ipo_date": ipo_date,
-                "price": price,
-                "valuation": f"${valuation:,.0f}M" if isinstance(valuation, (int, float)) else valuation,
-                "raised": None,
-                "description": "",
-                "source_url": url,
-            }
-            results.append(item)
+        # HTML 테이블 fallback
+        if not results:
+            for table in soup.find_all("table"):
+                rows = table.find_all("tr")
+                if len(rows) < 3:
+                    continue
+                for row in rows[1:]:
+                    cells = [td.get_text(strip=True) for td in row.find_all("td")]
+                    if len(cells) >= 3 and cells[0]:
+                        results.append({
+                            "name": cells[0],
+                            "ticker": cells[1] if len(cells) > 1 else None,
+                            "exchange": cells[2] if len(cells) > 2 else "TBD",
+                            "sector": cells[3] if len(cells) > 3 else "",
+                            "ipo_date": cells[4] if len(cells) > 4 else None,
+                            "price": None,
+                            "valuation": None,
+                            "raised": None,
+                            "description": "",
+                            "source_url": url,
+                        })
+                if results:
+                    break
 
         print(f"[stockanalysis] {len(results)}건 수집", file=sys.stderr)
     except Exception as e:
@@ -170,57 +206,71 @@ def crawl_stockanalysis():
     return results
 
 
+NOTABLE = {
+    "openai", "anthropic", "databricks", "spacex", "stripe",
+    "klarna", "reddit", "arm", "shein",
+}
+
+
+def _is_valid_intl(item):
+    name = item.get("name", "")
+    # 날짜 형태(Jan 12, 2026 등)로 들어온 잘못된 항목 제거
+    if re.match(r"^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d", name):
+        return False
+    if re.match(r"^\d{4}-\d{2}-\d{2}", name):
+        return False
+    return bool(name and len(name) > 1)
+
+
 def merge_international(existing, fresh):
-    """기존 주목 종목 보존, 새 데이터로 업데이트"""
-    notable_names = {
-        "openai", "anthropic", "databricks", "spacex", "stripe",
-        "klarna", "reddit", "arm", "shein",
-    }
-    # 기존 주목 종목은 유지 (수동 관리)
-    keep = [
-        item for item in existing
-        if any(n in item["name"].lower() for n in notable_names)
-    ]
-    keep_names = {item["name"].lower() for item in keep}
+    """주목 종목 보존 + 신규 데이터 병합. 90일 이상 지난 상장 완료 항목 제거."""
+    keep = [i for i in existing if any(n in i["name"].lower() for n in NOTABLE)]
+    keep_names = {i["name"].lower() for i in keep}
 
-    # fresh 결과에서 중복 제거
-    new_items = [item for item in fresh if item["name"].lower() not in keep_names]
-
-    # 최근 90일 + 미래 항목만 포함
     cutoff = date.today() - timedelta(days=90)
-    def keep_item(item):
+
+    def is_recent(item):
         d_str = item.get("ipo_date")
         if not d_str:
-            return True  # 날짜 미정 → 유지
+            return True
         try:
-            d = date.fromisoformat(d_str)
-            return d >= cutoff
+            return date.fromisoformat(str(d_str)[:10]) >= cutoff
         except:
             return True
 
-    merged = keep + [i for i in new_items if keep_item(i)]
-    return merged
+    new_items = [
+        i for i in fresh
+        if i["name"].lower() not in keep_names and is_recent(i) and _is_valid_intl(i)
+    ]
+    return keep + new_items
 
 
 def main():
     existing = load_existing()
 
-    # 국내 크롤링
+    # 국내
     domestic_fresh = crawl_38comm()
     if domestic_fresh:
+        # 기존 sector/listing_date 정보 보존 (수동 입력값)
+        name_map = {i["name"]: i for i in existing.get("domestic", [])}
+        for item in domestic_fresh:
+            prev = name_map.get(item["name"], {})
+            item["sector"]       = item["sector"] or prev.get("sector", "")
+            item["listing_date"] = item["listing_date"] or prev.get("listing_date")
+            item["refund_date"]  = item["refund_date"]  or prev.get("refund_date")
         domestic = domestic_fresh
     else:
-        print("[domestic] 크롤링 실패, 기존 데이터 유지", file=sys.stderr)
+        print("[domestic] 크롤링 실패 — 기존 데이터 유지", file=sys.stderr)
         domestic = existing.get("domestic", [])
 
-    # 해외 크롤링
+    # 해외
     intl_fresh = crawl_stockanalysis()
-    international = merge_international(
-        existing.get("international", []),
-        intl_fresh,
-    )
+    international = merge_international(existing.get("international", []), intl_fresh)
 
-    kst_now = datetime.utcnow() + timedelta(hours=9)
+    from datetime import timezone
+    kst = timezone(timedelta(hours=9))
+    kst_now = datetime.now(tz=timezone.utc).astimezone(kst)
+
     output = {
         "updated_at": kst_now.strftime("%Y-%m-%dT%H:%M:%S+09:00"),
         "domestic": domestic,
@@ -231,7 +281,7 @@ def main():
     with open(OUTPUT, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"저장 완료: {OUTPUT} (국내 {len(domestic)}건, 해외 {len(international)}건)")
+    print(f"저장 완료: 국내 {len(domestic)}건, 해외 {len(international)}건")
 
 
 if __name__ == "__main__":
