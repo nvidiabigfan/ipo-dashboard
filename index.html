@@ -21,10 +21,11 @@
       --cyan:    #06b6d4;
       --red:     #f87171;
     }
+    html, body { height: 100%; overflow: hidden; }
     body {
       background: var(--bg); color: var(--text);
       font-family: -apple-system,'Pretendard','Apple SD Gothic Neo',BlinkMacSystemFont,'Segoe UI',sans-serif;
-      min-height: 100vh; font-size: 14px;
+      font-size: 14px; display: flex; flex-direction: column;
     }
 
     /* Header */
@@ -69,8 +70,9 @@
     /* Controls */
     .controls {
       display: flex; align-items: center; gap: 12px;
-      padding: 10px 32px; background: var(--surface);
+      padding: 8px 32px; background: var(--surface);
       border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
     }
     .month-nav { display: flex; align-items: center; gap: 6px; }
     .nav-btn {
@@ -101,33 +103,37 @@
     .tab-btn.active {
       background: linear-gradient(135deg,var(--accent),var(--accent2)); color: #fff;
     }
-    .legend { display: flex; gap: 14px; margin-left: auto; }
+    .legend { display: flex; gap: 14px; margin-left: auto; align-items: center; }
     .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
     .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+    .legend-sep { width: 1px; height: 14px; background: var(--border); margin: 0 4px; }
+    .legend-link { font-size: 11px; color: var(--muted); text-decoration: none; }
+    .legend-link:hover { color: var(--accent); }
 
     /* Layout: calendar + sidebar */
     .workspace {
+      flex: 1; min-height: 0;
       display: grid;
-      grid-template-columns: 1fr 280px;
-      gap: 20px;
-      padding: 20px 32px;
-      max-width: 1600px;
-      margin: 0 auto;
-      align-items: start;
+      grid-template-columns: 1fr 270px;
+      gap: 14px;
+      padding: 14px 24px;
     }
 
     /* Calendar */
+    #cal-wrap { height: 100%; display: flex; flex-direction: column; }
     .calendar {
       background: var(--card); border: 1px solid var(--border);
-      border-radius: 14px; overflow: hidden;
+      border-radius: 12px; overflow: hidden;
+      flex: 1; display: flex; flex-direction: column;
     }
     .cal-head {
       display: grid; grid-template-columns: repeat(7,1fr);
       background: rgba(255,255,255,.03); border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
     }
     .cal-head-cell {
-      padding: 10px 8px; text-align: center;
-      font-size: 12px; font-weight: 700; color: var(--muted);
+      padding: 8px 6px; text-align: center;
+      font-size: 11px; font-weight: 700; color: var(--muted);
       text-transform: uppercase; letter-spacing: .5px;
     }
     .cal-head-cell:first-child { color: var(--red); }
@@ -135,12 +141,13 @@
 
     .cal-grid {
       display: grid; grid-template-columns: repeat(7,1fr);
+      flex: 1; grid-auto-rows: 1fr;
     }
     .day-cell {
       border-right: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      padding: 8px 7px 10px;
-      min-height: 100px;
+      padding: 6px 6px 6px;
+      min-height: 0; overflow: hidden;
       cursor: default;
       transition: background .1s;
     }
@@ -175,34 +182,35 @@
     .chip-done  { background: rgba(100,116,139,.12); color: #64748b; border-left: 2px solid #334155; }
 
     /* Sidebar */
-    .sidebar { display: flex; flex-direction: column; gap: 14px; }
-
+    .sidebar {
+      height: 100%; display: flex; flex-direction: column;
+    }
     .side-card {
       background: var(--card); border: 1px solid var(--border);
       border-radius: 12px; overflow: hidden;
+      flex: 1; display: flex; flex-direction: column;
     }
     .side-card-hd {
-      padding: 12px 16px; border-bottom: 1px solid var(--border);
+      padding: 10px 16px; border-bottom: 1px solid var(--border);
       font-size: 12px; font-weight: 700; color: var(--muted);
-      text-transform: uppercase; letter-spacing: .5px;
+      text-transform: uppercase; letter-spacing: .5px; flex-shrink: 0;
     }
-    .side-list { list-style: none; }
+    .side-list { list-style: none; overflow-y: auto; flex: 1; }
     .side-item {
-      padding: 10px 16px; border-bottom: 1px solid rgba(255,255,255,.04);
+      padding: 9px 16px; border-bottom: 1px solid rgba(255,255,255,.04);
       cursor: pointer; transition: background .12s;
-      display: flex; align-items: flex-start; gap: 10px;
+      display: flex; align-items: center; gap: 10px;
     }
     .side-item:last-child { border-bottom: none; }
     .side-item:hover { background: rgba(255,255,255,.03); }
     .side-date {
       font-size: 11px; font-weight: 700; color: var(--muted);
-      min-width: 40px; text-align: center; line-height: 1.4;
-      padding-top: 1px;
+      min-width: 36px; text-align: center; line-height: 1.3;
     }
-    .side-date .sd-day { font-size: 18px; line-height: 1; color: var(--text); display: block; }
+    .side-date .sd-day { font-size: 17px; line-height: 1; color: var(--text); display: block; }
     .side-info { flex: 1; min-width: 0; }
-    .side-name { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .side-type { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .side-name { font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .side-type { font-size: 11px; color: var(--muted); margin-top: 1px; }
     .side-badge {
       font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 3px;
       white-space: nowrap; flex-shrink: 0;
@@ -211,7 +219,7 @@
     .badge-list { background: rgba(59,130,246,.2);  color: #93c5fd; }
     .badge-intl { background: rgba(139,92,246,.2);  color: #c4b5fd; }
 
-    .side-empty { padding: 24px 16px; text-align: center; color: var(--muted); font-size: 12px; }
+    .side-empty { padding: 20px 16px; text-align: center; color: var(--muted); font-size: 12px; }
 
     /* Detail Panel */
     .overlay {
@@ -259,18 +267,9 @@
     .p-link:hover { background: rgba(99,102,241,.22); }
 
     /* Loading */
-    .loading { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--muted); padding: 100px; }
+    .loading { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--muted); padding: 60px; }
     .spinner { width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
-
-    /* Footer */
-    footer {
-      margin: 0 32px 20px; border-top: 1px solid var(--border);
-      padding-top: 14px; display: flex; justify-content: space-between;
-    }
-    footer span { font-size: 11px; color: var(--muted); }
-    footer a { font-size: 11px; color: var(--muted); text-decoration: none; margin-left: 12px; }
-    footer a:hover { color: var(--accent); }
   </style>
 </head>
 <body>
@@ -326,6 +325,10 @@
     <div class="legend-item"><div class="legend-dot" style="background:rgba(16,185,129,.8)"></div>청약기간</div>
     <div class="legend-item"><div class="legend-dot" style="background:rgba(59,130,246,.8)"></div>상장일</div>
     <div class="legend-item"><div class="legend-dot" style="background:rgba(139,92,246,.8)"></div>해외 IPO</div>
+    <div class="legend-sep"></div>
+    <a class="legend-link" href="http://www.38.co.kr/html/fund/?o=k" target="_blank">38커뮤니케이션</a>
+    <a class="legend-link" href="https://kind.krx.co.kr" target="_blank">KIND</a>
+    <a class="legend-link" href="https://stockanalysis.com/ipos/" target="_blank">StockAnalysis</a>
   </div>
 </div>
 
@@ -344,14 +347,6 @@
   </aside>
 </div>
 
-<footer>
-  <span>데이터는 매일 08:00 KST 자동 갱신됩니다. 투자 책임은 본인에게 있습니다.</span>
-  <div>
-    <a href="http://www.38.co.kr/html/fund/?o=k" target="_blank">38커뮤니케이션</a>
-    <a href="https://kind.krx.co.kr" target="_blank">KIND</a>
-    <a href="https://stockanalysis.com/ipos/" target="_blank">StockAnalysis</a>
-  </div>
-</footer>
 
 <div class="overlay" id="overlay" onclick="closePanel()"></div>
 <div class="panel" id="panel">
