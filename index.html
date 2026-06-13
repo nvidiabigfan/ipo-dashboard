@@ -27,22 +27,21 @@
       min-height: 100vh;
     }
 
-    /* ─── Header ─── */
+    /* Header */
     header {
       background: linear-gradient(135deg,#0d1b3e 0%,#1a0e3d 100%);
       border-bottom: 1px solid var(--border);
-      padding: 14px 28px;
+      padding: 14px 24px;
       display: flex; align-items: center; justify-content: space-between;
-      position: sticky; top: 0; z-index: 200;
     }
-    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo { display: flex; align-items: center; gap: 10px; }
     .logo-icon {
-      width: 32px; height: 32px;
+      width: 30px; height: 30px;
       background: linear-gradient(135deg,var(--accent),var(--accent2));
-      border-radius: 8px; display: flex; align-items: center; justify-content: center;
-      font-size: 15px; font-weight: 800; color: #fff;
+      border-radius: 7px; display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 800; color: #fff;
     }
-    .logo-text { font-size: 17px; font-weight: 700; letter-spacing: -.5px; }
+    .logo-text { font-size: 16px; font-weight: 700; }
     .logo-sub  { font-size: 11px; color: var(--muted); }
     .updated-badge {
       font-size: 11px; color: var(--muted);
@@ -51,19 +50,10 @@
     }
     .updated-badge span { color: var(--cyan); font-weight: 600; }
 
-    /* ─── Stats ─── */
-    .stats-bar {
-      display: grid; grid-template-columns: repeat(4,1fr);
-      background: var(--border); border-bottom: 1px solid var(--border); gap: 1px;
-    }
-    .stat-item { background: var(--surface); padding: 10px 16px; text-align: center; }
-    .stat-value { font-size: 20px; font-weight: 800; line-height: 1; }
-    .stat-label { font-size: 10px; color: var(--muted); margin-top: 3px; text-transform: uppercase; letter-spacing: .5px; }
-
-    /* ─── Controls ─── */
+    /* Controls */
     .controls {
       display: flex; align-items: center; gap: 10px;
-      padding: 12px 20px; background: var(--surface);
+      padding: 10px 24px; background: var(--surface);
       border-bottom: 1px solid var(--border); flex-wrap: wrap;
     }
     .month-nav { display: flex; align-items: center; gap: 6px; }
@@ -71,11 +61,11 @@
       width: 28px; height: 28px;
       background: rgba(255,255,255,.04); border: 1px solid var(--border);
       border-radius: 6px; color: var(--text); cursor: pointer;
-      font-size: 13px; display: flex; align-items: center; justify-content: center;
+      font-size: 14px; display: flex; align-items: center; justify-content: center;
       transition: background .15s;
     }
     .nav-btn:hover { background: rgba(99,102,241,.2); border-color: var(--accent); }
-    .month-label { font-size: 15px; font-weight: 700; min-width: 100px; text-align: center; }
+    .month-label { font-size: 15px; font-weight: 700; min-width: 96px; text-align: center; }
     .today-btn {
       padding: 4px 10px; font-size: 12px; font-weight: 600;
       background: rgba(99,102,241,.15); border: 1px solid rgba(99,102,241,.4);
@@ -97,12 +87,12 @@
     }
     .legend { display: flex; gap: 10px; margin-left: auto; flex-wrap: wrap; }
     .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--muted); white-space: nowrap; }
-    .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+    .legend-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
 
-    /* ─── Main ─── */
-    main { padding: 16px 20px; max-width: 1360px; margin: 0 auto; }
+    /* Main */
+    main { padding: 16px 20px; max-width: 1200px; margin: 0 auto; }
 
-    /* ─── Calendar ─── */
+    /* Calendar grid */
     .calendar {
       background: var(--card); border: 1px solid var(--border);
       border-radius: 14px; overflow: hidden;
@@ -119,75 +109,46 @@
     .cal-head-cell:first-child { color: var(--red); }
     .cal-head-cell:last-child  { color: #60a5fa; }
 
-    /* Week row = day numbers row + events row */
-    .week-row { border-bottom: 1px solid var(--border); }
-    .week-row:last-child { border-bottom: none; }
-
-    .week-days {
+    .cal-grid {
       display: grid; grid-template-columns: repeat(7,1fr);
-      border-bottom: 1px solid rgba(255,255,255,.04);
     }
     .day-cell {
-      padding: 6px 8px; min-height: 32px;
-      border-right: 1px solid rgba(255,255,255,.04);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 6px 5px 7px;
+      min-height: 80px;
+      vertical-align: top;
     }
-    .day-cell:last-child { border-right: none; }
+    .day-cell:nth-child(7n) { border-right: none; }
 
     .day-num {
       font-size: 12px; font-weight: 600;
       width: 22px; height: 22px;
       display: flex; align-items: center; justify-content: center;
-      border-radius: 50%;
+      border-radius: 50%; margin-bottom: 3px;
     }
     .day-num.today    { background: var(--accent); color: #fff; }
     .day-num.out      { color: #263347; }
     .day-num.sun      { color: var(--red); }
     .day-num.sat      { color: #60a5fa; }
 
-    /* Event bars grid */
-    .week-events {
-      display: grid;
-      grid-template-columns: repeat(7,1fr);
-      grid-auto-rows: 20px;
-      gap: 1px 0;
-      padding: 2px 0 4px;
-      position: relative;
+    /* Event chips */
+    .chips { display: flex; flex-direction: column; gap: 2px; }
+    .chip {
+      font-size: 10px; font-weight: 600;
+      padding: 2px 5px; border-radius: 3px;
+      cursor: pointer; line-height: 1.4;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      transition: filter .12s;
     }
-    .week-events:empty { display: none; }
+    .chip:hover { filter: brightness(1.3); }
 
-    .ev-bar {
-      height: 19px; margin: 0 2px;
-      border-radius: 3px;
-      display: flex; align-items: center;
-      padding: 0 5px;
-      font-size: 10.5px; font-weight: 600;
-      cursor: pointer; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
-      transition: filter .15s;
-      user-select: none;
-    }
-    .ev-bar:hover { filter: brightness(1.25); }
+    .chip-sub   { background: rgba(16,185,129,.2);  color: #34d399; border-left: 2px solid var(--green); }
+    .chip-list  { background: rgba(59,130,246,.2);  color: #93c5fd; border-left: 2px solid var(--blue); }
+    .chip-intl  { background: rgba(139,92,246,.2);  color: #c4b5fd; border-left: 2px solid var(--accent2); }
+    .chip-done  { background: rgba(100,116,139,.15); color: #94a3b8; border-left: 2px solid var(--muted); }
 
-    /* Type colors */
-    .ev-sub   { background: rgba(16,185,129,.22); color: #34d399; border-left: 2px solid var(--green); }
-    .ev-list  { background: rgba(59,130,246,.22); color: #60a5fa; border-left: 2px solid var(--blue);  }
-    .ev-intl  { background: rgba(139,92,246,.22); color: #a78bfa; border-left: 2px solid var(--accent2); }
-    .ev-done  { background: rgba(100,116,139,.18); color: #94a3b8; border-left: 2px solid var(--muted); }
-    .ev-tbd   { background: rgba(245,158,11,.18); color: #fbbf24; border-left: 2px solid var(--yellow); }
-
-    /* Clipped bars (continuation across week boundary) */
-    .ev-clip-left  { border-left: none; border-radius: 0 3px 3px 0; padding-left: 8px; }
-    .ev-clip-right { border-radius: 3px 0 0 3px; padding-right: 8px; }
-    .ev-clip-left.ev-clip-right { border-radius: 0; }
-
-    /* More overflow */
-    .more-btn {
-      font-size: 10px; color: var(--muted); padding: 0 6px;
-      cursor: pointer; white-space: nowrap;
-      display: flex; align-items: center;
-    }
-    .more-btn:hover { color: var(--accent); }
-
-    /* ─── Detail panel ─── */
+    /* Detail Panel */
     .overlay {
       display: none; position: fixed; inset: 0; z-index: 300;
       background: rgba(0,0,0,.55); backdrop-filter: blur(2px);
@@ -195,7 +156,7 @@
     .overlay.open { display: block; }
     .panel {
       position: fixed; right: 0; top: 0; bottom: 0;
-      width: 360px; background: #0f1a2e;
+      width: 340px; background: #0f1a2e;
       border-left: 1px solid var(--border);
       z-index: 301;
       transform: translateX(100%);
@@ -204,57 +165,52 @@
     }
     .panel.open { transform: translateX(0); }
     .panel-hd {
-      padding: 18px 20px; border-bottom: 1px solid var(--border);
+      padding: 16px 18px; border-bottom: 1px solid var(--border);
       display: flex; justify-content: space-between; align-items: flex-start;
       position: sticky; top: 0; background: #0f1a2e; z-index: 1;
     }
-    .panel-title { font-size: 17px; font-weight: 700; line-height: 1.3; }
+    .panel-title { font-size: 16px; font-weight: 700; line-height: 1.3; }
     .panel-sub   { font-size: 12px; color: var(--muted); margin-top: 3px; }
     .close-btn {
       width: 26px; height: 26px; flex-shrink: 0;
       background: rgba(255,255,255,.06); border: none; border-radius: 6px;
-      color: var(--muted); font-size: 15px; cursor: pointer;
+      color: var(--muted); font-size: 14px; cursor: pointer;
       display: flex; align-items: center; justify-content: center;
     }
     .close-btn:hover { color: var(--text); background: rgba(255,255,255,.12); }
-    .panel-body { padding: 18px 20px; flex: 1; }
-    .p-row { margin-bottom: 14px; }
+    .panel-body { padding: 16px 18px; flex: 1; }
+    .p-row { margin-bottom: 13px; }
     .p-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 3px; }
     .p-value { font-size: 14px; font-weight: 600; }
-    .p-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 20px;
-    }
+    .p-div { border-top: 1px solid var(--border); margin: 13px 0; }
     .p-link {
-      display: block; margin-top: 18px; padding: 9px;
+      display: block; margin-top: 16px; padding: 9px;
       background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3);
       border-radius: 8px; color: var(--accent); text-decoration: none;
       text-align: center; font-size: 12px; font-weight: 600;
     }
     .p-link:hover { background: rgba(99,102,241,.2); }
-    .p-div { border-top: 1px solid var(--border); margin: 14px 0; }
 
-    /* ─── Empty / Loading ─── */
-    .cal-msg { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
-    .loading  { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--muted); padding: 60px; }
+    /* Empty / Loading */
+    .cal-msg { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 13px; grid-column: 1/-1; }
+    .loading  { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--muted); padding: 80px; }
     .spinner  { width: 18px; height: 18px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* ─── Footer ─── */
-    footer { margin-top: 20px; border-top: 1px solid var(--border); padding: 14px 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+    /* Footer */
+    footer { margin-top: 20px; border-top: 1px solid var(--border); padding: 12px 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
     footer span { font-size: 11px; color: var(--muted); }
     footer a { font-size: 11px; color: var(--muted); text-decoration: none; margin-left: 10px; }
     footer a:hover { color: var(--accent); }
 
-    /* ─── Responsive ─── */
     @media(max-width:640px){
-      header { padding: 12px 14px; }
-      .stats-bar { grid-template-columns: repeat(2,1fr); }
+      header { padding: 10px 14px; }
       main { padding: 10px; }
-      .controls { padding: 8px 10px; gap: 6px; }
+      .controls { padding: 8px 12px; gap: 6px; }
       .legend { display: none; }
-      .panel { width: 100%; right: 0; left: 0; top: auto; bottom: 0; height: 65vh; border-left: none; border-top: 1px solid var(--border); }
-      .ev-bar { font-size: 9.5px; }
+      .panel { width: 100%; right: 0; left: 0; top: auto; bottom: 0; height: 60vh; border-left: none; border-top: 1px solid var(--border); }
+      .day-cell { min-height: 60px; padding: 4px 3px 5px; }
+      .chip { font-size: 9px; }
     }
   </style>
 </head>
@@ -271,13 +227,6 @@
   <div class="updated-badge">업데이트 <span id="updated-time">—</span></div>
 </header>
 
-<div class="stats-bar">
-  <div class="stat-item"><div class="stat-value" id="s-total"  style="color:var(--text)">—</div><div class="stat-label">전체</div></div>
-  <div class="stat-item"><div class="stat-value" id="s-sub"    style="color:var(--green)">—</div><div class="stat-label">청약중</div></div>
-  <div class="stat-item"><div class="stat-value" id="s-coming" style="color:var(--blue)">—</div><div class="stat-label">청약예정</div></div>
-  <div class="stat-item"><div class="stat-value" id="s-done"   style="color:var(--muted)">—</div><div class="stat-label">완료</div></div>
-</div>
-
 <div class="controls">
   <div class="month-nav">
     <button class="nav-btn" onclick="changeMonth(-1)">&#8249;</button>
@@ -293,10 +242,9 @@
   </div>
 
   <div class="legend">
-    <div class="legend-item"><div class="legend-dot" style="background:rgba(16,185,129,.7)"></div>청약기간</div>
-    <div class="legend-item"><div class="legend-dot" style="background:rgba(59,130,246,.7)"></div>상장일</div>
-    <div class="legend-item"><div class="legend-dot" style="background:rgba(139,92,246,.7)"></div>해외 IPO</div>
-    <div class="legend-item"><div class="legend-dot" style="background:rgba(245,158,11,.7)"></div>상장검토중</div>
+    <div class="legend-item"><div class="legend-dot" style="background:rgba(16,185,129,.8)"></div>청약기간</div>
+    <div class="legend-item"><div class="legend-dot" style="background:rgba(59,130,246,.8)"></div>상장일</div>
+    <div class="legend-item"><div class="legend-dot" style="background:rgba(139,92,246,.8)"></div>해외 IPO</div>
   </div>
 </div>
 
@@ -315,7 +263,6 @@
   </div>
 </footer>
 
-<!-- Detail Panel -->
 <div class="overlay" id="overlay" onclick="closePanel()"></div>
 <div class="panel" id="panel">
   <div class="panel-hd">
@@ -329,7 +276,6 @@
 </div>
 
 <script>
-  /* ─── State ─────────────────────────────────── */
   let allData = { domestic: [], international: [] };
   let currentTab = 'domestic';
   let viewYear, viewMonth;
@@ -339,8 +285,7 @@
   viewYear  = TODAY.getFullYear();
   viewMonth = TODAY.getMonth();
 
-  /* ─── Helpers ────────────────────────────────── */
-  function pd(str) { // parseDate → local midnight
+  function pd(str) {
     if (!str) return null;
     const [y,m,d] = str.split('-').map(Number);
     return new Date(y, m-1, d);
@@ -349,85 +294,70 @@
     if (!d) return '미정';
     return `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
   }
-  function fmtMD(d) { return d ? `${d.getMonth()+1}/${d.getDate()}` : '—'; }
   function sameDay(a,b) { return a.getFullYear()===b.getFullYear() && a.getMonth()===b.getMonth() && a.getDate()===b.getDate(); }
-  function dateKey(d) { return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
+  function addDays(d, n) { const r = new Date(d); r.setDate(r.getDate()+n); return r; }
+  function escAttr(s) { return String(s).replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+  function escHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-  /* ─── Event building ─────────────────────────── */
-  function buildEvents(tab) {
-    const evs = [];
+  /* Build a map: dateKey → [{name, type, tab}] */
+  function buildDayMap(tab) {
+    const map = {};
+    const add = (dateObj, name, type, t) => {
+      if (!dateObj) return;
+      const k = dateObj.toISOString().slice(0,10);
+      if (!map[k]) map[k] = [];
+      map[k].push({ name, type, tab: t });
+    };
 
     if (tab === 'domestic' || tab === 'all') {
       allData.domestic.forEach(item => {
-        // 청약기간 bar
+        // Mark every day of subscription period
         if (item.subscription_start) {
           const s = pd(item.subscription_start);
           const e = pd(item.subscription_end || item.subscription_start);
-          evs.push({ type:'sub', name: item.name, start:s, end:e, item, tab:'domestic' });
+          let cur = new Date(s);
+          while (cur <= e) {
+            add(cur, item.name, 'sub', 'domestic');
+            cur = addDays(cur, 1);
+          }
         }
-        // 상장일 marker
+        // Listing date
         if (item.listing_date) {
-          const d = pd(item.listing_date);
-          evs.push({ type:'list', name: item.name + ' 상장', start:d, end:d, item, tab:'domestic' });
+          add(pd(item.listing_date), item.name + ' 상장', 'list', 'domestic');
         }
       });
     }
 
     if (tab === 'international' || tab === 'all') {
       allData.international.forEach(item => {
-        if (!item.ipo_date) {
-          // No date → skip in calendar (TBD items shown in list if needed)
-          return;
-        }
+        if (!item.ipo_date) return;
         const d = pd(item.ipo_date.substring(0,10));
-        const isDone    = d <= TODAY;
-        const isExpected = !isDone && (d - TODAY) > 60 * 86400000;
-        const evType = isDone ? 'done' : isExpected ? 'tbd' : 'intl';
-        evs.push({ type: evType, name: item.name, start:d, end:d, item, tab:'international' });
+        const isDone = d < TODAY;
+        add(d, item.name, isDone ? 'done' : 'intl', 'international');
       });
     }
 
-    return evs;
+    return map;
   }
 
-  /* ─── Lane assignment ────────────────────────── */
-  function assignLanes(evs) {
-    evs.sort((a,b) => a.startCol - b.startCol || (b.endCol-b.startCol) - (a.endCol-a.startCol));
-    const laneEnds = [];
-    evs.forEach(ev => {
-      let lane = laneEnds.findIndex(end => end <= ev.startCol);
-      if (lane === -1) lane = laneEnds.length;
-      laneEnds[lane] = ev.endCol;
-      ev.lane = lane;
-    });
-    return evs;
-  }
-
-  /* ─── Calendar weeks ─────────────────────────── */
-  function getWeeks(year, month) {
-    const first = new Date(year, month, 1);
-    const last  = new Date(year, month+1, 0);
-    const start = new Date(first);
-    start.setDate(start.getDate() - start.getDay()); // back to Sunday
-    const weeks = [];
-    let cur = new Date(start);
-    while (cur <= last || weeks.length === 0) {
-      const week = [];
-      for (let i=0; i<7; i++) { week.push(new Date(cur)); cur.setDate(cur.getDate()+1); }
-      weeks.push(week);
-      if (cur > last && cur.getDay() === 0) break;
-    }
-    return weeks;
-  }
-
-  /* ─── Render calendar ────────────────────────── */
   function renderCalendar() {
     const MONTHS = ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];
     document.getElementById('month-label').textContent = `${viewYear}년 ${MONTHS[viewMonth]}`;
 
-    const weeks  = getWeeks(viewYear, viewMonth);
-    const events = buildEvents(currentTab);
-    const MAX_LANES = 5;
+    const dayMap = buildDayMap(currentTab);
+
+    // Build weeks
+    const first = new Date(viewYear, viewMonth, 1);
+    const last  = new Date(viewYear, viewMonth+1, 0);
+    const cells = [];
+    const startDay = new Date(first);
+    startDay.setDate(startDay.getDate() - startDay.getDay());
+    let cur = new Date(startDay);
+    while (cur <= last || cells.length % 7 !== 0 || cells.length === 0) {
+      cells.push(new Date(cur));
+      cur = addDays(cur, 1);
+      if (cur > last && cells.length % 7 === 0) break;
+    }
 
     let html = `<div class="calendar">
       <div class="cal-head">
@@ -438,80 +368,43 @@
         <div class="cal-head-cell">목</div>
         <div class="cal-head-cell">금</div>
         <div class="cal-head-cell">토</div>
-      </div>`;
+      </div>
+      <div class="cal-grid">`;
 
-    weeks.forEach(week => {
-      const wStart = week[0], wEnd = week[6];
+    cells.forEach((day, i) => {
+      const out    = day.getMonth() !== viewMonth;
+      const isTod  = sameDay(day, TODAY);
+      const dow    = day.getDay();
+      let numCls   = '';
+      if (isTod)     numCls = 'today';
+      else if (out)  numCls = 'out';
+      else if (dow===0) numCls = 'sun';
+      else if (dow===6) numCls = 'sat';
 
-      // Day numbers row
-      html += '<div class="week-row"><div class="week-days">';
-      week.forEach((day, i) => {
-        const out = day.getMonth() !== viewMonth;
-        const isTod = sameDay(day, TODAY);
-        let cls = '';
-        if (isTod)     cls = 'today';
-        else if (out)  cls = 'out';
-        else if (i===0) cls = 'sun';
-        else if (i===6) cls = 'sat';
-        html += `<div class="day-cell"><div class="day-num ${cls}">${day.getDate()}</div></div>`;
-      });
-      html += '</div>';
+      const k = day.toISOString().slice(0,10);
+      const evs = (dayMap[k] || []);
 
-      // Events for this week
-      const weekEvs = events
-        .filter(ev => ev.start <= wEnd && ev.end >= wStart)
-        .map(ev => {
-          const clipL = ev.start < wStart;
-          const clipR = ev.end > wEnd;
-          const sc = clipL ? 1 : ev.start.getDay() + 1;
-          const ec = clipR ? 8 : ev.end.getDay() + 2;
-          return { ...ev, startCol:sc, endCol:ec, clipL, clipR };
+      let chipsHtml = '';
+      if (!out && evs.length > 0) {
+        chipsHtml = '<div class="chips">';
+        evs.forEach(ev => {
+          chipsHtml += `<div class="chip chip-${ev.type}"
+            data-name="${escAttr(ev.name.replace(' 상장',''))}"
+            data-tab="${escAttr(ev.tab)}">${escHtml(ev.name)}</div>`;
         });
-
-      assignLanes(weekEvs);
-
-      const visible = weekEvs.filter(ev => ev.lane < MAX_LANES);
-      const hidden  = weekEvs.filter(ev => ev.lane >= MAX_LANES);
-
-      if (visible.length > 0) {
-        const maxLane = Math.max(...visible.map(e => e.lane));
-        html += `<div class="week-events" style="grid-template-rows:repeat(${maxLane+1},20px)">`;
-
-        visible.forEach(ev => {
-          const clipClass = (ev.clipL ? ' ev-clip-left' : '') + (ev.clipR ? ' ev-clip-right' : '');
-          const typeClass = `ev-${ev.type}`;
-          const label = ev.clipL ? `← ${ev.name}` : ev.name;
-          html += `<div class="ev-bar ${typeClass}${clipClass}"
-                     style="grid-column:${ev.startCol}/${ev.endCol};grid-row:${ev.lane+1}"
-                     data-name="${escAttr(ev.item.name)}" data-tab="${ev.tab}">
-                     ${escHtml(label)}
-                   </div>`;
-        });
-
-        // "+N more" per day column if any hidden
-        if (hidden.length > 0) {
-          const moreByCols = {};
-          hidden.forEach(ev => {
-            for (let c = ev.startCol; c < ev.endCol; c++) {
-              moreByCols[c] = (moreByCols[c] || 0) + 1;
-            }
-          });
-          Object.entries(moreByCols).forEach(([col, n]) => {
-            html += `<div class="more-btn" style="grid-column:${col};grid-row:${maxLane+2}">+${n}</div>`;
-          });
-        }
-
-        html += '</div>';
+        chipsHtml += '</div>';
       }
 
-      html += '</div>'; // .week-row
+      html += `<div class="day-cell">
+        <div class="day-num ${numCls}">${day.getDate()}</div>
+        ${chipsHtml}
+      </div>`;
     });
 
-    html += '</div>'; // .calendar
+    html += '</div></div>';
     document.getElementById('cal-wrap').innerHTML = html;
 
-    // Attach click handlers
-    document.querySelectorAll('.ev-bar').forEach(el => {
+    document.querySelectorAll('.chip').forEach(el => {
       el.addEventListener('click', e => {
         e.stopPropagation();
         openPanel(el.dataset.name, el.dataset.tab);
@@ -519,7 +412,6 @@
     });
   }
 
-  /* ─── Detail panel ───────────────────────────── */
   function openPanel(name, tab) {
     const items = tab === 'domestic' ? allData.domestic : allData.international;
     const item  = items.find(i => i.name === name);
@@ -528,7 +420,6 @@
     document.getElementById('p-name').textContent = item.name;
 
     let sub = '', body = '';
-
     if (tab === 'domestic') {
       sub = `${item.market || ''}${item.sector ? ' · ' + item.sector : ''}`;
       const subRange = item.subscription_start
@@ -559,9 +450,8 @@
       `;
     }
 
-    document.getElementById('p-sub').textContent  = sub;
-    document.getElementById('p-body').innerHTML   = body;
-
+    document.getElementById('p-sub').textContent = sub;
+    document.getElementById('p-body').innerHTML  = body;
     document.getElementById('overlay').classList.add('open');
     document.getElementById('panel').classList.add('open');
   }
@@ -571,34 +461,6 @@
     document.getElementById('panel').classList.remove('open');
   }
 
-  /* ─── Stats ──────────────────────────────────── */
-  function updateStats() {
-    let total = 0, sub = 0, coming = 0, done = 0;
-    const check = (tab, items) => {
-      items.forEach(item => {
-        total++;
-        if (tab === 'domestic') {
-          const s = pd(item.subscription_start), e = pd(item.subscription_end);
-          const l = pd(item.listing_date);
-          if (l && TODAY > l) done++;
-          else if (s && TODAY >= s && e && TODAY <= e) sub++;
-          else coming++;
-        } else {
-          const d = item.ipo_date ? pd(item.ipo_date.substring(0,10)) : null;
-          if (!d || d > TODAY) coming++;
-          else done++;
-        }
-      });
-    };
-    check('domestic', allData.domestic);
-    check('international', allData.international);
-    document.getElementById('s-total').textContent  = total;
-    document.getElementById('s-sub').textContent    = sub;
-    document.getElementById('s-coming').textContent = coming;
-    document.getElementById('s-done').textContent   = done;
-  }
-
-  /* ─── Navigation ──────────────────────────────── */
   function changeMonth(delta) {
     viewMonth += delta;
     if (viewMonth < 0)  { viewMonth = 11; viewYear--; }
@@ -616,27 +478,20 @@
     renderCalendar();
   }
 
-  /* ─── Escape utils ────────────────────────────── */
-  function escAttr(s) { return String(s).replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
-  function escHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-
-  /* ─── Time format ─────────────────────────────── */
   function fmtUpdated(iso) {
     const d = new Date(iso);
     return `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
   }
 
-  /* ─── Bootstrap ──────────────────────────────── */
   fetch('data/ipo_data.json')
     .then(r => r.json())
     .then(data => {
       allData = data;
       document.getElementById('updated-time').textContent = fmtUpdated(data.updated_at);
-      updateStats();
       renderCalendar();
     })
     .catch(() => {
-      document.getElementById('cal-wrap').innerHTML = '<div class="cal-msg">데이터를 불러올 수 없습니다.</div>';
+      document.getElementById('cal-wrap').innerHTML = '<div class="loading">데이터를 불러올 수 없습니다.</div>';
     });
 
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
