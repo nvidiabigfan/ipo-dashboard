@@ -7,19 +7,26 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --bg:      #0a0f1e;
-      --surface: #111827;
-      --card:    #141e2e;
-      --border:  #1e2d47;
-      --text:    #e2e8f0;
-      --muted:   #64748b;
-      --accent:  #6366f1;
-      --accent2: #8b5cf6;
-      --green:   #10b981;
-      --blue:    #3b82f6;
-      --yellow:  #f59e0b;
-      --cyan:    #06b6d4;
-      --red:     #f87171;
+      --bg:          #0a0d14;
+      --surface:     #0f1320;
+      --card:        #0f1320;
+      --surface2:    #161b2e;
+      --surface3:    #1c2238;
+      --border:      #1e2540;
+      --border-2:    #161d30;
+      --text:        #e8eaf2;
+      --muted:       #6b7394;
+      --dim:         #3a4060;
+
+      /* RED = 긍정 / 청약중 / 활성 / 중요 */
+      --red:         #e05c6a;
+      --red-dim:     rgba(224,92,106,.14);
+      --red-border:  rgba(224,92,106,.35);
+
+      /* BLUE = 상장일 / 완료 / 보조 */
+      --blue:        #4d7ab5;
+      --blue-dim:    rgba(77,122,181,.14);
+      --blue-border: rgba(77,122,181,.35);
     }
     html, body { height: 100%; overflow: hidden; }
     body {
@@ -30,7 +37,7 @@
 
     /* Header */
     header {
-      background: linear-gradient(135deg,#0d1b3e 0%,#1a0e3d 100%);
+      background: var(--surface);
       border-bottom: 1px solid var(--border);
       padding: 10px 32px;
       display: flex; align-items: center; justify-content: space-between; gap: 24px;
@@ -38,18 +45,19 @@
     .logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
     .logo-icon {
       width: 30px; height: 30px;
-      background: linear-gradient(135deg,var(--accent),var(--accent2));
+      background: var(--red-dim);
+      border: 1px solid var(--red-border);
       border-radius: 7px; display: flex; align-items: center; justify-content: center;
-      font-size: 14px; font-weight: 800; color: #fff;
+      font-size: 14px; font-weight: 800; color: var(--red);
     }
     .logo-text { font-size: 15px; font-weight: 700; }
     .logo-sub  { font-size: 11px; color: var(--muted); margin-top: 1px; }
 
-    /* Stats — now inline in header */
+    /* Stats */
     .stats-bar {
       display: flex; align-items: center; gap: 0;
-      background: rgba(255,255,255,.04); border: 1px solid var(--border);
-      border-radius: 10px; overflow: hidden;
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden;
     }
     .stat-item {
       padding: 6px 18px; display: flex; align-items: center; gap: 7px;
@@ -62,73 +70,72 @@
     .header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
     .updated-badge {
       font-size: 11px; color: var(--muted);
-      background: rgba(255,255,255,.04); border: 1px solid var(--border);
-      padding: 4px 10px; border-radius: 20px;
+      background: var(--surface2); border: 1px solid var(--border);
+      padding: 4px 10px; border-radius: 6px;
     }
-    .updated-badge span { color: var(--cyan); font-weight: 600; }
+    .updated-badge span { color: var(--text); font-weight: 600; }
 
     /* Controls */
     .controls {
       display: flex; align-items: center; gap: 12px;
-      padding: 8px 32px; background: var(--surface);
+      padding: 8px 32px; background: var(--bg);
       border-bottom: 1px solid var(--border);
       flex-shrink: 0;
     }
     .month-nav { display: flex; align-items: center; gap: 6px; }
     .nav-btn {
       width: 30px; height: 30px;
-      background: rgba(255,255,255,.04); border: 1px solid var(--border);
+      background: var(--surface2); border: 1px solid var(--border);
       border-radius: 6px; color: var(--text); cursor: pointer;
       font-size: 16px; display: flex; align-items: center; justify-content: center;
-      transition: background .15s, border-color .15s;
+      transition: border-color .12s, color .12s;
     }
-    .nav-btn:hover { background: rgba(99,102,241,.2); border-color: var(--accent); }
+    .nav-btn:hover { border-color: var(--red-border); color: var(--red); }
     .month-label { font-size: 16px; font-weight: 700; min-width: 110px; text-align: center; }
     .today-btn {
       padding: 5px 12px; font-size: 12px; font-weight: 600;
-      background: rgba(99,102,241,.15); border: 1px solid rgba(99,102,241,.4);
-      border-radius: 6px; color: var(--accent); cursor: pointer; transition: background .15s;
+      background: var(--red-dim); border: 1px solid var(--red-border);
+      border-radius: 6px; color: var(--red); cursor: pointer; transition: background .12s;
     }
-    .today-btn:hover { background: rgba(99,102,241,.3); }
+    .today-btn:hover { background: rgba(224,92,106,.24); }
     .tabs {
       display: flex; gap: 3px;
-      background: rgba(255,255,255,.04); border: 1px solid var(--border);
-      border-radius: 9px; padding: 3px;
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 8px; padding: 3px;
     }
     .tab-btn {
       padding: 5px 16px; border: none; background: transparent;
       color: var(--muted); font-size: 13px; font-weight: 600;
-      border-radius: 6px; cursor: pointer; transition: all .15s;
+      border-radius: 6px; cursor: pointer; transition: all .12s;
     }
-    .tab-btn.active {
-      background: linear-gradient(135deg,var(--accent),var(--accent2)); color: #fff;
-    }
+    .tab-btn.active { background: var(--red-dim); color: var(--red); border: 1px solid var(--red-border); }
     .legend { display: flex; gap: 14px; margin-left: auto; align-items: center; }
     .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
     .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
     .legend-sep { width: 1px; height: 14px; background: var(--border); margin: 0 4px; }
-    .legend-link { font-size: 11px; color: var(--muted); text-decoration: none; }
-    .legend-link:hover { color: var(--accent); }
+    .legend-link { font-size: 11px; color: var(--muted); text-decoration: none; transition: color .12s; }
+    .legend-link:hover { color: var(--red); }
 
-    /* Layout: calendar + sidebar */
+    /* Layout */
     .workspace {
       flex: 1; min-height: 0;
       display: grid;
       grid-template-columns: 1fr 270px;
-      gap: 14px;
+      gap: 0;
       padding: 14px 24px;
+      gap: 14px;
     }
 
     /* Calendar */
     #cal-wrap { height: 100%; display: flex; flex-direction: column; }
     .calendar {
       background: var(--card); border: 1px solid var(--border);
-      border-radius: 12px; overflow: hidden;
+      border-radius: 10px; overflow: hidden;
       flex: 1; display: flex; flex-direction: column;
     }
     .cal-head {
       display: grid; grid-template-columns: repeat(7,1fr);
-      background: rgba(255,255,255,.03); border-bottom: 1px solid var(--border);
+      background: var(--surface2); border-bottom: 1px solid var(--border);
       flex-shrink: 0;
     }
     .cal-head-cell {
@@ -137,22 +144,22 @@
       text-transform: uppercase; letter-spacing: .5px;
     }
     .cal-head-cell:first-child { color: var(--red); }
-    .cal-head-cell:last-child  { color: #60a5fa; }
+    .cal-head-cell:last-child  { color: var(--blue); }
 
     .cal-grid {
       display: grid; grid-template-columns: repeat(7,1fr);
       flex: 1; grid-auto-rows: 1fr;
     }
     .day-cell {
-      border-right: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 6px 6px 6px;
+      border-right: 1px solid var(--border-2);
+      border-bottom: 1px solid var(--border-2);
+      padding: 6px;
       min-height: 0; overflow: hidden;
       cursor: default;
       transition: background .1s;
     }
     .day-cell:nth-child(7n) { border-right: none; }
-    .day-cell:hover:not(.day-out) { background: rgba(255,255,255,.015); }
+    .day-cell:hover:not(.day-out) { background: rgba(255,255,255,.012); }
 
     .day-num {
       font-size: 13px; font-weight: 600;
@@ -160,49 +167,49 @@
       display: flex; align-items: center; justify-content: center;
       border-radius: 50%; margin-bottom: 5px;
     }
-    .day-num.today    { background: var(--accent); color: #fff; }
-    .day-num.out      { color: #263347; }
-    .day-num.sun      { color: var(--red); }
-    .day-num.sat      { color: #60a5fa; }
+    .day-num.today { background: var(--red); color: #fff; }
+    .day-num.out   { color: var(--dim); }
+    .day-num.sun   { color: var(--red); }
+    .day-num.sat   { color: var(--blue); }
 
     .chips { display: flex; flex-direction: column; gap: 3px; }
     .chip {
       font-size: 11px; font-weight: 600;
-      padding: 3px 7px; border-radius: 4px;
+      padding: 3px 7px; border-radius: 3px;
       cursor: pointer; line-height: 1.4;
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
       transition: filter .12s, transform .1s;
       user-select: none;
     }
-    .chip:hover { filter: brightness(1.35); transform: translateX(1px); }
+    .chip:hover { filter: brightness(1.3); transform: translateX(1px); }
 
-    .chip-sub   { background: rgba(16,185,129,.18);  color: #34d399; border-left: 2px solid var(--green); }
-    .chip-list  { background: rgba(59,130,246,.18);  color: #93c5fd; border-left: 2px solid var(--blue); }
-    .chip-intl  { background: rgba(139,92,246,.18);  color: #c4b5fd; border-left: 2px solid var(--accent2); }
-    .chip-done  { background: rgba(100,116,139,.12); color: #64748b; border-left: 2px solid #334155; }
+    /* RED = 청약기간 (긍정) / BLUE = 상장일 / GRAY = 해외·완료 */
+    .chip-sub  { background: var(--red-dim);  color: var(--red);  border-left: 2px solid var(--red); }
+    .chip-list { background: var(--blue-dim); color: var(--blue); border-left: 2px solid var(--blue); }
+    .chip-intl { background: var(--surface2); color: var(--muted); border-left: 2px solid var(--dim); }
+    .chip-done { background: rgba(30,37,64,.6); color: var(--dim); border-left: 2px solid var(--border); }
 
     /* Sidebar */
-    .sidebar {
-      height: 100%; display: flex; flex-direction: column;
-    }
+    .sidebar { height: 100%; display: flex; flex-direction: column; }
     .side-card {
       background: var(--card); border: 1px solid var(--border);
-      border-radius: 12px; overflow: hidden;
+      border-radius: 10px; overflow: hidden;
       flex: 1; display: flex; flex-direction: column;
     }
     .side-card-hd {
       padding: 10px 16px; border-bottom: 1px solid var(--border);
-      font-size: 12px; font-weight: 700; color: var(--muted);
+      font-size: 11px; font-weight: 700; color: var(--muted);
       text-transform: uppercase; letter-spacing: .5px; flex-shrink: 0;
+      background: var(--surface2);
     }
     .side-list { list-style: none; overflow-y: auto; flex: 1; }
     .side-item {
-      padding: 9px 16px; border-bottom: 1px solid rgba(255,255,255,.04);
+      padding: 9px 16px; border-bottom: 1px solid var(--border-2);
       cursor: pointer; transition: background .12s;
       display: flex; align-items: center; gap: 10px;
     }
     .side-item:last-child { border-bottom: none; }
-    .side-item:hover { background: rgba(255,255,255,.03); }
+    .side-item:hover { background: var(--surface2); }
     .side-date {
       font-size: 11px; font-weight: 700; color: var(--muted);
       min-width: 36px; text-align: center; line-height: 1.3;
@@ -212,63 +219,63 @@
     .side-name { font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .side-type { font-size: 11px; color: var(--muted); margin-top: 1px; }
     .side-badge {
-      font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 3px;
+      font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 3px;
       white-space: nowrap; flex-shrink: 0;
     }
-    .badge-sub  { background: rgba(16,185,129,.2);  color: #34d399; }
-    .badge-list { background: rgba(59,130,246,.2);  color: #93c5fd; }
-    .badge-intl { background: rgba(139,92,246,.2);  color: #c4b5fd; }
+    .badge-sub  { background: var(--red-dim);  color: var(--red);  border: 1px solid var(--red-border); }
+    .badge-list { background: var(--blue-dim); color: var(--blue); border: 1px solid var(--blue-border); }
+    .badge-intl { background: var(--surface2); color: var(--muted); border: 1px solid var(--border); }
 
     .side-empty { padding: 20px 16px; text-align: center; color: var(--muted); font-size: 12px; }
 
     /* Detail Panel */
     .overlay {
       display: none; position: fixed; inset: 0; z-index: 300;
-      background: rgba(0,0,0,.55); backdrop-filter: blur(3px);
+      background: rgba(0,0,0,.6);
     }
     .overlay.open { display: block; }
     .panel {
       position: fixed; right: 0; top: 0; bottom: 0;
-      width: 380px; background: #0f1a2e;
+      width: 360px; background: var(--surface);
       border-left: 1px solid var(--border);
       z-index: 301;
       transform: translateX(100%);
-      transition: transform .22s cubic-bezier(.4,0,.2,1);
+      transition: transform .2s cubic-bezier(.4,0,.2,1);
       overflow-y: auto; display: flex; flex-direction: column;
     }
     .panel.open { transform: translateX(0); }
     .panel-hd {
-      padding: 20px 22px; border-bottom: 1px solid var(--border);
+      padding: 18px 20px; border-bottom: 1px solid var(--border);
       display: flex; justify-content: space-between; align-items: flex-start;
-      position: sticky; top: 0; background: #0f1a2e; z-index: 1;
+      position: sticky; top: 0; background: var(--surface); z-index: 1;
     }
-    .panel-title { font-size: 18px; font-weight: 700; line-height: 1.3; }
+    .panel-title { font-size: 17px; font-weight: 700; line-height: 1.3; }
     .panel-sub   { font-size: 12px; color: var(--muted); margin-top: 4px; }
     .close-btn {
       width: 28px; height: 28px; flex-shrink: 0;
-      background: rgba(255,255,255,.06); border: none; border-radius: 6px;
+      background: var(--surface2); border: 1px solid var(--border); border-radius: 6px;
       color: var(--muted); font-size: 16px; cursor: pointer;
       display: flex; align-items: center; justify-content: center;
-      transition: all .15s;
+      transition: all .12s;
     }
-    .close-btn:hover { color: var(--text); background: rgba(255,255,255,.12); }
-    .panel-body { padding: 20px 22px; flex: 1; }
-    .p-row { margin-bottom: 15px; }
+    .close-btn:hover { color: var(--text); border-color: var(--red-border); }
+    .panel-body { padding: 18px 20px; flex: 1; }
+    .p-row { margin-bottom: 14px; }
     .p-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px; }
-    .p-value { font-size: 15px; font-weight: 600; }
-    .p-div { border-top: 1px solid var(--border); margin: 15px 0; }
+    .p-value { font-size: 14px; font-weight: 600; }
+    .p-div { border-top: 1px solid var(--border); margin: 14px 0; }
     .p-link {
-      display: block; margin-top: 20px; padding: 10px;
-      background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3);
-      border-radius: 8px; color: var(--accent); text-decoration: none;
+      display: block; margin-top: 18px; padding: 10px;
+      background: var(--red-dim); border: 1px solid var(--red-border);
+      border-radius: 7px; color: var(--red); text-decoration: none;
       text-align: center; font-size: 13px; font-weight: 600;
-      transition: background .15s;
+      transition: background .12s;
     }
-    .p-link:hover { background: rgba(99,102,241,.22); }
+    .p-link:hover { background: rgba(224,92,106,.24); }
 
     /* Loading */
     .loading { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--muted); padding: 60px; }
-    .spinner { width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
+    .spinner { width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--red); border-radius: 50%; animation: spin .7s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
   </style>
 </head>
@@ -289,11 +296,11 @@
       <div class="stat-label">전체</div>
     </div>
     <div class="stat-item">
-      <div class="stat-value" id="s-sub" style="color:var(--green)">—</div>
+      <div class="stat-value" id="s-sub" style="color:var(--red)">—</div>
       <div class="stat-label">청약중</div>
     </div>
     <div class="stat-item">
-      <div class="stat-value" id="s-coming" style="color:var(--blue)">—</div>
+      <div class="stat-value" id="s-coming" style="color:var(--text)">—</div>
       <div class="stat-label">청약예정</div>
     </div>
     <div class="stat-item">
@@ -322,9 +329,9 @@
   </div>
 
   <div class="legend">
-    <div class="legend-item"><div class="legend-dot" style="background:rgba(16,185,129,.8)"></div>청약기간</div>
-    <div class="legend-item"><div class="legend-dot" style="background:rgba(59,130,246,.8)"></div>상장일</div>
-    <div class="legend-item"><div class="legend-dot" style="background:rgba(139,92,246,.8)"></div>해외 IPO</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--red)"></div>청약기간</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div>상장일</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--dim)"></div>해외 IPO</div>
     <div class="legend-sep"></div>
     <a class="legend-link" href="http://www.38.co.kr/html/fund/?o=k" target="_blank">38커뮤니케이션</a>
     <a class="legend-link" href="https://kind.krx.co.kr" target="_blank">KIND</a>
@@ -346,7 +353,6 @@
     </div>
   </aside>
 </div>
-
 
 <div class="overlay" id="overlay" onclick="closePanel()"></div>
 <div class="panel" id="panel">
@@ -418,7 +424,6 @@
     return map;
   }
 
-  /* Sidebar: unique key events for the month (sub start + listing + intl) */
   function buildSidebarItems(tab) {
     const items = [];
     const monthStart = new Date(viewYear, viewMonth, 1);
@@ -464,8 +469,8 @@
     list.innerHTML = items.map(it => {
       const day = it.date.getDate();
       const dow = ['일','월','화','수','목','금','토'][it.date.getDay()];
-      const badgeMap = { sub: 'badge-sub 청약', list: 'badge-list 상장', intl: 'badge-intl IPO', done: 'badge-sub 완료' };
-      const [bc, bl] = (badgeMap[it.type] || 'badge-sub 기타').split(' ');
+      const badgeMap = { sub: 'badge-sub 청약', list: 'badge-list 상장', intl: 'badge-intl IPO', done: 'badge-intl 완료' };
+      const [bc, bl] = (badgeMap[it.type] || 'badge-intl 기타').split(' ');
       return `<li class="side-item" data-name="${escAttr(it.name)}" data-tab="${escAttr(it.tab)}">
         <div class="side-date"><span class="sd-day">${day}</span>${dow}</div>
         <div class="side-info">
@@ -513,8 +518,8 @@
       const isTod = sameDay(day, TODAY);
       const dow   = day.getDay();
       let numCls  = '';
-      if (isTod)      numCls = 'today';
-      else if (out)   numCls = 'out';
+      if (isTod)        numCls = 'today';
+      else if (out)     numCls = 'out';
       else if (dow===0) numCls = 'sun';
       else if (dow===6) numCls = 'sat';
 
@@ -584,24 +589,24 @@
         ? `${fmtDate(pd(item.subscription_start))} ~ ${fmtDate(pd(item.subscription_end))}`
         : '미정';
       body = `
-        <div class="p-row"><div class="p-label">청약 기간</div><div class="p-value">${subRange}</div></div>
-        ${item.listing_date ? `<div class="p-row"><div class="p-label">상장일</div><div class="p-value">${fmtDate(pd(item.listing_date))}</div></div>` : ''}
+        <div class="p-row"><div class="p-label">청약 기간</div><div class="p-value" style="color:var(--red)">${subRange}</div></div>
+        ${item.listing_date ? `<div class="p-row"><div class="p-label">상장일</div><div class="p-value" style="color:var(--blue)">${fmtDate(pd(item.listing_date))}</div></div>` : ''}
         ${item.refund_date  ? `<div class="p-row"><div class="p-label">환불일</div><div class="p-value">${fmtDate(pd(item.refund_date))}</div></div>` : ''}
         <div class="p-div"></div>
-        ${item.offer_price  ? `<div class="p-row"><div class="p-label">확정 공모가</div><div class="p-value" style="color:var(--yellow)">${item.offer_price} 원</div></div>` : ''}
+        ${item.offer_price  ? `<div class="p-row"><div class="p-label">확정 공모가</div><div class="p-value" style="color:var(--red)">${item.offer_price} 원</div></div>` : ''}
         ${item.price_band   ? `<div class="p-row"><div class="p-label">희망 공모가</div><div class="p-value">${item.price_band} 원</div></div>` : ''}
-        ${item.competition_ratio ? `<div class="p-row"><div class="p-label">청약 경쟁률</div><div class="p-value" style="color:var(--cyan)">${item.competition_ratio}</div></div>` : ''}
+        ${item.competition_ratio ? `<div class="p-row"><div class="p-label">청약 경쟁률</div><div class="p-value">${item.competition_ratio}</div></div>` : ''}
         <div class="p-div"></div>
         ${item.sector ? `<div class="p-row"><div class="p-label">섹터</div><div class="p-value">${item.sector}</div></div>` : ''}
-        ${item.note   ? `<div class="p-row"><div class="p-label">비고</div><div class="p-value" style="color:var(--yellow)">${item.note}</div></div>` : ''}
+        ${item.note   ? `<div class="p-row"><div class="p-label">비고</div><div class="p-value" style="color:var(--muted);font-weight:400">${item.note}</div></div>` : ''}
         <a class="p-link" href="${item.source_url || '#'}" target="_blank">38커뮤니케이션에서 보기 ↗</a>`;
     } else {
       sub = `${item.exchange || 'TBD'}${item.sector ? ' · ' + item.sector : ''}`;
       body = `
-        <div class="p-row"><div class="p-label">IPO 예정일</div><div class="p-value">${fmtDate(pd(item.ipo_date ? item.ipo_date.substring(0,10) : null))}</div></div>
-        ${item.price     ? `<div class="p-row"><div class="p-label">공모가</div><div class="p-value" style="color:var(--yellow)">$${item.price}</div></div>` : ''}
-        ${item.valuation ? `<div class="p-row"><div class="p-label">기업가치</div><div class="p-value" style="color:var(--cyan)">${item.valuation}</div></div>` : ''}
-        ${item.raised    ? `<div class="p-row"><div class="p-label">조달 규모</div><div class="p-value" style="color:var(--green)">${item.raised}</div></div>` : ''}
+        <div class="p-row"><div class="p-label">IPO 예정일</div><div class="p-value" style="color:var(--red)">${fmtDate(pd(item.ipo_date ? item.ipo_date.substring(0,10) : null))}</div></div>
+        ${item.price     ? `<div class="p-row"><div class="p-label">공모가</div><div class="p-value" style="color:var(--red)">$${item.price}</div></div>` : ''}
+        ${item.valuation ? `<div class="p-row"><div class="p-label">기업가치</div><div class="p-value">${item.valuation}</div></div>` : ''}
+        ${item.raised    ? `<div class="p-row"><div class="p-label">조달 규모</div><div class="p-value">${item.raised}</div></div>` : ''}
         ${item.description ? `<div class="p-div"></div><div class="p-row"><div class="p-label">설명</div><div class="p-value" style="font-size:13px;font-weight:400;line-height:1.6;color:var(--muted)">${item.description}</div></div>` : ''}
         <a class="p-link" href="${item.source_url || '#'}" target="_blank">상세 정보 보기 ↗</a>`;
     }
