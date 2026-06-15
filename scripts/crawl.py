@@ -209,6 +209,8 @@ def crawl_stockanalysis():
 NOTABLE = {
     "openai", "anthropic", "databricks", "spacex", "stripe",
     "klarna", "reddit", "arm", "shein",
+    # 28번 봇 감시 후보(OpenAI/Anthropic 이전 상장 예상, 소형~중형)
+    "plaid", "monzo", "consensys", "kraken", "canva",
 }
 
 

@@ -398,11 +398,11 @@
       "ticker": "SPACEX",
       "exchange": "NASDAQ",
       "sector": "Aerospace & Defense",
-      "ipo_date": "2026-06-12",
+      "ipo_date": "2026-06-15",
       "price": 135,
       "valuation": "$1.77T",
       "raised": "$75B",
-      "description": "역대 최대 IPO. 나스닥 상장.",
+      "description": "역대 최대 IPO. 2026-06-15 상장 완료(공모가 $135, $85.7B 조달).",
       "source_url": "https://stockanalysis.com/ipos/"
     },
     {
@@ -439,6 +439,66 @@
       "valuation": "$62B",
       "raised": null,
       "description": "2026년 하반기 상장 검토 중.",
+      "source_url": "https://dealroom.net/blog/upcoming-recent-ipos"
+    },
+    {
+      "name": "Plaid",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "Fintech",
+      "ipo_date": "2026-07-15",
+      "price": null,
+      "valuation": "$6.1B",
+      "raised": null,
+      "description": "결제 인프라. Q2~Q3 2026 상장 예상(추정). 소형·임박. OpenAI/Anthropic 이전 후보.",
+      "source_url": "https://dealroom.net/blog/upcoming-recent-ipos"
+    },
+    {
+      "name": "Monzo",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "Fintech",
+      "ipo_date": "2026-07-15",
+      "price": null,
+      "valuation": "$8B",
+      "raised": null,
+      "description": "영국 네오뱅크. Q2~Q3 2026 예상(추정). 소형.",
+      "source_url": "https://dealroom.net/blog/upcoming-recent-ipos"
+    },
+    {
+      "name": "Consensys",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "Crypto",
+      "ipo_date": "2026-08-15",
+      "price": null,
+      "valuation": "$7B",
+      "raised": null,
+      "description": "이더리움 인프라(MetaMask). 비공개 S-1 보도, Q3 2026 예상(추정). 소형.",
+      "source_url": "https://dealroom.net/blog/upcoming-recent-ipos"
+    },
+    {
+      "name": "Kraken",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "Crypto",
+      "ipo_date": "2026-08-15",
+      "price": null,
+      "valuation": "$20B",
+      "raised": null,
+      "description": "크립토 거래소. 비공개 S-1(Q1 보도), Q3 2026 예상(추정).",
+      "source_url": "https://dealroom.net/blog/upcoming-recent-ipos"
+    },
+    {
+      "name": "Canva",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "Design / SaaS",
+      "ipo_date": "2026-08-15",
+      "price": null,
+      "valuation": "$42B",
+      "raised": null,
+      "description": "디자인 SaaS. NYSE/ASX 이중상장 검토 보도, Q3 2026 예상(추정).",
       "source_url": "https://dealroom.net/blog/upcoming-recent-ipos"
     }
   ]
