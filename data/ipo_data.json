@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T09:24:23+09:00",
+  "updated_at": "2026-06-17T09:11:09+09:00",
   "domestic": [
     {
       "name": "케이앤에스아이앤씨",
@@ -23,6 +23,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "12,000~14,500",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "에이치엘지노믹스",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-07-13",
+      "subscription_end": "2026-07-14",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "18,500~21,500",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -376,19 +389,6 @@
       "price_band": "7,000~8,500",
       "offer_price": "8,500",
       "competition_ratio": "1960.87:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "케이뱅크",
-      "market": "KOSPI",
-      "sector": "",
-      "subscription_start": "2026-02-20",
-      "subscription_end": "2026-02-23",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "8,300~9,500",
-      "offer_price": "8,300",
-      "competition_ratio": "134.59:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
