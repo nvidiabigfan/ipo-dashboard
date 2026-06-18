@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17T09:11:09+09:00",
+  "updated_at": "2026-06-18T09:09:50+09:00",
   "domestic": [
     {
       "name": "케이앤에스아이앤씨",
@@ -102,7 +102,7 @@
       "listing_date": "2026-06-24",
       "price_band": "22,000~27,000",
       "offer_price": null,
-      "competition_ratio": null,
+      "competition_ratio": "정정신고서 제출 요구",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -114,7 +114,7 @@
       "refund_date": "2026-06-13",
       "listing_date": "2026-06-18",
       "price_band": "12,000~14,000",
-      "offer_price": null,
+      "offer_price": "12,000",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -127,7 +127,7 @@
       "refund_date": "2026-06-20",
       "listing_date": "2026-06-25",
       "price_band": "10,500~12,500",
-      "offer_price": null,
+      "offer_price": "12,500",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
