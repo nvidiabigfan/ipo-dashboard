@@ -1,6 +1,19 @@
 {
-  "updated_at": "2026-06-25T09:00:36+09:00",
+  "updated_at": "2026-06-26T09:04:51+09:00",
   "domestic": [
+    {
+      "name": "딜리셔스",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-03",
+      "subscription_end": "2026-08-04",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "5,000~7,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
     {
       "name": "케이앤에스아이앤씨",
       "market": "KOSDAQ",
@@ -63,7 +76,7 @@
       "listing_date": "2026-06-26",
       "price_band": "7,500~10,000",
       "offer_price": "10,000",
-      "competition_ratio": null,
+      "competition_ratio": "1510.57:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -76,7 +89,7 @@
       "listing_date": "2026-07-01",
       "price_band": "7,000~8,000",
       "offer_price": "8,000",
-      "competition_ratio": null,
+      "competition_ratio": "3304.76:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -376,19 +389,6 @@
       "price_band": "10,100~11,500",
       "offer_price": "11,500",
       "competition_ratio": "2711.06:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "에스팀",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-02-23",
-      "subscription_end": "2026-02-24",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "7,000~8,500",
-      "offer_price": "8,500",
-      "competition_ratio": "1960.87:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
