@@ -1,6 +1,19 @@
 {
-  "updated_at": "2026-06-26T09:04:51+09:00",
+  "updated_at": "2026-06-27T08:57:14+09:00",
   "domestic": [
+    {
+      "name": "니어스랩",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-05",
+      "subscription_end": "2026-08-06",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "30,000~41,200",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
     {
       "name": "딜리셔스",
       "market": "KOSDAQ",
@@ -62,7 +75,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "17,800~20,700",
-      "offer_price": null,
+      "offer_price": "20,700",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -376,19 +389,6 @@
       "price_band": "16,000~20,000",
       "offer_price": "20,000",
       "competition_ratio": "1899.29:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "액스비스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-02-23",
-      "subscription_end": "2026-02-24",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "10,100~11,500",
-      "offer_price": "11,500",
-      "competition_ratio": "2711.06:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
