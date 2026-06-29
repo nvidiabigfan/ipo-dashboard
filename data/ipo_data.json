@@ -1,6 +1,32 @@
 {
-  "updated_at": "2026-06-29T09:02:27+09:00",
+  "updated_at": "2026-06-30T08:56:07+09:00",
   "domestic": [
+    {
+      "name": "기도산업",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-11",
+      "subscription_end": "2026-08-12",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "24,800~28,400",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "해치텍",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-06",
+      "subscription_end": "2026-08-07",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "23,000~28,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
     {
       "name": "니어스랩",
       "market": "KOSDAQ",
@@ -363,32 +389,6 @@
       "price_band": "17,000~19,000",
       "offer_price": "19,000",
       "competition_ratio": "1673.04:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "아이엠바이오로직스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-03-11",
-      "subscription_end": "2026-03-12",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "19,000~26,000",
-      "offer_price": "26,000",
-      "competition_ratio": "1806:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "카나프테라퓨틱스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-03-05",
-      "subscription_end": "2026-03-06",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "16,000~20,000",
-      "offer_price": "20,000",
-      "competition_ratio": "1899.29:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
