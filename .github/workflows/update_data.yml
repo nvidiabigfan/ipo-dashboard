@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   crawl:
@@ -26,6 +27,44 @@ jobs:
 
       - name: Run crawler
         run: python scripts/crawl.py
+
+      - name: Create pricing alert issue
+        if: hashFiles('data/pricing_alerts.json') != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import json, subprocess, sys
+          with open("data/pricing_alerts.json", encoding="utf-8") as f:
+              alerts = json.load(f)
+          for a in alerts:
+              name     = a.get("name", "")
+              ticker   = a.get("ticker") or "미확정"
+              price    = a.get("price")
+              ipo_date = a.get("ipo_date") or "미확정"
+              exchange = a.get("exchange") or "TBD"
+              price_str = f"${price}" if price else "미확정"
+              title = f"[IPO Pricing] {name} — 티커 {ticker} / 공모가 {price_str}"
+              body = (
+                  f"## {name} IPO Pricing 감지\n\n"
+                  f"| 항목 | 값 |\n|---|---|\n"
+                  f"| 티커 | `{ticker}` |\n"
+                  f"| 공모가 | {price_str} |\n"
+                  f"| 상장 예정일 | {ipo_date} |\n"
+                  f"| 거래소 | {exchange} |\n\n"
+                  f"### 봇 가동 체크리스트\n"
+                  f"- [ ] config.yaml `ticker_code` → `{ticker}`\n"
+                  f"- [ ] config.yaml `ipo_price` → `{price or 0.0}`\n"
+                  f"- [ ] rsync 서버 재배포\n"
+                  f"- [ ] 상장일 `test_order.py {ticker} --order` 검증\n"
+                  f"- [ ] `sudo systemctl start toss-ipo-bot`\n"
+              )
+              result = subprocess.run(
+                  ["gh", "issue", "create", "--title", title, "--body", body, "--label", "ipo-alert"],
+                  capture_output=True, text=True
+              )
+              print(result.stdout or result.stderr)
+          EOF
 
       - name: Commit & push if changed
         run: |

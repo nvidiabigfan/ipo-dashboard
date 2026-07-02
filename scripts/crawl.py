@@ -209,9 +209,11 @@ def crawl_stockanalysis():
 NOTABLE = {
     "openai", "anthropic", "databricks", "spacex", "stripe",
     "klarna", "reddit", "arm", "shein",
-    # 28번 봇 감시 후보(OpenAI/Anthropic 이전 상장 예상, 소형~중형)
     "plaid", "monzo", "consensys", "kraken", "canva",
 }
+
+# 봇 자동매수 감시 대상 — pricing 공시 시 alert 생성
+WATCHLIST = {"plaid", "monzo", "consensys", "kraken", "canva"}
 
 
 def _is_valid_intl(item):
@@ -229,6 +231,16 @@ def merge_international(existing, fresh):
     keep = [i for i in existing if any(n in i["name"].lower() for n in NOTABLE)]
     keep_names = {i["name"].lower() for i in keep}
 
+    # fresh 데이터에서 NOTABLE 종목의 ticker/price/ipo_date/exchange 갱신
+    fresh_map = {i["name"].lower(): i for i in fresh}
+    for item in keep:
+        fresh_item = fresh_map.get(item["name"].lower())
+        if not fresh_item:
+            continue
+        for field in ("ticker", "price", "ipo_date", "exchange"):
+            if fresh_item.get(field) and not item.get(field):
+                item[field] = fresh_item[field]
+
     cutoff = date.today() - timedelta(days=90)
 
     def is_recent(item):
@@ -245,6 +257,22 @@ def merge_international(existing, fresh):
         if i["name"].lower() not in keep_names and is_recent(i) and _is_valid_intl(i)
     ]
     return keep + new_items
+
+
+def check_pricing_alerts(existing_intl, merged_intl):
+    """WATCHLIST 종목 중 이번 크롤에서 ticker 또는 price가 새로 채워진 것 반환"""
+    existing_map = {i["name"].lower(): i for i in existing_intl}
+    alerts = []
+    for item in merged_intl:
+        name_lower = item["name"].lower()
+        if name_lower not in WATCHLIST:
+            continue
+        prev = existing_map.get(name_lower, {})
+        newly_priced = item.get("price") and not prev.get("price")
+        newly_tickered = item.get("ticker") and not prev.get("ticker")
+        if newly_priced or newly_tickered:
+            alerts.append(item)
+    return alerts
 
 
 def main():
@@ -267,7 +295,20 @@ def main():
 
     # 해외
     intl_fresh = crawl_stockanalysis()
-    international = merge_international(existing.get("international", []), intl_fresh)
+    existing_intl = existing.get("international", [])
+    international = merge_international(existing_intl, intl_fresh)
+
+    # pricing alert 감지
+    alerts = check_pricing_alerts(existing_intl, international)
+    alerts_path = OUTPUT.parent / "pricing_alerts.json"
+    if alerts:
+        with open(alerts_path, "w", encoding="utf-8") as f:
+            json.dump(alerts, f, ensure_ascii=False, indent=2)
+        print(f"[PRICING_ALERT] {len(alerts)}건: {[a['name'] for a in alerts]}", file=sys.stderr)
+    else:
+        # 이전 alert 파일 제거 (중복 issue 방지)
+        if alerts_path.exists():
+            alerts_path.unlink()
 
     from datetime import timezone
     kst = timezone(timedelta(hours=9))
