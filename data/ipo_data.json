@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T09:00:00+09:00",
+  "updated_at": "2026-07-02T09:02:03+09:00",
   "domestic": [
     {
       "name": "기도산업",
@@ -23,6 +23,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "23,000~28,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "빅웨이브로보틱스",
+      "market": "KOSDAQ",
+      "sector": "로보틱스",
+      "subscription_start": "2026-08-05",
+      "subscription_end": "2026-08-06",
+      "refund_date": "2026-06-19",
+      "listing_date": "2026-06-24",
+      "price_band": "20,000~24,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -142,19 +155,6 @@
       "price_band": "2,000~2,000",
       "offer_price": "2,000",
       "competition_ratio": "1274.77:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "빅웨이브로보틱스",
-      "market": "KOSDAQ",
-      "sector": "로보틱스",
-      "subscription_start": "2026-06-19",
-      "subscription_end": "2026-06-22",
-      "refund_date": "2026-06-19",
-      "listing_date": "2026-06-24",
-      "price_band": "22,000~27,000",
-      "offer_price": null,
-      "competition_ratio": "정정신고서 제출 요구",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
