@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T09:02:03+09:00",
+  "updated_at": "2026-07-03T08:57:14+09:00",
   "domestic": [
     {
       "name": "기도산업",
@@ -115,7 +115,7 @@
       "listing_date": null,
       "price_band": "17,800~20,700",
       "offer_price": "20,700",
-      "competition_ratio": null,
+      "competition_ratio": "1706.71:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
