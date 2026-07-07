@@ -1,6 +1,19 @@
 {
-  "updated_at": "2026-07-07T09:00:29+09:00",
+  "updated_at": "2026-07-08T08:50:43+09:00",
   "domestic": [
+    {
+      "name": "스카이랩스",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-13",
+      "subscription_end": "2026-08-14",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "13,000~16,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
     {
       "name": "기도산업",
       "market": "KOSDAQ",
@@ -376,19 +389,6 @@
       "price_band": "16,700~21,600",
       "offer_price": "21,600",
       "competition_ratio": "2428.25:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "한패스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-03-16",
-      "subscription_end": "2026-03-17",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "17,000~19,000",
-      "offer_price": "19,000",
-      "competition_ratio": "1673.04:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
