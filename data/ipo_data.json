@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T09:01:36+09:00",
+  "updated_at": "2026-07-10T08:59:02+09:00",
   "domestic": [
     {
       "name": "스카이랩스",
@@ -67,6 +67,19 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
+      "name": "케이앤에스아이앤씨",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-04",
+      "subscription_end": "2026-08-05",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "9,000~9,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
       "name": "딜리셔스",
       "market": "KOSDAQ",
       "sector": "",
@@ -77,19 +90,6 @@
       "price_band": "5,000~7,000",
       "offer_price": null,
       "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "케이앤에스아이앤씨",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-07-27",
-      "subscription_end": "2026-07-28",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "9,000~9,000",
-      "offer_price": null,
-      "competition_ratio": "정정신고서 제출 요구",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
