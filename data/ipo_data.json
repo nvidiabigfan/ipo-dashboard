@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10T08:59:02+09:00",
+  "updated_at": "2026-07-11T08:51:49+09:00",
   "domestic": [
     {
       "name": "스카이랩스",
@@ -114,7 +114,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "18,500~21,500",
-      "offer_price": null,
+      "offer_price": "21,500",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
