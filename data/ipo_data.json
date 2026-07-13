@@ -1,6 +1,19 @@
 {
-  "updated_at": "2026-07-13T08:43:54+09:00",
+  "updated_at": "2026-07-14T08:44:29+09:00",
   "domestic": [
+    {
+      "name": "브릴스",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-25",
+      "subscription_end": "2026-08-26",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "16,500~19,500",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
     {
       "name": "스카이랩스",
       "market": "KOSDAQ",
@@ -376,19 +389,6 @@
       "price_band": "2,000~2,000",
       "offer_price": "2,000",
       "competition_ratio": "569.27:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "메쥬",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-03-16",
-      "subscription_end": "2026-03-17",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "16,700~21,600",
-      "offer_price": "21,600",
-      "competition_ratio": "2428.25:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
