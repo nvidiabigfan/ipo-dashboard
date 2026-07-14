@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T08:44:29+09:00",
+  "updated_at": "2026-07-15T08:43:22+09:00",
   "domestic": [
     {
       "name": "브릴스",
@@ -23,6 +23,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "13,000~16,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "니어스랩",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-12",
+      "subscription_end": "2026-08-13",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "30,000~41,200",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -67,19 +80,6 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
-      "name": "니어스랩",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-08-05",
-      "subscription_end": "2026-08-06",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "30,000~41,200",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
       "name": "케이앤에스아이앤씨",
       "market": "KOSDAQ",
       "sector": "",
@@ -109,8 +109,8 @@
       "name": "인제니아테라퓨틱스",
       "market": "KOSDAQ",
       "sector": "",
-      "subscription_start": "2026-07-23",
-      "subscription_end": "2026-07-24",
+      "subscription_start": "2026-07-30",
+      "subscription_end": "2026-07-31",
       "refund_date": null,
       "listing_date": null,
       "price_band": "12,000~14,500",
@@ -128,7 +128,7 @@
       "listing_date": null,
       "price_band": "18,500~21,500",
       "offer_price": "21,500",
-      "competition_ratio": null,
+      "competition_ratio": "666.78:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
