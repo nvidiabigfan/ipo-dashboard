@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16T08:52:15+09:00",
+  "updated_at": "2026-07-17T08:52:03+09:00",
   "domestic": [
     {
       "name": "브릴스",
@@ -41,6 +41,19 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
+      "name": "해치텍",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-12",
+      "subscription_end": "2026-08-13",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "23,000~28,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
       "name": "기도산업",
       "market": "KOSDAQ",
       "sector": "",
@@ -49,19 +62,6 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "24,800~28,400",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "해치텍",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-08-06",
-      "subscription_end": "2026-08-07",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "23,000~28,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
