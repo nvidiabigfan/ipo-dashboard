@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T08:50:36+09:00",
+  "updated_at": "2026-07-23T08:55:33+09:00",
   "domestic": [
     {
       "name": "브릴스",
@@ -10,6 +10,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "16,500~19,500",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "빅웨이브로보틱스",
+      "market": "KOSDAQ",
+      "sector": "로보틱스",
+      "subscription_start": "2026-08-13",
+      "subscription_end": "2026-08-14",
+      "refund_date": "2026-06-19",
+      "listing_date": "2026-06-24",
+      "price_band": "20,000~24,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -62,19 +75,6 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "24,800~28,400",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "빅웨이브로보틱스",
-      "market": "KOSDAQ",
-      "sector": "로보틱스",
-      "subscription_start": "2026-08-05",
-      "subscription_end": "2026-08-06",
-      "refund_date": "2026-06-19",
-      "listing_date": "2026-06-24",
-      "price_band": "20,000~24,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
