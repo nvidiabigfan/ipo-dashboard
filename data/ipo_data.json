@@ -1,6 +1,32 @@
 {
-  "updated_at": "2026-07-24T08:53:47+09:00",
+  "updated_at": "2026-07-25T08:56:54+09:00",
   "domestic": [
+    {
+      "name": "덕산넵코어스(구.넵코어스)",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-09-16",
+      "subscription_end": "2026-09-17",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "12,400~14,600",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "네오사피엔스",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-09-08",
+      "subscription_end": "2026-09-09",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "13,800~15,800",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
     {
       "name": "브릴스",
       "market": "KOSDAQ",
@@ -363,32 +389,6 @@
       "price_band": "9,000~11,000",
       "offer_price": "11,000",
       "competition_ratio": "2097.68:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "신한스팩17호",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-03-19",
-      "subscription_end": "2026-03-20",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "2,000~2,000",
-      "offer_price": "2,000",
-      "competition_ratio": "1403.74:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "NH스팩33호",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-03-17",
-      "subscription_end": "2026-03-18",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "2,000~2,000",
-      "offer_price": "2,000",
-      "competition_ratio": "569.27:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
