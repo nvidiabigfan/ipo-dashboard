@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T08:56:37+09:00",
+  "updated_at": "2026-07-29T08:52:52+09:00",
   "domestic": [
     {
       "name": "덕산넵코어스(구.넵코어스)",
@@ -140,7 +140,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "12,000~14,500",
-      "offer_price": null,
+      "offer_price": "12,000",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
