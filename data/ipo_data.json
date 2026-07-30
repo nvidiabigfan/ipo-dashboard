@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T08:54:44+09:00",
+  "updated_at": "2026-07-31T08:55:05+09:00",
   "domestic": [
     {
       "name": "덕산넵코어스(구.넵코어스)",
@@ -67,6 +67,19 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
+      "name": "스카이랩스",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-08-26",
+      "subscription_end": "2026-08-27",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "13,000~16,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
       "name": "브릴스",
       "market": "KOSDAQ",
       "sector": "",
@@ -88,19 +101,6 @@
       "refund_date": "2026-06-19",
       "listing_date": "2026-06-24",
       "price_band": "20,000~24,000",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "스카이랩스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-08-13",
-      "subscription_end": "2026-08-14",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "13,000~16,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
