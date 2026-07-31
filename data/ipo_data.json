@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T17:40:16+09:00",
+  "updated_at": "2026-08-01T08:54:39+09:00",
   "domestic": [
     {
       "name": "덕산넵코어스(구.넵코어스)",
@@ -502,6 +502,79 @@
       "source_url": "https://stockanalysis.com/private/canva/"
     },
     {
+      "name": "SK hynix Inc.",
+      "ticker": "SKHY",
+      "exchange": "NASDAQ Global Select",
+      "sector": "",
+      "ipo_date": "2026-07-10",
+      "price": 149.0,
+      "valuation": null,
+      "raised": "$26,507,100,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07",
+      "alert_reason": "watchlist"
+    },
+    {
+      "name": "Karman Line Acquisition Corp.",
+      "ticker": "XTERU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-07-27",
+      "price": null,
+      "valuation": null,
+      "raised": "$230,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "Cumberland Farms Ltd",
+      "ticker": "CMBY",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-07-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "Reformation Inc.",
+      "ticker": "REF",
+      "exchange": "NYSE",
+      "sector": "",
+      "ipo_date": "2026-07-30",
+      "price": 15.0,
+      "valuation": null,
+      "raised": "$210,937,500",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "Game Your Game Inc.",
+      "ticker": "GYGY",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-07-30",
+      "price": null,
+      "valuation": null,
+      "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "Jersey Mike's Subs Inc.",
+      "ticker": "JMKE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-07-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$1,000,000,003",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
       "name": "IMC Rare Earths Ltd",
       "ticker": "IMC",
       "exchange": "NYSE MKT",
@@ -574,18 +647,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
-      "name": "B&R Technology Merger Corp.",
-      "ticker": "BRTMU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$325,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
       "name": "Southern Cross Acquisition I Corp.",
       "ticker": "NCOOU",
       "exchange": "NASDAQ Global",
@@ -594,6 +655,18 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "B&R Technology Merger Corp.",
+      "ticker": "BRTMU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-07-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$325,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
@@ -619,8 +692,7 @@
       "valuation": null,
       "raised": "$1,050,000,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07",
-      "alert_reason": "auto_large_deal"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
       "name": "QumulusAI, Inc.",
@@ -681,19 +753,6 @@
       "raised": "$200,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "SK hynix Inc.",
-      "ticker": "SKHY",
-      "exchange": "NASDAQ Global Select",
-      "sector": "",
-      "ipo_date": "2026-07-10",
-      "price": 149.0,
-      "valuation": null,
-      "raised": "$26,507,100,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07",
-      "alert_reason": "watchlist"
     },
     {
       "name": "Columbus Circle Capital Corp III",
@@ -813,8 +872,7 @@
       "valuation": null,
       "raised": "$1,681,159,435",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07",
-      "alert_reason": "auto_large_deal"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
       "name": "Churchill Capital Corp XIII",
@@ -824,7 +882,31 @@
       "ipo_date": "2026-07-15",
       "price": null,
       "valuation": null,
-      "raised": "$345,000,000",
+      "raised": "$360,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "MetaOptics Ltd",
+      "ticker": "MOT",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-07-31",
+      "price": null,
+      "valuation": null,
+      "raised": "$24,150,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "East West Ave Acquisition Corp.",
+      "ticker": "EWAVU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-07-31",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
@@ -848,31 +930,7 @@
       "ipo_date": "2026-07-10",
       "price": null,
       "valuation": null,
-      "raised": "$184,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "MetaOptics Ltd",
-      "ticker": "MOT",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-07-30",
-      "price": null,
-      "valuation": null,
-      "raised": "$24,150,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "East West Ave Acquisition Corp.",
-      "ticker": "EWAVU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-07-30",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
+      "raised": "$192,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
@@ -897,18 +955,6 @@
       "price": null,
       "valuation": null,
       "raised": "$22,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Karman Line Acquisition Corp.",
-      "ticker": "XTERU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-27",
-      "price": null,
-      "valuation": null,
-      "raised": "$230,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
@@ -1052,7 +1098,7 @@
       "ipo_date": "2026-07-15",
       "price": null,
       "valuation": null,
-      "raised": "$100,000,000",
+      "raised": "$366,562,500",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
@@ -1203,30 +1249,6 @@
     {
       "name": "Londian Wason New Energy Tech Inc.",
       "ticker": "FOIL",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Jersey Mike's Subs Inc.",
-      "ticker": "JMKE",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$1,000,000,003",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Cumberland Farms Ltd",
-      "ticker": "CMBY",
       "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-07-02",
