@@ -234,42 +234,53 @@ def _parse_nasdaq_date(date_str):
         return None
 
 
+def _crawl_nasdaq_ipo_month(year_month):
+    url = f"https://api.nasdaq.com/api/ipo/calendar?date={year_month}"
+    results = []
+    resp = requests.get(url, headers=NASDAQ_HEADERS, timeout=15)
+    payload = resp.json().get("data") or {}
+
+    for section, date_field in (
+        ("priced", "pricedDate"),
+        ("upcoming", "expectedPriceDate"),
+        ("filed", "filedDate"),
+    ):
+        block = payload.get(section) or {}
+        table = block.get("upcomingTable", block)  # upcoming만 한 겹 더 감싸져 있음
+        for row in (table.get("rows") or []):
+            name = (row.get("companyName") or "").strip()
+            if not name:
+                continue
+            results.append({
+                "name": name,
+                "ticker": row.get("proposedTickerSymbol") or None,
+                "exchange": row.get("proposedExchange") or "TBD",
+                "sector": "",
+                "ipo_date": _parse_nasdaq_date(row.get(date_field)),
+                # 확정가(priced)만 price로 인정 — filed/upcoming의 밴드가격을
+                # price로 넣으면 확정 전인데 '프라이싱 완료'로 오탐된다.
+                "price": _parse_nasdaq_price(row.get("proposedSharePrice")) if section == "priced" else None,
+                "valuation": None,
+                "raised": row.get("dollarValueOfSharesOffered"),
+                "description": "",
+                "source_url": url,
+            })
+    return results
+
+
 def crawl_nasdaq_ipo():
     """Nasdaq 공식 IPO 캘린더 API(priced/upcoming/filed).
-    StockAnalysis가 놓치는 외국기업 ADR 이중상장(예: SK하이닉스 SKHY)도 잡힌다."""
-    url = f"https://api.nasdaq.com/api/ipo/calendar?date={date.today().strftime('%Y-%m')}"
+    StockAnalysis가 놓치는 외국기업 ADR 이중상장(예: SK하이닉스 SKHY)도 잡힌다.
+    API가 월 단위 쿼리라 이번 달만 조회하면 매월 1일에 지난달 확정분이
+    통째로 빠지므로(예: 7/31에 70건이던 게 8/1엔 3건) 이번 달+지난달을 합쳐서 본다."""
+    today = date.today()
+    prev_month = (today.replace(day=1) - timedelta(days=1))
+    months = {today.strftime("%Y-%m"), prev_month.strftime("%Y-%m")}
     results = []
     try:
-        resp = requests.get(url, headers=NASDAQ_HEADERS, timeout=15)
-        payload = resp.json().get("data") or {}
-
-        for section, date_field in (
-            ("priced", "pricedDate"),
-            ("upcoming", "expectedPriceDate"),
-            ("filed", "filedDate"),
-        ):
-            block = payload.get(section) or {}
-            table = block.get("upcomingTable", block)  # upcoming만 한 겹 더 감싸져 있음
-            for row in (table.get("rows") or []):
-                name = (row.get("companyName") or "").strip()
-                if not name:
-                    continue
-                results.append({
-                    "name": name,
-                    "ticker": row.get("proposedTickerSymbol") or None,
-                    "exchange": row.get("proposedExchange") or "TBD",
-                    "sector": "",
-                    "ipo_date": _parse_nasdaq_date(row.get(date_field)),
-                    # 확정가(priced)만 price로 인정 — filed/upcoming의 밴드가격을
-                    # price로 넣으면 확정 전인데 '프라이싱 완료'로 오탐된다.
-                    "price": _parse_nasdaq_price(row.get("proposedSharePrice")) if section == "priced" else None,
-                    "valuation": None,
-                    "raised": row.get("dollarValueOfSharesOffered"),
-                    "description": "",
-                    "source_url": url,
-                })
-
-        print(f"[nasdaq] {len(results)}건 수집", file=sys.stderr)
+        for ym in months:
+            results.extend(_crawl_nasdaq_ipo_month(ym))
+        print(f"[nasdaq] {len(results)}건 수집 ({', '.join(sorted(months))})", file=sys.stderr)
     except Exception as e:
         print(f"[nasdaq] 오류: {e}", file=sys.stderr)
 
@@ -340,6 +351,19 @@ def _dedup_by_name(items):
     return list(out.values())
 
 
+MANUAL_CORRECTIONS = {
+    # 이미 확정된 사실인데 소스가 오탈자를 냈거나(캘린더 페이지 표기 오류) 상장 후
+    # 캘린더에서 빠져 자동갱신 대상에서 벗어난 종목. git checkout/재크롤 등으로
+    # existing 데이터가 통째로 리셋돼도 유실되지 않도록 매 실행마다 강제 적용.
+    "spacex": {
+        "ticker": "SPCX",
+        "ipo_date": "2026-06-12",
+        "description": "역대 최대 IPO. 2026-06-12 상장 완료(공모가 $135, $85.7B 조달).",
+        "source_url": "https://stockanalysis.com/stocks/spcx/",
+    },
+}
+
+
 NOTABLE = {
     "openai", "anthropic", "databricks", "spacex", "stripe",
     "klarna", "reddit", "arm", "shein",
@@ -402,6 +426,12 @@ def merge_international(existing, fresh, private_info=None):
                 item["ipo_date"] = None
             break
 
+        # 하드 오버라이드 — existing 데이터가 뭐였든 항상 이 값으로 고정
+        for key, correction in MANUAL_CORRECTIONS.items():
+            if key in name_lower:
+                item.update(correction)
+                break
+
     cutoff = date.today() - timedelta(days=90)
 
     def is_recent(item):
@@ -417,7 +447,20 @@ def merge_international(existing, fresh, private_info=None):
         i for i in fresh
         if i["name"].lower() not in keep_names and is_recent(i) and _is_valid_intl(i)
     ]
-    return keep + new_items
+
+    # 비-NOTABLE 기존 항목 중 최근(90일 이내) 것도 보존 — 이번 크롤(fresh)에 다시
+    # 안 잡혀도 사라지지 않게 함. nasdaq API가 월 단위라 매월 1일에 지난달 확정분이
+    # fresh에서 통째로 빠지는 경우(crawl_nasdaq_ipo 참고)의 안전망.
+    new_names = {i["name"].lower() for i in new_items}
+    preserved = [
+        i for i in existing
+        if i["name"].lower() not in keep_names
+        and i["name"].lower() not in new_names
+        and is_recent(i)
+        and _is_valid_intl(i)
+    ]
+
+    return keep + new_items + preserved
 
 
 def check_pricing_alerts(existing_intl, merged_intl):

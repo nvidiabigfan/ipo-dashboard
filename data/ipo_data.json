@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T08:54:39+09:00",
+  "updated_at": "2026-08-01T09:03:09+09:00",
   "domestic": [
     {
       "name": "덕산넵코어스(구.넵코어스)",
@@ -395,15 +395,15 @@
   "international": [
     {
       "name": "SpaceX",
-      "ticker": "SPACEX",
+      "ticker": "SPCX",
       "exchange": "NASDAQ",
       "sector": "Aerospace & Defense",
-      "ipo_date": "2026-06-15",
+      "ipo_date": "2026-06-12",
       "price": 135,
       "valuation": "$1.77T",
       "raised": "$75B",
-      "description": "역대 최대 IPO. 2026-06-15 상장 완료(공모가 $135, $85.7B 조달).",
-      "source_url": "https://stockanalysis.com/ipos/"
+      "description": "역대 최대 IPO. 2026-06-12 상장 완료(공모가 $135, $85.7B 조달).",
+      "source_url": "https://stockanalysis.com/stocks/spcx/"
     },
     {
       "name": "OpenAI",
@@ -1093,26 +1093,26 @@
     {
       "name": "Braveheart Bio, Inc.",
       "ticker": "BRVE",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Global",
       "sector": "",
-      "ipo_date": "2026-07-15",
+      "ipo_date": "2026-08-06",
       "price": null,
       "valuation": null,
       "raised": "$366,562,500",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
       "name": "Attovia Therapeutics, Inc.",
       "ticker": "ATTO",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Global",
       "sector": "",
-      "ipo_date": "2026-07-14",
+      "ipo_date": "2026-08-05",
       "price": null,
       "valuation": null,
       "raised": "$244,375,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
       "name": "Material Resource Acquisition Corp.",
@@ -1305,6 +1305,18 @@
       "raised": "$115,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "OceanLight Acquisition Corp",
+      "ticker": "OCLT",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-08-06",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     }
   ]
 }
