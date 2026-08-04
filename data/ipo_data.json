@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T09:01:29+09:00",
+  "updated_at": "2026-08-05T08:56:35+09:00",
   "domestic": [
     {
       "name": "빅웨이브로보틱스",
@@ -54,6 +54,19 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
+      "name": "브릴스",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-09-08",
+      "subscription_end": "2026-09-09",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "16,500~19,500",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
       "name": "네오사피엔스",
       "market": "KOSDAQ",
       "sector": "",
@@ -88,19 +101,6 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "13,000~16,000",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "브릴스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-08-25",
-      "subscription_end": "2026-08-26",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "16,500~19,500",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -167,7 +167,7 @@
       "listing_date": null,
       "price_band": "5,000~7,000",
       "offer_price": "7,000",
-      "competition_ratio": null,
+      "competition_ratio": "10.29:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -537,6 +537,126 @@
       "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "Latigo Biotherapeutics, Inc.",
+      "ticker": "LTGO",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-07-17",
+      "price": null,
+      "valuation": null,
+      "raised": "$331,200,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "BlossomHill Therapeutics, Inc.",
+      "ticker": "BLSM",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-07-17",
+      "price": null,
+      "valuation": null,
+      "raised": "$152,734,375",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "Phalanx Acquisition Corp I",
+      "ticker": "PHAXU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-07-16",
+      "price": null,
+      "valuation": null,
+      "raised": "$201,250,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "Braveheart Bio, Inc.",
+      "ticker": "BRVE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-07-15",
+      "price": null,
+      "valuation": null,
+      "raised": "$366,562,500",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "OceanLight Acquisition Corp",
+      "ticker": "OCLT",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-08-06",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Attovia Therapeutics, Inc.",
+      "ticker": "ATTO",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-07-14",
+      "price": null,
+      "valuation": null,
+      "raised": "$244,375,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
+    },
+    {
+      "name": "ARC Group Securities Acquisition I",
+      "ticker": "FJDIU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-08-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$105,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "BOA Acquisition Corp. II",
+      "ticker": "THEOU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-08-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$125,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "1776 Acquisition Corp",
+      "ticker": "SVSXU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-03",
+      "price": null,
+      "valuation": null,
+      "raised": "$172,500,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "GX Acquisition Corp. III/Cayman",
+      "ticker": "GXTRU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-03",
+      "price": null,
+      "valuation": null,
+      "raised": "$230,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
       "name": "Apnimed, Inc.",
@@ -1019,42 +1139,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
-      "name": "Latigo Biotherapeutics, Inc.",
-      "ticker": "LTGO",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-17",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "BlossomHill Therapeutics, Inc.",
-      "ticker": "BLSM",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-17",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Phalanx Acquisition Corp I",
-      "ticker": "PHAXU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-04",
-      "price": null,
-      "valuation": null,
-      "raised": "$201,250,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Vogenx, Inc.",
       "ticker": "VOGX",
       "exchange": "TBD",
@@ -1065,30 +1149,6 @@
       "raised": "$93,437,500",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Braveheart Bio, Inc.",
-      "ticker": "BRVE",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$366,562,500",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Attovia Therapeutics, Inc.",
-      "ticker": "ATTO",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-05",
-      "price": null,
-      "valuation": null,
-      "raised": "$244,375,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
       "name": "Material Resource Acquisition Corp.",
@@ -1230,7 +1290,7 @@
       "ipo_date": "2026-07-02",
       "price": null,
       "valuation": null,
-      "raised": "$100,000,000",
+      "raised": "$90,357,146",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
@@ -1281,30 +1341,6 @@
       "raised": "$115,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "OceanLight Acquisition Corp",
-      "ticker": "OCLT",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "BOA Acquisition Corp. II",
-      "ticker": "THEOU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-04",
-      "price": null,
-      "valuation": null,
-      "raised": "$143,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
       "name": "MetaOptics Ltd",
