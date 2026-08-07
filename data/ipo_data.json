@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T08:51:56+09:00",
+  "updated_at": "2026-08-07T10:40:09+09:00",
   "domestic": [
     {
       "name": "빅웨이브로보틱스",
@@ -1000,7 +1000,7 @@
       "exchange": "NASDAQ Capital",
       "sector": "",
       "ipo_date": "2026-08-05",
-      "price": null,
+      "price": 10.0,
       "valuation": null,
       "raised": "$75,000,000",
       "description": "",
@@ -1045,14 +1045,14 @@
     {
       "name": "Phalanx Acquisition Corp I",
       "ticker": "PHAXU",
-      "exchange": "NASDAQ Global",
+      "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-08-06",
+      "ipo_date": "2026-07-16",
       "price": null,
       "valuation": null,
       "raised": "$201,250,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
       "name": "Vogenx, Inc.",
@@ -1074,7 +1074,7 @@
       "ipo_date": "2026-08-06",
       "price": null,
       "valuation": null,
-      "raised": "$366,562,500",
+      "raised": "$382,500,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
@@ -1084,7 +1084,7 @@
       "exchange": "NASDAQ Global",
       "sector": "",
       "ipo_date": "2026-08-05",
-      "price": null,
+      "price": 17.0,
       "valuation": null,
       "raised": "$289,000,000",
       "description": "",
@@ -1315,6 +1315,30 @@
       "price": null,
       "valuation": null,
       "raised": "$115,000,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Gravity Acquisition Corp.",
+      "ticker": "GVACU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$287,500,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Naoris Quantum Protocol Inc.",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$24,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
