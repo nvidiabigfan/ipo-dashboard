@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T08:26:27+09:00",
+  "updated_at": "2026-08-09T08:19:52+09:00",
   "domestic": [
     {
       "name": "빅웨이브로보틱스",
@@ -1021,26 +1021,26 @@
     {
       "name": "Latigo Biotherapeutics, Inc.",
       "ticker": "LTGO",
-      "exchange": "NASDAQ Global Select",
+      "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-08-07",
+      "ipo_date": "2026-07-17",
       "price": null,
       "valuation": null,
       "raised": "$345,600,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
       "name": "BlossomHill Therapeutics, Inc.",
       "ticker": "BLSM",
-      "exchange": "NASDAQ Global Select",
+      "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-08-07",
+      "ipo_date": "2026-07-17",
       "price": null,
       "valuation": null,
       "raised": "$150,000,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
       "name": "Phalanx Acquisition Corp I",
@@ -1307,18 +1307,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "OceanLight Acquisition Corp",
-      "ticker": "OCLTU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000.00",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Rainier Acquisition Corp",
       "ticker": "RNAQU",
       "exchange": "TBD",
@@ -1399,6 +1387,18 @@
       "price": null,
       "valuation": null,
       "raised": "$230,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "OceanLight Acquisition Corp",
+      "ticker": "OCLTU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-08-07",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000.00",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
