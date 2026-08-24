@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T08:13:09+09:00",
+  "updated_at": "2026-08-25T08:15:20+09:00",
   "domestic": [
     {
       "name": "멜콘(구.에스앤에프솔루션)",
@@ -10,6 +10,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "10,700~12,300",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "엘리스그룹",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-09-18",
+      "subscription_end": "2026-09-21",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "70,400~90,500",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -376,19 +389,6 @@
       "price_band": "4,100~5,000",
       "offer_price": "5,000",
       "competition_ratio": "3169.86:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "코스모로보틱스(구.엑소아틀레트아시아)",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-04-27",
-      "subscription_end": "2026-04-28",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "5,300~6,000",
-      "offer_price": "6,000",
-      "competition_ratio": "2013:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
@@ -1367,6 +1367,42 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
+      "name": "Advasa Holdings, Inc.",
+      "ticker": "ADBT",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-08-25",
+      "price": null,
+      "valuation": null,
+      "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Bitari Inc",
+      "ticker": "BIAI",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-21",
+      "price": null,
+      "valuation": null,
+      "raised": "$34,500,004",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "CoVolt Power, Inc.",
+      "ticker": "KVLT",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-21",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
       "name": "ARC Group Acquisition II Corp.",
       "ticker": "CLMZU",
       "exchange": "TBD",
@@ -1651,18 +1687,6 @@
       "price": null,
       "valuation": null,
       "raised": "$230,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Advasa Holdings, Inc.",
-      "ticker": "ADBT",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-18",
-      "price": null,
-      "valuation": null,
-      "raised": "",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
