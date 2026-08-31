@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T09:55:19+09:00",
+  "updated_at": "2026-08-31T10:00:47+09:00",
   "domestic": [
     {
       "name": "SK증권스팩14호",
@@ -23,6 +23,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "20,000~23,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "엠비디",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-06",
+      "subscription_end": "2026-10-07",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "9,400~11,500",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -376,19 +389,6 @@
       "price_band": "2,000~2,000",
       "offer_price": "2,000",
       "competition_ratio": "1388.66:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "피스피스스튜디오",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-05-26",
-      "subscription_end": "2026-05-27",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "19,000~21,500",
-      "offer_price": "21,500",
-      "competition_ratio": "1194.94:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
