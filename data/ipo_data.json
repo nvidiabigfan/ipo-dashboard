@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T10:31:41+09:00",
+  "updated_at": "2026-09-02T09:42:37+09:00",
   "domestic": [
     {
       "name": "SK증권스팩14호",
@@ -551,6 +551,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
+      "name": "Three Lions Acquisition Corp.",
+      "ticker": "TLACU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-09-01",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "Inflection Point Acquisition Corp. VIII",
       "ticker": "IPHXU",
       "exchange": "TBD",
@@ -815,14 +827,38 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "Turbogen Ltd.",
-      "ticker": "TRBG",
-      "exchange": "NASDAQ Capital",
+      "name": "Kainan Holding Group Ltd",
+      "ticker": "KHG",
+      "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-08-31",
       "price": null,
       "valuation": null,
-      "raised": "",
+      "raised": "$27,600,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Wella Co",
+      "ticker": "WELA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-31",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "La Beaute Inc.",
+      "ticker": "LABI",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-31",
+      "price": null,
+      "valuation": null,
+      "raised": "$50,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
@@ -1207,6 +1243,18 @@
       "price": null,
       "valuation": null,
       "raised": "$230,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Turbogen Ltd.",
+      "ticker": "TRBG",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-08-31",
+      "price": null,
+      "valuation": null,
+      "raised": "",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
@@ -1807,18 +1855,6 @@
       "price": null,
       "valuation": null,
       "raised": "$50,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Three Lions Acquisition Corp.",
-      "ticker": "TLACU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-01",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
