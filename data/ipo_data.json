@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T09:33:51+09:00",
+  "updated_at": "2026-09-05T09:30:44+09:00",
   "domestic": [
     {
       "name": "티앤이코리아",
@@ -10,6 +10,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "12,600~15,300",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "크리에이츠",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-20",
+      "subscription_end": "2026-10-21",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "15,000~18,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -377,19 +390,6 @@
       "offer_price": "12,000",
       "competition_ratio": "45.83:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "져스텍",
-      "market": "KOSDAQ",
-      "sector": "산업기계",
-      "subscription_start": "2026-06-18",
-      "subscription_end": "2026-06-19",
-      "refund_date": "2026-06-20",
-      "listing_date": "2026-06-25",
-      "price_band": "10,500~12,500",
-      "offer_price": "12,500",
-      "competition_ratio": "2,783.89:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
   "international": [
@@ -539,6 +539,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
+      "name": "Turbogen Ltd.",
+      "ticker": "TRBG",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-09-03",
+      "price": null,
+      "valuation": null,
+      "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "Three Lions Acquisition Corp.",
       "ticker": "TLACU",
       "exchange": "NASDAQ Global",
@@ -563,6 +575,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
+      "name": "Oura Inc.",
+      "ticker": "OURA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-03",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "Accelevation Holdings Corp.",
       "ticker": "ACCV",
       "exchange": "TBD",
@@ -582,7 +606,7 @@
       "ipo_date": "2026-09-02",
       "price": null,
       "valuation": null,
-      "raised": "$15,000,000",
+      "raised": "$34,500,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -1315,18 +1339,6 @@
       "price": null,
       "valuation": null,
       "raised": "$230,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Turbogen Ltd.",
-      "ticker": "TRBG",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-08-31",
-      "price": null,
-      "valuation": null,
-      "raised": "",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
