@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T09:30:44+09:00",
+  "updated_at": "2026-09-06T09:25:32+09:00",
   "domestic": [
     {
       "name": "티앤이코리아",
@@ -537,126 +537,6 @@
       "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Turbogen Ltd.",
-      "ticker": "TRBG",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-09-03",
-      "price": null,
-      "valuation": null,
-      "raised": "",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "Three Lions Acquisition Corp.",
-      "ticker": "TLACU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-09-01",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "SIYATA PTT",
-      "ticker": "PTT",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-06",
-      "price": null,
-      "valuation": null,
-      "raised": "",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Oura Inc.",
-      "ticker": "OURA",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-03",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "Accelevation Holdings Corp.",
-      "ticker": "ACCV",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "LiPower New Energy Holdings Ltd",
-      "ticker": "LPNE",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$34,500,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "Bogd FT Ltd",
-      "ticker": "BOGD",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-01",
-      "price": null,
-      "valuation": null,
-      "raised": "$43,125,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "RainRock Acquisition Corp.",
-      "ticker": "RRCKU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-01",
-      "price": null,
-      "valuation": null,
-      "raised": "$172,500,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "GLGHK Ltd",
-      "ticker": "GLG",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-01",
-      "price": null,
-      "valuation": null,
-      "raised": "$40,250,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "SE Global Holdings, LLC",
-      "ticker": "SBE",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-01",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Inflection Point Acquisition Corp. VIII",
@@ -1283,6 +1163,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
+      "name": "SIYATA PTT",
+      "ticker": "PTT",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-09-08",
+      "price": null,
+      "valuation": null,
+      "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "Gravity Acquisition Corp.",
       "ticker": "GVACU",
       "exchange": "TBD",
@@ -1341,6 +1233,114 @@
       "raised": "$230,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Turbogen Ltd.",
+      "ticker": "TRBG",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-09-03",
+      "price": null,
+      "valuation": null,
+      "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Three Lions Acquisition Corp.",
+      "ticker": "TLACU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-09-01",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Oura Inc.",
+      "ticker": "OURA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-03",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Accelevation Holdings Corp.",
+      "ticker": "ACCV",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "LiPower New Energy Holdings Ltd",
+      "ticker": "LPNE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$34,500,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Bogd FT Ltd",
+      "ticker": "BOGD",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-01",
+      "price": null,
+      "valuation": null,
+      "raised": "$43,125,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "RainRock Acquisition Corp.",
+      "ticker": "RRCKU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-01",
+      "price": null,
+      "valuation": null,
+      "raised": "$172,500,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "GLGHK Ltd",
+      "ticker": "GLG",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-01",
+      "price": null,
+      "valuation": null,
+      "raised": "$40,250,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "SE Global Holdings, LLC",
+      "ticker": "SBE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-01",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Apnimed, Inc.",
