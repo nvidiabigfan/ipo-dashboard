@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T09:32:24+09:00",
+  "updated_at": "2026-09-08T09:50:07+09:00",
   "domestic": [
     {
       "name": "티앤이코리아",
@@ -54,6 +54,19 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
+      "name": "엘리스그룹",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-07",
+      "subscription_end": "2026-10-08",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "70,400~90,500",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
       "name": "엠비디",
       "market": "KOSDAQ",
       "sector": "",
@@ -88,19 +101,6 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "10,700~12,300",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "엘리스그룹",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-09-18",
-      "subscription_end": "2026-09-21",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "70,400~90,500",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -152,7 +152,7 @@
       "subscription_end": "2026-09-16",
       "refund_date": "2026-06-19",
       "listing_date": "2026-06-24",
-      "price_band": "20,000~24,000",
+      "price_band": "15,000~18,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -1259,6 +1259,42 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "New Iceland Arctic Acquisition Corp.",
+      "ticker": "NIAAU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$143,750,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "ADARx Pharmaceuticals, Inc.",
+      "ticker": "ADRX",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Legion Capital Acquisition Corp.",
+      "ticker": "LCADU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$230,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "Oura Inc.",
       "ticker": "OURA",
       "exchange": "TBD",
@@ -1327,6 +1363,18 @@
       "price": null,
       "valuation": null,
       "raised": "$40,250,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "SB Energy, Inc.",
+      "ticker": "SBE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-01",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
