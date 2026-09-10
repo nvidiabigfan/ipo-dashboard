@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T09:54:44+09:00",
+  "updated_at": "2026-09-10T09:43:46+09:00",
   "domestic": [
     {
       "name": "바로팜",
@@ -205,7 +205,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "13,800~15,800",
-      "offer_price": null,
+      "offer_price": "10,000",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -231,7 +231,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "2,000~2,000",
-      "offer_price": null,
+      "offer_price": "2,000",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -1179,7 +1179,7 @@
       "ticker": "PTT",
       "exchange": "NASDAQ Capital",
       "sector": "",
-      "ipo_date": "2026-09-08",
+      "ipo_date": "2026-09-30",
       "price": null,
       "valuation": null,
       "raised": "",
@@ -1247,18 +1247,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "Leader's Advantage Acquisition Corp.",
-      "ticker": "LEDRU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-09-04",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$150,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
       "name": "Turbogen Ltd.",
       "ticker": "TRBG",
       "exchange": "NASDAQ Capital",
@@ -1283,6 +1271,30 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "Holtec Nuclear Corp",
+      "ticker": "HNUC",
+      "exchange": "NASDAQ",
+      "sector": "",
+      "ipo_date": "2026-09-18",
+      "price": null,
+      "valuation": null,
+      "raised": "$1,035,000,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Jingrui Wang Pu Holdings Group Ltd.",
+      "ticker": "JRWP",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-08",
+      "price": null,
+      "valuation": null,
+      "raised": "$43,125,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "New Iceland Arctic Acquisition Corp.",
       "ticker": "NIAAU",
       "exchange": "TBD",
@@ -1291,6 +1303,18 @@
       "price": null,
       "valuation": null,
       "raised": "$143,750,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Rothe Development, Inc.",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$50,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -1387,6 +1411,18 @@
       "price": null,
       "valuation": null,
       "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Leader's Advantage Acquisition Corp.",
+      "ticker": "LEDRU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-09-04",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$150,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -1864,18 +1900,6 @@
       "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-07-13",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Holtec Nuclear Corp",
-      "ticker": "HNUC",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-10",
       "price": null,
       "valuation": null,
       "raised": "$100,000,000",
