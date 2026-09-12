@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T09:42:51+09:00",
+  "updated_at": "2026-09-12T09:49:08+09:00",
   "domestic": [
     {
       "name": "바로팜",
@@ -49,6 +49,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "2,000~2,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "디티에스(구.동양티에스)",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-13",
+      "subscription_end": "2026-10-14",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "17,000~18,500",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -192,7 +205,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "10,000~12,000",
-      "offer_price": null,
+      "offer_price": "12,000",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -206,7 +219,7 @@
       "listing_date": null,
       "price_band": "13,800~15,800",
       "offer_price": "10,000",
-      "competition_ratio": null,
+      "competition_ratio": "1047.78:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -219,7 +232,7 @@
       "listing_date": null,
       "price_band": "2,000~2,000",
       "offer_price": "2,000",
-      "competition_ratio": null,
+      "competition_ratio": "397.33:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -232,7 +245,7 @@
       "listing_date": null,
       "price_band": "2,000~2,000",
       "offer_price": "2,000",
-      "competition_ratio": null,
+      "competition_ratio": "494.62:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -376,19 +389,6 @@
       "price_band": "7,500~10,000",
       "offer_price": "10,000",
       "competition_ratio": "1510.57:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "매드업",
-      "market": "KOSDAQ",
-      "sector": "애드테크/데이터",
-      "subscription_start": "2026-06-23",
-      "subscription_end": "2026-06-24",
-      "refund_date": "2026-06-26",
-      "listing_date": "2026-07-01",
-      "price_band": "7,000~8,000",
-      "offer_price": "8,000",
-      "competition_ratio": "3304.76:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
@@ -1279,6 +1279,30 @@
       "price": null,
       "valuation": null,
       "raised": "$1,035,000,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Allarity Acquisition Corp.",
+      "ticker": "ALLNU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-10",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Elevation Acquisition Group Inc.",
+      "ticker": "ELEVU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-10",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
