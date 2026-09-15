@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T09:33:05+09:00",
+  "updated_at": "2026-09-15T10:05:39+09:00",
   "domestic": [
     {
       "name": "바로팜",
@@ -192,7 +192,7 @@
       "refund_date": "2026-06-19",
       "listing_date": "2026-06-24",
       "price_band": "15,000~18,000",
-      "offer_price": null,
+      "offer_price": "18,000",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -426,7 +426,7 @@
       "price": null,
       "valuation": "$965B",
       "raised": null,
-      "description": "IPO Status: Filed · Expected: Sept / Oct 2026 (valuation as of May 28, 2026)",
+      "description": "IPO Status: Filed · Expected: Oct/Nov 2026 (valuation as of May 28, 2026)",
       "source_url": "https://stockanalysis.com/private/anthropic/"
     },
     {
@@ -486,7 +486,7 @@
       "price": null,
       "valuation": "$20B",
       "raised": null,
-      "description": "IPO Status: Filed · Expected: n/a (valuation as of Nov 18, 2025)",
+      "description": "IPO Status: Filed · Expected: Q2 2027 (valuation as of Nov 18, 2025)",
       "source_url": "https://stockanalysis.com/private/kraken/"
     },
     {
@@ -1279,6 +1279,42 @@
       "price": null,
       "valuation": null,
       "raised": "$1,035,000,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Meey Global Corp",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-11",
+      "price": null,
+      "valuation": null,
+      "raised": "$34,500,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "FutureCore Acquisition Corp",
+      "ticker": "FTCRU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-11",
+      "price": null,
+      "valuation": null,
+      "raised": "$86,250,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Hao Feng Group Ltd.",
+      "ticker": "HFE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-11",
+      "price": null,
+      "valuation": null,
+      "raised": "$29,440,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
