@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T09:58:23+09:00",
+  "updated_at": "2026-09-18T09:54:48+09:00",
   "domestic": [
     {
       "name": "바로팜",
@@ -10,6 +10,32 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "16,400~20,200",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "아이엠스팩1호",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-26",
+      "subscription_end": "2026-10-27",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "2,000~2,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "인텔리빅스",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-21",
+      "subscription_end": "2026-10-22",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "7,600~9,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -180,7 +206,7 @@
       "listing_date": null,
       "price_band": "12,400~14,600",
       "offer_price": "14,600",
-      "competition_ratio": null,
+      "competition_ratio": "332.82:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -193,7 +219,7 @@
       "listing_date": null,
       "price_band": "13,000~15,000",
       "offer_price": "10,000",
-      "competition_ratio": null,
+      "competition_ratio": "57.15:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -206,7 +232,7 @@
       "listing_date": "2026-06-24",
       "price_band": "15,000~18,000",
       "offer_price": "18,000",
-      "competition_ratio": null,
+      "competition_ratio": "1375.34:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -363,32 +389,6 @@
       "price_band": "12,000~14,500",
       "offer_price": "12,000",
       "competition_ratio": "3.09:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "에이치엘지노믹스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-07-13",
-      "subscription_end": "2026-07-14",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "18,500~21,500",
-      "offer_price": "21,500",
-      "competition_ratio": "666.78:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "레메디",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-07-01",
-      "subscription_end": "2026-07-02",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "17,800~20,700",
-      "offer_price": "20,700",
-      "competition_ratio": "1706.71:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
@@ -645,6 +645,30 @@
       "raised": "$398,666,672",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Haymaker Acquisition Corp V",
+      "ticker": "HYACU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-25",
+      "price": null,
+      "valuation": null,
+      "raised": "$250,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Lower Cross Acquisitions Corp",
+      "ticker": "LCACU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-16",
+      "price": null,
+      "valuation": null,
+      "raised": "$230,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "SPACCircle Acquisition Corp.",
@@ -1219,18 +1243,6 @@
       "price": null,
       "valuation": null,
       "raised": "$15,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Haymaker Acquisition Corp V",
-      "ticker": "HYACU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-25",
-      "price": null,
-      "valuation": null,
-      "raised": "$287,500,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
