@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T09:54:48+09:00",
+  "updated_at": "2026-09-19T09:49:48+09:00",
   "domestic": [
     {
       "name": "바로팜",
@@ -10,6 +10,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "16,400~20,200",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "엠비디",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-28",
+      "subscription_end": "2026-10-29",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "9,600~11,700",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -62,6 +75,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "15,000~18,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "한화플러스스팩6호",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-20",
+      "subscription_end": "2026-10-21",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "2,000~2,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -145,19 +171,6 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
-      "name": "엠비디",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-10-06",
-      "subscription_end": "2026-10-07",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "9,400~11,500",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
       "name": "진코스텍",
       "market": "KOSDAQ",
       "sector": "",
@@ -193,7 +206,7 @@
       "listing_date": null,
       "price_band": "16,500~19,500",
       "offer_price": "19,500",
-      "competition_ratio": null,
+      "competition_ratio": "1676.26:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -377,19 +390,6 @@
       "offer_price": "7,000",
       "competition_ratio": "10.29:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "인제니아테라퓨틱스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-07-30",
-      "subscription_end": "2026-07-31",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "12,000~14,500",
-      "offer_price": "12,000",
-      "competition_ratio": "3.09:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
   "international": [
@@ -551,6 +551,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "Haymaker Acquisition Corp V",
+      "ticker": "HYACU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-25",
+      "price": null,
+      "valuation": null,
+      "raised": "$250,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
       "name": "Turbogen Ltd.",
       "ticker": "TRBG",
       "exchange": "NASDAQ Capital",
@@ -618,7 +630,7 @@
       "ipo_date": "2026-08-20",
       "price": null,
       "valuation": null,
-      "raised": "$391,000,000",
+      "raised": "$240,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
@@ -635,6 +647,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "Leader's Advantage Acquisition Corp.",
+      "ticker": "LEDRU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-09-18",
+      "price": null,
+      "valuation": null,
+      "raised": "$150,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "Electra Therapeutics, Inc.",
       "ticker": "ETRA",
       "exchange": "TBD",
@@ -642,19 +666,7 @@
       "ipo_date": "2026-08-28",
       "price": null,
       "valuation": null,
-      "raised": "$398,666,672",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Haymaker Acquisition Corp V",
-      "ticker": "HYACU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-25",
-      "price": null,
-      "valuation": null,
-      "raised": "$250,000,000",
+      "raised": "$350,000,010",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
@@ -1533,18 +1545,6 @@
       "raised": "$230,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Leader's Advantage Acquisition Corp.",
-      "ticker": "LEDRU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-09-04",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$150,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "SE Global Holdings, LLC",
