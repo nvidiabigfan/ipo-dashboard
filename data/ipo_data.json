@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T09:41:58+09:00",
+  "updated_at": "2026-09-22T10:22:11+09:00",
   "domestic": [
     {
       "name": "바로팜",
@@ -36,6 +36,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "2,000~2,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "에이엘로봇",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-26",
+      "subscription_end": "2026-10-27",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "15,700~17,600",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -377,19 +390,6 @@
       "offer_price": "11,000",
       "competition_ratio": "1079.55:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "딜리셔스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-08-03",
-      "subscription_end": "2026-08-04",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "5,000~7,000",
-      "offer_price": "7,000",
-      "competition_ratio": "10.29:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
   "international": [
@@ -551,6 +551,42 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "Electra Therapeutics, Inc.",
+      "ticker": "ETRA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-28",
+      "price": null,
+      "valuation": null,
+      "raised": "$350,000,010",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
+      "name": "Leader's Advantage Acquisition Corp.",
+      "ticker": "LEDRU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-09-18",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$150,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Orion180 Insurance Group Inc.",
+      "ticker": "OIG",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-08-20",
+      "price": null,
+      "valuation": null,
+      "raised": "$240,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+    },
+    {
       "name": "Haymaker Acquisition Corp V",
       "ticker": "HYACU",
       "exchange": "TBD",
@@ -623,14 +659,62 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "Holtec Nuclear Corp",
-      "ticker": "HNUC",
-      "exchange": "NASDAQ",
+      "name": "Retension Pharmaceuticals, Inc.",
+      "ticker": "RTSN",
+      "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-09-18",
       "price": null,
       "valuation": null,
-      "raised": "$1,035,000,000.00",
+      "raised": "$57,500,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "TRex Bio, Inc.",
+      "ticker": "TRXB",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-18",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Santa Ana Global Enterprises, S.A.",
+      "ticker": "STNF",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-18",
+      "price": null,
+      "valuation": null,
+      "raised": "$19,906,500",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "NSCALE Ltd",
+      "ticker": "NSCL",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-18",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "VME Companies, Inc.",
+      "ticker": "VME",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-18",
+      "price": null,
+      "valuation": null,
+      "raised": "$30,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -1199,18 +1283,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "Electra Therapeutics, Inc.",
-      "ticker": "ETRA",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-28",
-      "price": null,
-      "valuation": null,
-      "raised": "$350,000,010",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Skubbs Holdings Ltd",
       "ticker": "SKUB",
       "exchange": "TBD",
@@ -1218,7 +1290,7 @@
       "ipo_date": "2026-08-28",
       "price": null,
       "valuation": null,
-      "raised": "$27,500,000",
+      "raised": "$30,800,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
@@ -1303,18 +1375,6 @@
       "price": null,
       "valuation": null,
       "raised": "$120,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Orion180 Insurance Group Inc.",
-      "ticker": "OIG",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-20",
-      "price": null,
-      "valuation": null,
-      "raised": "$240,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
@@ -1535,14 +1595,14 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "Leader's Advantage Acquisition Corp.",
-      "ticker": "LEDRU",
-      "exchange": "NASDAQ Global",
+      "name": "Holtec Nuclear Corp",
+      "ticker": "HNUC",
+      "exchange": "NASDAQ",
       "sector": "",
       "ipo_date": "2026-09-18",
       "price": null,
       "valuation": null,
-      "raised": "$150,000,000",
+      "raised": "$1,035,000,000.00",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
