@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T10:05:45+09:00",
+  "updated_at": "2026-09-24T09:58:45+09:00",
   "domestic": [
     {
       "name": "하나에어로다이내믹스",
@@ -877,14 +877,14 @@
     {
       "name": "Bamboo Insurance Services, Inc.",
       "ticker": "BMB",
-      "exchange": "NYSE",
+      "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-09-23",
+      "ipo_date": "2026-08-28",
       "price": null,
       "valuation": null,
       "raised": "$805,000,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
       "name": "Electra Therapeutics, Inc.",
@@ -949,14 +949,14 @@
     {
       "name": "Live Oak Acquisition Corp. VI",
       "ticker": "LOVIU",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Global",
       "sector": "",
-      "ipo_date": "2026-08-24",
+      "ipo_date": "2026-09-23",
       "price": null,
       "valuation": null,
-      "raised": "$230,000,000",
+      "raised": "$200,000,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Aggreko Inc.",
@@ -1307,6 +1307,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "Accelevation Holdings Corp.",
+      "ticker": "ACCV",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$828,000,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "Silicon Valley Acquisition Corp. II",
       "ticker": "SVATU",
       "exchange": "TBD",
@@ -1555,18 +1567,6 @@
       "price": null,
       "valuation": null,
       "raised": "$230,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "Accelevation Holdings Corp.",
-      "ticker": "ACCV",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
