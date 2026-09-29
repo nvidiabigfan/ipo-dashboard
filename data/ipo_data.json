@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T10:19:51+09:00",
+  "updated_at": "2026-09-29T11:26:05+09:00",
   "domestic": [
     {
       "name": "하나에어로다이내믹스",
@@ -10,6 +10,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "4,700~5,700",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "넥스아이",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-03",
+      "subscription_end": "2026-11-04",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "10,500~13,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -171,6 +184,19 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
+      "name": "유캐스트",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-10-19",
+      "subscription_end": "2026-10-20",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "21,000~26,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
       "name": "SK증권스팩14호",
       "market": "KOSDAQ",
       "sector": "",
@@ -231,7 +257,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "19,500~23,500",
-      "offer_price": null,
+      "offer_price": "23,500",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -363,32 +389,6 @@
       "price_band": "2,000~2,000",
       "offer_price": "2,000",
       "competition_ratio": "356.99:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "스카이랩스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-08-26",
-      "subscription_end": "2026-08-27",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "13,000~16,000",
-      "offer_price": "10,000",
-      "competition_ratio": "2.85:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "니어스랩",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-08-12",
-      "subscription_end": "2026-08-13",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "30,000~41,200",
-      "offer_price": "41,200",
-      "competition_ratio": "522.99:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
@@ -563,6 +563,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "Bluerock Acquisition Corp. II",
+      "ticker": "BRRKU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-09-25",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$150,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "Live Oak Acquisition Corp. VI",
       "ticker": "LOVIU",
       "exchange": "TBD",
@@ -683,14 +695,38 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "New Iceland Arctic Acquisition Corp.",
-      "ticker": "NIAAU",
+      "name": "TCGX Acquisition Corp. II",
+      "ticker": "TCXB",
       "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-09-04",
+      "ipo_date": "2026-09-25",
       "price": null,
       "valuation": null,
-      "raised": "$143,750,000",
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Regenlab USA Inc.",
+      "ticker": "RGNA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-25",
+      "price": null,
+      "valuation": null,
+      "raised": "$34,500,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "TFP Group Ltd",
+      "ticker": "TFP",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-25",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -931,6 +967,18 @@
       "price": null,
       "valuation": null,
       "raised": "$43,125,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "New Iceland Arctic Acquisition Corp.",
+      "ticker": "NIAAU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$143,750,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -1653,18 +1701,6 @@
       "raised": "$230,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Bluerock Acquisition Corp. II",
-      "ticker": "BRRKU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-09-25",
-      "price": null,
-      "valuation": null,
-      "raised": "$150,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Holtec Nuclear Corp",
