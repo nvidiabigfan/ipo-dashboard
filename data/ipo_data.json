@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T11:26:05+09:00",
+  "updated_at": "2026-09-30T10:46:06+09:00",
   "domestic": [
     {
       "name": "하나에어로다이내믹스",
@@ -10,6 +10,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "4,700~5,700",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "옵토닉스",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-05",
+      "subscription_end": "2026-11-06",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "10,000~12,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -270,7 +283,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "10,700~12,300",
-      "offer_price": null,
+      "offer_price": "12,300",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -376,19 +389,6 @@
       "price_band": "2,000~2,000",
       "offer_price": "2,000",
       "competition_ratio": "494.62:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "NH스팩34호",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-09-01",
-      "subscription_end": "2026-09-02",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "2,000~2,000",
-      "offer_price": "2,000",
-      "competition_ratio": "356.99:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
@@ -695,6 +695,54 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
+      "name": "ROZE AI INC.",
+      "ticker": "RZAI",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-09-29",
+      "price": null,
+      "valuation": null,
+      "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Source Agriventures Inc.",
+      "ticker": "SRAV",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-28",
+      "price": null,
+      "valuation": null,
+      "raised": "$15,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Orange Street Acquisition Corp",
+      "ticker": "OSACU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-28",
+      "price": null,
+      "valuation": null,
+      "raised": "$74,750,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Calm Seas Acquisition Corp.",
+      "ticker": "CSEAU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-28",
+      "price": null,
+      "valuation": null,
+      "raised": "$345,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "TCGX Acquisition Corp. II",
       "ticker": "TCXB",
       "exchange": "TBD",
@@ -727,6 +775,18 @@
       "price": null,
       "valuation": null,
       "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "MED-X, INC.",
+      "ticker": "MXRX",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-25",
+      "price": null,
+      "valuation": null,
+      "raised": "",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -2051,54 +2111,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
-      "name": "Neutron Holdings, Inc.",
-      "ticker": "LIME",
-      "exchange": "NASDAQ Global Select",
-      "sector": "",
-      "ipo_date": "2026-07-01",
-      "price": 25.0,
-      "valuation": null,
-      "raised": "$173,913,050",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "ITG, Inc./DE/",
-      "ticker": "ITG",
-      "exchange": "NASDAQ Global Select",
-      "sector": "",
-      "ipo_date": "2026-07-01",
-      "price": 16.0,
-      "valuation": null,
-      "raised": "$312,195,136",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Bending Spoons S.p.A.",
-      "ticker": "BSP",
-      "exchange": "NASDAQ Global Select",
-      "sector": "",
-      "ipo_date": "2026-07-01",
-      "price": 29.0,
-      "valuation": null,
-      "raised": "$1,681,159,435",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Osprey Acquisition Corp. III",
-      "ticker": "OSPRU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-07-01",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$261,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
       "name": "SIERRA INTERNATIONAL NETWORK INC",
       "ticker": "SINI",
       "exchange": "TBD",
@@ -2299,18 +2311,6 @@
       "price": null,
       "valuation": null,
       "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Asia AI Group Inc",
-      "ticker": "ASAG",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-01",
-      "price": null,
-      "valuation": null,
-      "raised": "$50,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
