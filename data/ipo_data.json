@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T10:46:06+09:00",
+  "updated_at": "2026-10-01T10:43:18+09:00",
   "domestic": [
     {
       "name": "하나에어로다이내믹스",
@@ -563,6 +563,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "ROZE AI INC.",
+      "ticker": "RZAI",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-09-29",
+      "price": null,
+      "valuation": null,
+      "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "Bluerock Acquisition Corp. II",
       "ticker": "BRRKU",
       "exchange": "NASDAQ Global",
@@ -577,38 +589,38 @@
     {
       "name": "Live Oak Acquisition Corp. VI",
       "ticker": "LOVIU",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Global",
       "sector": "",
-      "ipo_date": "2026-08-24",
-      "price": null,
+      "ipo_date": "2026-09-23",
+      "price": 10.0,
       "valuation": null,
       "raised": "$200,000,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Orion180 Insurance Group Inc.",
       "ticker": "OIG",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Global Select",
       "sector": "",
-      "ipo_date": "2026-08-20",
-      "price": null,
+      "ipo_date": "2026-09-18",
+      "price": 12.0,
       "valuation": null,
       "raised": "$240,000,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Electra Therapeutics, Inc.",
       "ticker": "ETRA",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Global Select",
       "sector": "",
-      "ipo_date": "2026-08-28",
-      "price": null,
+      "ipo_date": "2026-09-18",
+      "price": 15.0,
       "valuation": null,
       "raised": "$350,000,010",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Leader's Advantage Acquisition Corp.",
@@ -625,14 +637,14 @@
     {
       "name": "Haymaker Acquisition Corp V",
       "ticker": "HYACU",
-      "exchange": "TBD",
+      "exchange": "NYSE",
       "sector": "",
-      "ipo_date": "2026-08-25",
-      "price": null,
+      "ipo_date": "2026-09-17",
+      "price": 10.0,
       "valuation": null,
       "raised": "$250,000,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Turbogen Ltd.",
@@ -659,18 +671,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
-      "name": "Oura Inc.",
-      "ticker": "OURA",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-03",
-      "price": null,
-      "valuation": null,
-      "raised": "$2,530,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
       "name": "Accelevation Holdings Corp.",
       "ticker": "ACCV",
       "exchange": "TBD",
@@ -685,24 +685,36 @@
     {
       "name": "SIYATA PTT",
       "ticker": "PTT",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Capital",
       "sector": "",
-      "ipo_date": "2026-08-06",
+      "ipo_date": "2026-09-30",
       "price": null,
       "valuation": null,
       "raised": "",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
-      "name": "ROZE AI INC.",
-      "ticker": "RZAI",
-      "exchange": "NASDAQ Capital",
+      "name": "AfterNext Acquisition I Corp.",
+      "ticker": "AFNXU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-09-30",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "MNBS Acquisition Corp.",
+      "ticker": "MNBSU",
+      "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-09-29",
       "price": null,
       "valuation": null,
-      "raised": "",
+      "raised": "$86,250,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -1063,6 +1075,18 @@
       "price": null,
       "valuation": null,
       "raised": "$230,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Oura Inc.",
+      "ticker": "OURA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-03",
+      "price": null,
+      "valuation": null,
+      "raised": "$2,530,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -1823,18 +1847,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
-      "name": "Jersey Mike's Subs Inc.",
-      "ticker": "JMKE",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$1,000,000,003",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
       "name": "Game Your Game Inc.",
       "ticker": "GYGY",
       "exchange": "NASDAQ Capital",
@@ -1895,18 +1907,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
-      "name": "Scribe Therapeutics, Inc.",
-      "ticker": "SCTX",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$128,700,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
       "name": "Pelican Acquisition II Corp",
       "ticker": "PLCIU",
       "exchange": "NASDAQ Capital",
@@ -1939,18 +1939,6 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "B&R Technology Merger Corp.",
-      "ticker": "BRTMU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$325,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
@@ -2083,30 +2071,6 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$300,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Meridian3 Industrials Acquisition Corp",
-      "ticker": "MIACU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$175,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Viking Acquisition Corp. II",
-      "ticker": "VIIU",
-      "exchange": "NYSE",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$200,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
@@ -2260,54 +2224,6 @@
       "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-07-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Gold Mountain Acquisition Corp.",
-      "ticker": "GDMTU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$86,250,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Laris Growth Acquisition Corp.",
-      "ticker": "LARSU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$230,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Dear Industrial Gas Inc",
-      "ticker": "KFDE",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$25,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Genneia S.A.",
-      "ticker": "GENN",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-02",
       "price": null,
       "valuation": null,
       "raised": "$100,000,000",
