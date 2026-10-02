@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T10:43:18+09:00",
+  "updated_at": "2026-10-02T10:54:36+09:00",
   "domestic": [
     {
       "name": "하나에어로다이내믹스",
@@ -49,6 +49,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "16,400~20,200",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "동원파츠",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-02",
+      "subscription_end": "2026-11-03",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "23,000~26,500",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -192,19 +205,6 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "12,300~16,600",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "유캐스트",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-10-19",
-      "subscription_end": "2026-10-20",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "21,000~26,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -563,6 +563,42 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "AfterNext Acquisition I Corp.",
+      "ticker": "AFNXU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-10-07",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Chilwa Minerals Ltd",
+      "ticker": "CHWM",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-10-01",
+      "price": null,
+      "valuation": null,
+      "raised": "$4,600,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Accelevation Holdings Corp.",
+      "ticker": "ACCV",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$540,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
       "name": "ROZE AI INC.",
       "ticker": "RZAI",
       "exchange": "NASDAQ Capital",
@@ -671,38 +707,26 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
-      "name": "Accelevation Holdings Corp.",
-      "ticker": "ACCV",
+      "name": "BHAV Acquisition Corp II",
+      "ticker": "BHAIU",
       "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-09-02",
+      "ipo_date": "2026-09-30",
       "price": null,
       "valuation": null,
-      "raised": "$828,000,000.00",
+      "raised": "$172,500,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
-      "name": "SIYATA PTT",
-      "ticker": "PTT",
-      "exchange": "NASDAQ Capital",
+      "name": "Primagrove Ltd",
+      "ticker": "YHTE",
+      "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-09-30",
       "price": null,
       "valuation": null,
-      "raised": "",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "AfterNext Acquisition I Corp.",
-      "ticker": "AFNXU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-09-30",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
+      "raised": "$43,125,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -1147,6 +1171,18 @@
       "price": null,
       "valuation": null,
       "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "SIYATA PTT",
+      "ticker": "PTT",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-09-30",
+      "price": null,
+      "valuation": null,
+      "raised": "",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -2203,18 +2239,6 @@
       "price": null,
       "valuation": null,
       "raised": "$35,937,500",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Chilwa Minerals Ltd",
-      "ticker": "CHWM",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-09",
-      "price": null,
-      "valuation": null,
-      "raised": "$4,600,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
