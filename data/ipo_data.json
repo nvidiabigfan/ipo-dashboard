@@ -1,6 +1,19 @@
 {
-  "updated_at": "2026-10-02T10:54:36+09:00",
+  "updated_at": "2026-10-03T10:35:25+09:00",
   "domestic": [
+    {
+      "name": "케이엠에프",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-24",
+      "subscription_end": "2026-11-25",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "15,000~17,800",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
     {
       "name": "하나에어로다이내믹스",
       "market": "KOSDAQ",
@@ -284,7 +297,7 @@
       "listing_date": null,
       "price_band": "10,700~12,300",
       "offer_price": "12,300",
-      "competition_ratio": null,
+      "competition_ratio": "1741.48:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -376,19 +389,6 @@
       "price_band": "2,000~2,000",
       "offer_price": "2,000",
       "competition_ratio": "397.33:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "한국스팩17호",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-09-10",
-      "subscription_end": "2026-09-11",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "2,000~2,000",
-      "offer_price": "2,000",
-      "competition_ratio": "494.62:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
@@ -563,6 +563,30 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
+      "name": "Chilwa Minerals Ltd",
+      "ticker": "CHWM",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-10-01",
+      "price": 5.6,
+      "valuation": null,
+      "raised": "$3,500,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Southport Acquisition Corp. II",
+      "ticker": "PORTU",
+      "exchange": "NYSE",
+      "sector": "",
+      "ipo_date": "2026-10-01",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$200,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
       "name": "AfterNext Acquisition I Corp.",
       "ticker": "AFNXU",
       "exchange": "NASDAQ Global",
@@ -575,14 +599,14 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
-      "name": "Chilwa Minerals Ltd",
-      "ticker": "CHWM",
-      "exchange": "NASDAQ Capital",
+      "name": "POP GLOBAL ACQUISITION Ltd",
+      "ticker": "PGA",
+      "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-10-01",
       "price": null,
       "valuation": null,
-      "raised": "$4,600,000",
+      "raised": "$115,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -1723,18 +1747,6 @@
       "price": null,
       "valuation": null,
       "raised": "$28,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Southport Acquisition Corp. II",
-      "ticker": "PORTU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": null,
-      "valuation": null,
-      "raised": "$230,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
