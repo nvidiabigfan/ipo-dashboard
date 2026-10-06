@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T10:25:47+09:00",
+  "updated_at": "2026-10-06T11:36:42+09:00",
   "domestic": [
     {
       "name": "케이엠에프",
@@ -1187,6 +1187,42 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
+      "name": "GEORGIA BANKING CO INC",
+      "ticker": "GBC",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-02",
+      "price": null,
+      "valuation": null,
+      "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "LPC LTD",
+      "ticker": "LPCI",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$25,875,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Arca Nova Acquisition Corp",
+      "ticker": "ANACU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
       "name": "POP GLOBAL ACQUISITION Ltd",
       "ticker": "PGA",
       "exchange": "TBD",
@@ -2107,18 +2143,6 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$275,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Bleichroeder Acquisition Corp. III",
-      "ticker": "BCCQU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-07-07",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$300,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
