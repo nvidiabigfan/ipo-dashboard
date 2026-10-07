@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T11:36:42+09:00",
+  "updated_at": "2026-10-07T10:54:59+09:00",
   "domestic": [
     {
       "name": "케이엠에프",
@@ -210,19 +210,6 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
-      "name": "다비오",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-10-19",
-      "subscription_end": "2026-10-20",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "12,300~16,600",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
       "name": "SK증권스팩14호",
       "market": "KOSDAQ",
       "sector": "",
@@ -270,7 +257,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "70,400~90,500",
-      "offer_price": null,
+      "offer_price": "90,500",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -284,7 +271,7 @@
       "listing_date": null,
       "price_band": "19,500~23,500",
       "offer_price": "23,500",
-      "competition_ratio": null,
+      "competition_ratio": "685:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -390,6 +377,19 @@
       "offer_price": "2,000",
       "competition_ratio": "397.33:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "한국스팩17호",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-09-10",
+      "subscription_end": "2026-09-11",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "2,000~2,000",
+      "offer_price": "2,000",
+      "competition_ratio": "494.62:1",
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
   "international": [
@@ -426,7 +426,7 @@
       "price": null,
       "valuation": "$965B",
       "raised": null,
-      "description": "IPO Status: Filed · Expected: Oct/Nov 2026 (valuation as of May 28, 2026)",
+      "description": "IPO Status: Filed · Expected: Nov 2026 (valuation as of May 28, 2026)",
       "source_url": "https://stockanalysis.com/private/anthropic/"
     },
     {
@@ -561,6 +561,150 @@
       "raised": "$57,500,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "Chilwa Minerals Ltd",
+      "ticker": "CHWM",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-10-01",
+      "price": 5.6,
+      "valuation": null,
+      "raised": "$3,500,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Southport Acquisition Corp. II",
+      "ticker": "PORTU",
+      "exchange": "NYSE",
+      "sector": "",
+      "ipo_date": "2026-10-01",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$200,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "TRex Bio, Inc.",
+      "ticker": "TRXB",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-18",
+      "price": null,
+      "valuation": null,
+      "raised": "$153,333,344",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "AfterNext Acquisition I Corp.",
+      "ticker": "AFNXU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-10-07",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Pine Tree Acquisition Corp.",
+      "ticker": "PAXGU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-10-06",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Lycia Therapeutics, Inc.",
+      "ticker": "LYCA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "DayOne Data Centers Ltd",
+      "ticker": "DODC",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "New Iceland Arctic Acquisition Corp.",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-09-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$143,750,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+    },
+    {
+      "name": "GEORGIA BANKING CO INC",
+      "ticker": "GBC",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-02",
+      "price": null,
+      "valuation": null,
+      "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "LPC LTD",
+      "ticker": "LPCI",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$25,875,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Arca Nova Acquisition Corp",
+      "ticker": "ANACU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-02",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "POP GLOBAL ACQUISITION Ltd",
+      "ticker": "PGA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-01",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
       "name": "Accelevation Holdings Corp.",
@@ -863,18 +1007,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
-      "name": "TRex Bio, Inc.",
-      "ticker": "TRXB",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-18",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
       "name": "Santa Ana Global Enterprises, S.A.",
       "ticker": "STNF",
       "exchange": "TBD",
@@ -1043,18 +1175,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
-      "name": "New Iceland Arctic Acquisition Corp.",
-      "ticker": "NIAAU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-04",
-      "price": null,
-      "valuation": null,
-      "raised": "$143,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
       "name": "Rothe Development, Inc.",
       "ticker": "RDEV",
       "exchange": "TBD",
@@ -1149,90 +1269,6 @@
       "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "Chilwa Minerals Ltd",
-      "ticker": "CHWM",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-10-01",
-      "price": 5.6,
-      "valuation": null,
-      "raised": "$3,500,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "Southport Acquisition Corp. II",
-      "ticker": "PORTU",
-      "exchange": "NYSE",
-      "sector": "",
-      "ipo_date": "2026-10-01",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$200,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "AfterNext Acquisition I Corp.",
-      "ticker": "AFNXU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-10-07",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "GEORGIA BANKING CO INC",
-      "ticker": "GBC",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-10-02",
-      "price": null,
-      "valuation": null,
-      "raised": "",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "LPC LTD",
-      "ticker": "LPCI",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-10-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$25,875,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "Arca Nova Acquisition Corp",
-      "ticker": "ANACU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-10-02",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "POP GLOBAL ACQUISITION Ltd",
-      "ticker": "PGA",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-10-01",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
       "name": "SIYATA PTT",
@@ -1967,18 +2003,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
-      "name": "Catalyst Acquisition Corp.",
-      "ticker": "CATLU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-08",
-      "price": null,
-      "valuation": null,
-      "raised": "$200,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
       "name": "Ionic Digital Inc.",
       "ticker": "IOND",
       "exchange": "NASDAQ Global Select",
@@ -2131,18 +2155,6 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$150,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Freedom Metals Acquisition Corp.",
-      "ticker": "FDMMU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-07-08",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$275,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
