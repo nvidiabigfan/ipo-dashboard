@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T11:22:40+09:00",
+  "updated_at": "2026-10-09T11:40:24+09:00",
   "domestic": [
     {
       "name": "케이엠에프",
@@ -702,7 +702,7 @@
       "ipo_date": "2026-09-30",
       "price": null,
       "valuation": null,
-      "raised": "$43,125,000",
+      "raised": "$43,125,000.00",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -1183,6 +1183,30 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$200,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Centinel Spine Holdco, Inc.",
+      "ticker": "CNTL",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-07",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "FireFly Robotics, Inc.",
+      "ticker": "FFLY",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-07",
+      "price": null,
+      "valuation": null,
+      "raised": "",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -1943,18 +1967,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
-      "name": "Apnimed, Inc.",
-      "ticker": "APMD",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-10",
-      "price": null,
-      "valuation": null,
-      "raised": "$192,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
       "name": "East West Ave Acquisition Corp.",
       "ticker": "EWAVU",
       "exchange": "NASDAQ Global",
@@ -2135,18 +2147,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
-      "name": "Samos Energy Acquisition Corp",
-      "ticker": "SAMOU",
-      "exchange": "NYSE",
-      "sector": "",
-      "ipo_date": "2026-07-10",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$200,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
       "name": "SIERRA INTERNATIONAL NETWORK INC",
       "ticker": "SINI",
       "exchange": "TBD",
@@ -2239,42 +2239,6 @@
       "price": null,
       "valuation": null,
       "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Tailored Brands, Inc. / DE",
-      "ticker": "MENW",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-10",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Timwood Holdings Ltd",
-      "ticker": "TIWD",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-10",
-      "price": null,
-      "valuation": null,
-      "raised": "$43,125,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Sin Lian Seng Construction",
-      "ticker": "ININ",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-10",
-      "price": null,
-      "valuation": null,
-      "raised": "$35,937,500",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
