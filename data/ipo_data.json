@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T11:40:24+09:00",
+  "updated_at": "2026-10-10T11:00:01+09:00",
   "domestic": [
     {
       "name": "케이엠에프",
@@ -750,7 +750,7 @@
       "ipo_date": "2026-09-28",
       "price": null,
       "valuation": null,
-      "raised": "$345,000,000",
+      "raised": "$230,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
@@ -841,14 +841,14 @@
     {
       "name": "Iambic Therapeutics, Inc.",
       "ticker": "IAM",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Global Select",
       "sector": "",
-      "ipo_date": "2026-09-21",
+      "ipo_date": "2026-10-15",
       "price": null,
       "valuation": null,
-      "raised": "$100,000,000",
+      "raised": "$183,281,250",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
       "name": "Sprout Red International Ltd",
