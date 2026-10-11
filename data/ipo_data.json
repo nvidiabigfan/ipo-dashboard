@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T11:00:01+09:00",
+  "updated_at": "2026-10-11T10:25:43+09:00",
   "domestic": [
     {
       "name": "케이엠에프",
@@ -865,14 +865,14 @@
     {
       "name": "TRex Bio, Inc.",
       "ticker": "TRXB",
-      "exchange": "NASDAQ Global Select",
+      "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-10-09",
+      "ipo_date": "2026-09-18",
       "price": null,
       "valuation": null,
       "raised": "$153,333,344",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Santa Ana Global Enterprises, S.A.",
