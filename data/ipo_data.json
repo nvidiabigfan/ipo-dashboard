@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T10:25:43+09:00",
+  "updated_at": "2026-10-12T10:56:16+09:00",
   "domestic": [
     {
       "name": "케이엠에프",
@@ -271,7 +271,7 @@
       "listing_date": null,
       "price_band": "70,400~90,500",
       "offer_price": "90,500",
-      "competition_ratio": null,
+      "competition_ratio": "408:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -2135,18 +2135,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
-      "name": "Research Alliance Corp IV",
-      "ticker": "RACD",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-07-13",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$75,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
       "name": "SIERRA INTERNATIONAL NETWORK INC",
       "ticker": "SINI",
       "exchange": "TBD",
@@ -2215,30 +2203,6 @@
       "price": null,
       "valuation": null,
       "raised": "$201,250,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Material Resource Acquisition Corp.",
-      "ticker": "MTRLU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-13",
-      "price": null,
-      "valuation": null,
-      "raised": "$230,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "YPF Energia Electrica S.A.",
-      "ticker": "YLUZ",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-13",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
