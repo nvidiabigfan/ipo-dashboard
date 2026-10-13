@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T10:56:16+09:00",
+  "updated_at": "2026-10-13T12:17:30+09:00",
   "domestic": [
     {
       "name": "케이엠에프",
@@ -15,6 +15,32 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
+      "name": "아델",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-23",
+      "subscription_end": "2026-11-24",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "18,000~25,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "엔키화이트햇",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-12",
+      "subscription_end": "2026-11-13",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "13,000~16,500",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
       "name": "하나에어로다이내믹스",
       "market": "KOSDAQ",
       "sector": "",
@@ -23,6 +49,32 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "4,700~5,700",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "다비오",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-10",
+      "subscription_end": "2026-11-11",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "12,300~16,600",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "에이엘로봇",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-06",
+      "subscription_end": "2026-11-09",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "15,700~17,600",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -49,6 +101,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "9,700~12,200",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "영광와이케이엠씨",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-04",
+      "subscription_end": "2026-11-05",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "9,400~11,000",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -114,19 +179,6 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "2,000~2,000",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "에이엘로봇",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-10-26",
-      "subscription_end": "2026-10-27",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "15,700~17,600",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -244,7 +296,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "17,000~18,500",
-      "offer_price": null,
+      "offer_price": "18,500",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -337,58 +389,6 @@
       "price_band": "13,000~15,000",
       "offer_price": "10,000",
       "competition_ratio": "57.15:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "빅웨이브로보틱스",
-      "market": "KOSDAQ",
-      "sector": "로보틱스",
-      "subscription_start": "2026-09-15",
-      "subscription_end": "2026-09-16",
-      "refund_date": "2026-06-19",
-      "listing_date": "2026-06-24",
-      "price_band": "15,000~18,000",
-      "offer_price": "18,000",
-      "competition_ratio": "1375.34:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "와이즈플래닛컴퍼니",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-09-14",
-      "subscription_end": "2026-09-15",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "10,000~12,000",
-      "offer_price": "12,000",
-      "competition_ratio": "1477.65:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "네오사피엔스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-09-10",
-      "subscription_end": "2026-09-11",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "13,800~15,800",
-      "offer_price": "10,000",
-      "competition_ratio": "1047.78:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "KB스팩34호",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-09-10",
-      "subscription_end": "2026-09-11",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "2,000~2,000",
-      "offer_price": "2,000",
-      "competition_ratio": "397.33:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
@@ -556,7 +556,7 @@
       "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-09-18",
-      "price": null,
+      "price": 12.0,
       "valuation": null,
       "raised": "$57,500,000",
       "description": "",
@@ -805,14 +805,14 @@
     {
       "name": "CITY THERAPEUTICS, INC.",
       "ticker": "CTY",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Global",
       "sector": "",
-      "ipo_date": "2026-09-24",
+      "ipo_date": "2026-10-16",
       "price": null,
       "valuation": null,
-      "raised": "$100,000,000.00",
+      "raised": "$212,430,545",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
       "name": "Frazier Life Sciences Acquisition Corp. II",
@@ -865,14 +865,14 @@
     {
       "name": "TRex Bio, Inc.",
       "ticker": "TRXB",
-      "exchange": "TBD",
+      "exchange": "NASDAQ Global Select",
       "sector": "",
-      "ipo_date": "2026-09-18",
-      "price": null,
+      "ipo_date": "2026-10-09",
+      "price": 14.0,
       "valuation": null,
-      "raised": "$153,333,344",
+      "raised": "$116,666,676",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
       "name": "Santa Ana Global Enterprises, S.A.",
@@ -1183,6 +1183,78 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$200,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Bambusa Therapeutics, Inc.",
+      "ticker": "BBTX",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Patriot Mobile Inc.",
+      "ticker": "PTRT",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$10,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Aspen Neuroscience, Inc.",
+      "ticker": "ASPE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "OPAY Ltd",
+      "ticker": "OPAY",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$50,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "vVARDIS Holding AG",
+      "ticker": "VVVV",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Simwon America Corp.",
+      "ticker": "SWA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$41,250,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -2119,18 +2191,6 @@
       "price": 15.0,
       "valuation": null,
       "raised": "$150,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Jones Ventures INTL Acquisition1 Corp",
-      "ticker": "JONEU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-07-14",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$200,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
