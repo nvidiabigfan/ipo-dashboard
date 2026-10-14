@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T12:17:30+09:00",
+  "updated_at": "2026-10-14T10:29:37+09:00",
   "domestic": [
     {
       "name": "케이엠에프",
@@ -310,7 +310,7 @@
       "listing_date": null,
       "price_band": "6,800~7,800",
       "offer_price": "7,800",
-      "competition_ratio": null,
+      "competition_ratio": "1538.51:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -2047,18 +2047,6 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "Churchill Capital Corp XIII",
-      "ticker": "XIIIU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-15",
-      "price": null,
-      "valuation": null,
-      "raised": "$360,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
