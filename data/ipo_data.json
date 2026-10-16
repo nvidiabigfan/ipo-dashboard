@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T10:08:04+09:00",
+  "updated_at": "2026-10-16T09:54:44+09:00",
   "domestic": [
     {
       "name": "케이엠에프",
@@ -23,6 +23,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "18,000~25,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "엠비디",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-11-12",
+      "subscription_end": "2026-11-13",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "9,600~11,700",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -158,19 +171,6 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
-      "name": "엠비디",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-10-28",
-      "subscription_end": "2026-10-29",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "9,600~11,700",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
       "name": "아이엠스팩1호",
       "market": "KOSDAQ",
       "sector": "",
@@ -297,7 +297,7 @@
       "listing_date": null,
       "price_band": "17,000~18,500",
       "offer_price": "18,500",
-      "competition_ratio": "987:1",
+      "competition_ratio": "986.99:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -820,7 +820,7 @@
       "exchange": "NASDAQ Capital",
       "sector": "",
       "ipo_date": "2026-10-14",
-      "price": null,
+      "price": 10.0,
       "valuation": null,
       "raised": "$75,000,000",
       "description": "",
@@ -846,7 +846,7 @@
       "ipo_date": "2026-10-15",
       "price": null,
       "valuation": null,
-      "raised": "$183,281,250",
+      "raised": "$150,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -925,14 +925,14 @@
     {
       "name": "SPACCircle Acquisition Corp.",
       "ticker": "SCQCU",
-      "exchange": "NASDAQ Global",
+      "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-10-15",
+      "ipo_date": "2026-09-15",
       "price": null,
       "valuation": null,
       "raised": "$172,500,000",
       "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
       "name": "Oceanhawk Acquisition II Corp.",
@@ -1183,6 +1183,18 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$200,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Amaero Inc.",
+      "ticker": "AMRO",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-10-15",
+      "price": null,
+      "valuation": null,
+      "raised": "$20,000,002.75",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -1751,18 +1763,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "Amaero Inc.",
-      "ticker": "AMRO",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-28",
-      "price": null,
-      "valuation": null,
-      "raised": "$60,539,323.50",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Spinnova Plc",
       "ticker": "SPNV",
       "exchange": "TBD",
@@ -2159,18 +2159,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
     {
-      "name": "AMR Resources Acquisition Corp.",
-      "ticker": "AMACU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-07-17",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$250,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
       "name": "SIERRA INTERNATIONAL NETWORK INC",
       "ticker": "SINI",
       "exchange": "TBD",
@@ -2215,18 +2203,6 @@
       "price": null,
       "valuation": null,
       "raised": "$172,500,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
-    },
-    {
-      "name": "NuvOx Therapeutics, Inc.",
-      "ticker": "NUOX",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-07-17",
-      "price": null,
-      "valuation": null,
-      "raised": "$26,312,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-07"
     },
