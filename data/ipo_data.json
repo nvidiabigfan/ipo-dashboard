@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T10:42:52+09:00",
+  "updated_at": "2026-11-02T10:59:10+09:00",
   "domestic": [
     {
       "name": "KTE",
@@ -2155,30 +2155,6 @@
       "price": null,
       "valuation": null,
       "raised": "$120,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "1776 Acquisition Corp",
-      "ticker": "SVSXU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-03",
-      "price": null,
-      "valuation": null,
-      "raised": "$172,500,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "GX Acquisition Corp. III/Cayman",
-      "ticker": "GXTRU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-03",
-      "price": null,
-      "valuation": null,
-      "raised": "$230,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
