@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T10:59:10+09:00",
+  "updated_at": "2026-11-03T12:47:05+09:00",
   "domestic": [
     {
       "name": "KTE",
@@ -88,6 +88,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "13,000~16,500",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "다비오",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-12-01",
+      "subscription_end": "2026-12-02",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "12,300~16,600",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -231,19 +244,6 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "4,700~5,700",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "다비오",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-11-10",
-      "subscription_end": "2026-11-11",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "12,300~16,600",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -575,14 +575,26 @@
       "source_url": "https://stockanalysis.com/private/anthropic/"
     },
     {
-      "name": "BHAV Acquisition Corp II",
-      "ticker": "BHAIU",
-      "exchange": "NASDAQ Global",
+      "name": "Bambusa Therapeutics, Inc.",
+      "ticker": "BBTX",
+      "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-10-29",
-      "price": 10.0,
+      "ipo_date": "2026-10-09",
+      "price": null,
       "valuation": null,
-      "raised": "$100,000,000",
+      "raised": "$168,888,880",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Aspen Neuroscience, Inc.",
+      "ticker": "ASPE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$140,625,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -595,6 +607,18 @@
       "price": null,
       "valuation": null,
       "raised": "",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "BHAV Acquisition Corp II",
+      "ticker": "BHAIU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-10-29",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -743,14 +767,14 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
-      "name": "OPAY Ltd",
-      "ticker": "OPAY",
+      "name": "UCSB Acquisition Corp.",
+      "ticker": "UCSBU",
       "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-10-09",
+      "ipo_date": "2026-10-30",
       "price": null,
       "valuation": null,
-      "raised": "$386,400,000",
+      "raised": "$69,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -887,18 +911,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
-      "name": "Bambusa Therapeutics, Inc.",
-      "ticker": "BBTX",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-10-09",
-      "price": null,
-      "valuation": null,
-      "raised": "$168,888,880",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
       "name": "Patriot Mobile Inc.",
       "ticker": "PTRT",
       "exchange": "TBD",
@@ -911,14 +923,14 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
-      "name": "Aspen Neuroscience, Inc.",
-      "ticker": "ASPE",
+      "name": "OPAY Ltd",
+      "ticker": "OPAY",
       "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-10-09",
       "price": null,
       "valuation": null,
-      "raised": "$140,625,000",
+      "raised": "$304,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -1811,30 +1823,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "BOA Acquisition Corp. II",
-      "ticker": "THEOU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-04",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$125,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "ARC Group Securities Acquisition I",
-      "ticker": "FJDIU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-04",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$105,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Kainan Holding Group Ltd",
       "ticker": "KHG",
       "exchange": "TBD",
@@ -2143,18 +2131,6 @@
       "price": null,
       "valuation": null,
       "raised": "$24,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Luminous Acquisition",
-      "ticker": "LUMIU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-04",
-      "price": null,
-      "valuation": null,
-      "raised": "$120,750,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
