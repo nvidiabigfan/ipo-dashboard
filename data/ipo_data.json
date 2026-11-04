@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T12:47:05+09:00",
+  "updated_at": "2026-11-04T11:50:23+09:00",
   "domestic": [
     {
       "name": "KTE",
@@ -283,7 +283,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "9,400~11,000",
-      "offer_price": null,
+      "offer_price": "11,000",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -310,7 +310,7 @@
       "listing_date": null,
       "price_band": "16,400~20,200",
       "offer_price": "16,400",
-      "competition_ratio": null,
+      "competition_ratio": "19.27:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -323,7 +323,7 @@
       "listing_date": null,
       "price_band": "23,000~26,500",
       "offer_price": "26,500",
-      "competition_ratio": null,
+      "competition_ratio": "1219.37:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -573,6 +573,18 @@
       "raised": "$1,000,000,000",
       "description": "IPO Status: Filed · Expected: Nov 2026 (valuation as of May 28, 2026)",
       "source_url": "https://stockanalysis.com/private/anthropic/"
+    },
+    {
+      "name": "Narragansett Bancorp, Inc.",
+      "ticker": "NARA",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-11-02",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$90,988,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
     {
       "name": "Bambusa Therapeutics, Inc.",
@@ -930,7 +942,7 @@
       "ipo_date": "2026-10-09",
       "price": null,
       "valuation": null,
-      "raised": "$304,000,000",
+      "raised": "$386,400,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -1799,30 +1811,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "TCGX Acquisition Corp.",
-      "ticker": "TCGX",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-08-05",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$75,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Attovia Therapeutics, Inc.",
-      "ticker": "ATTO",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-05",
-      "price": 17.0,
-      "valuation": null,
-      "raised": "$289,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Kainan Holding Group Ltd",
       "ticker": "KHG",
       "exchange": "TBD",
@@ -2107,30 +2095,6 @@
       "price": null,
       "valuation": null,
       "raised": "$115,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Gravity Acquisition Corp.",
-      "ticker": "GVACU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-05",
-      "price": null,
-      "valuation": null,
-      "raised": "$287,500,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Naoris Quantum Protocol Inc.",
-      "ticker": "QDY",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-05",
-      "price": null,
-      "valuation": null,
-      "raised": "$24,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
