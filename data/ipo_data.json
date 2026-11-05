@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T11:50:23+09:00",
+  "updated_at": "2026-11-05T11:58:39+09:00",
   "domestic": [
     {
       "name": "KTE",
@@ -257,7 +257,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "15,700~17,600",
-      "offer_price": null,
+      "offer_price": "17,600",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -297,7 +297,7 @@
       "listing_date": null,
       "price_band": "10,500~13,000",
       "offer_price": "8,000",
-      "competition_ratio": null,
+      "competition_ratio": "13.26:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -1607,18 +1607,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "Rainier Acquisition Corp",
-      "ticker": "RNAQU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$75,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "JATT III Acquisition Corp",
       "ticker": "JTTT",
       "exchange": "TBD",
@@ -1795,18 +1783,6 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$200,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Braveheart Bio, Inc.",
-      "ticker": "BRVE",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-06",
-      "price": 18.0,
-      "valuation": null,
-      "raised": "$382,500,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
