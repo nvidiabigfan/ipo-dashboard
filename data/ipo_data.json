@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T11:58:39+09:00",
+  "updated_at": "2026-11-06T11:59:13+09:00",
   "domestic": [
     {
       "name": "KTE",
@@ -284,7 +284,7 @@
       "listing_date": null,
       "price_band": "9,400~11,000",
       "offer_price": "11,000",
-      "competition_ratio": null,
+      "competition_ratio": "1342.66:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
@@ -583,6 +583,18 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$90,988,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Churchill Capital Corp XIV",
+      "ticker": "CXIVU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$345,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
@@ -1727,66 +1739,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "Ticketplus Ltd.",
-      "ticker": "TP",
-      "exchange": "NYSE MKT",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": 8.0,
-      "valuation": null,
-      "raised": "$15,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Latigo Biotherapeutics, Inc.",
-      "ticker": "LTGO",
-      "exchange": "NASDAQ Global Select",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": 18.0,
-      "valuation": null,
-      "raised": "$345,600,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "BlossomHill Therapeutics, Inc.",
-      "ticker": "BLSM",
-      "exchange": "NASDAQ Global Select",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": 16.0,
-      "valuation": null,
-      "raised": "$150,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "OceanLight Acquisition Corp",
-      "ticker": "OCLTU",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Pinnacle Acquisition Corp",
-      "ticker": "PNAQU",
-      "exchange": "NYSE",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$200,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Kainan Holding Group Ltd",
       "ticker": "KHG",
       "exchange": "TBD",
@@ -2020,54 +1972,6 @@
       "exchange": "TBD",
       "sector": "",
       "ipo_date": "2026-08-10",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Danneskjold & Galt Acquisition Co",
-      "ticker": "CPLMU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": null,
-      "valuation": null,
-      "raised": "$172,500,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Zensitive Holding Limited",
-      "ticker": null,
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": null,
-      "valuation": null,
-      "raised": "$28,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "KiNRG, Inc.",
-      "ticker": "BYOP",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-07",
-      "price": null,
-      "valuation": null,
-      "raised": "$24,150,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Lucens Capital Acquisition Corp I",
-      "ticker": "LCNSU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-07",
       "price": null,
       "valuation": null,
       "raised": "$115,000,000",
