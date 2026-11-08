@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T11:28:40+09:00",
+  "updated_at": "2026-11-08T10:57:42+09:00",
   "domestic": [
     {
       "name": "KTE",
@@ -412,9 +412,9 @@
       "sector": "Artificial Intelligence",
       "ipo_date": null,
       "price": null,
-      "valuation": "$852B",
+      "valuation": "$1,250B",
       "raised": null,
-      "description": "IPO Status: Filed · Expected: 2027 (valuation as of Mar 31, 2026)",
+      "description": "IPO Status: Filed · Expected: 2027 (valuation as of Nov 6, 2026)",
       "source_url": "https://stockanalysis.com/private/openai/"
     },
     {
@@ -486,7 +486,7 @@
       "price": null,
       "valuation": "$21B",
       "raised": null,
-      "description": "IPO Status: Filed · Expected: Q2 2027 (valuation as of Sep 10, 2026)",
+      "description": "IPO Status: Filed · Expected: n/a (valuation as of Sep 10, 2026)",
       "source_url": "https://stockanalysis.com/private/kraken/"
     },
     {
@@ -575,16 +575,64 @@
       "source_url": "https://stockanalysis.com/private/anthropic/"
     },
     {
-      "name": "Bambusa Therapeutics, Inc.",
-      "ticker": "BBTX",
+      "name": "Narragansett Bancorp, Inc.",
+      "ticker": "NARA",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-11-02",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$90,988,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Rezera Inc.",
+      "ticker": "RZRA",
       "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-10-09",
+      "ipo_date": "2026-10-21",
       "price": null,
       "valuation": null,
-      "raised": "$168,888,880",
+      "raised": "$249,166,671",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Guitar Group Ltd",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$31,050,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Kartoon Studios Acquisition Corp",
+      "ticker": "KACQU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$345,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Churchill Capital Corp XIV",
+      "ticker": "CXIVU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$345,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
     {
       "name": "Aspen Neuroscience, Inc.",
@@ -599,14 +647,14 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
-      "name": "GEORGIA BANKING CO INC",
-      "ticker": "GBC",
+      "name": "Bambusa Therapeutics, Inc.",
+      "ticker": "BBTX",
       "exchange": "TBD",
       "sector": "",
-      "ipo_date": "2026-10-02",
+      "ipo_date": "2026-10-09",
       "price": null,
       "valuation": null,
-      "raised": "",
+      "raised": "$168,888,880",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -619,6 +667,18 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "GEORGIA BANKING CO INC",
+      "ticker": "GBC",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-02",
+      "price": null,
+      "valuation": null,
+      "raised": "",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -683,18 +743,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
-      "name": "Amaero Inc.",
-      "ticker": "AMRO",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-10-15",
-      "price": 4.25,
-      "valuation": null,
-      "raised": "$20,000,003",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
       "name": "Iambic Therapeutics, Inc.",
       "ticker": "IAM",
       "exchange": "NASDAQ Global Select",
@@ -703,6 +751,18 @@
       "price": 16.0,
       "valuation": null,
       "raised": "$150,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Amaero Inc.",
+      "ticker": "AMRO",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-10-15",
+      "price": 4.25,
+      "valuation": null,
+      "raised": "$20,000,003",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -743,18 +803,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
-      "name": "Chilwa Minerals Ltd",
-      "ticker": "CHWM",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-10-01",
-      "price": 5.6,
-      "valuation": null,
-      "raised": "$3,500,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
       "name": "Southport Acquisition Corp. II",
       "ticker": "PORTU",
       "exchange": "NYSE",
@@ -763,6 +811,18 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$200,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Chilwa Minerals Ltd",
+      "ticker": "CHWM",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-10-01",
+      "price": 5.6,
+      "valuation": null,
+      "raised": "$3,500,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -849,18 +909,6 @@
       "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "Rezera Inc.",
-      "ticker": "RZRA",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-11-12",
-      "price": null,
-      "valuation": null,
-      "raised": "$249,166,671",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
     {
       "name": "Sensing4D AI Ltd",
@@ -1053,54 +1101,6 @@
       "raised": "$115,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "Narragansett Bancorp, Inc.",
-      "ticker": "NARA",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-11-02",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$90,988,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Guitar Group Ltd",
-      "ticker": null,
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-05",
-      "price": null,
-      "valuation": null,
-      "raised": "$31,050,000.00",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Kartoon Studios Acquisition Corp",
-      "ticker": "KACQU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-05",
-      "price": null,
-      "valuation": null,
-      "raised": "$345,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Churchill Capital Corp XIV",
-      "ticker": "CXIVU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-04",
-      "price": null,
-      "valuation": null,
-      "raised": "$345,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
     {
       "name": "NODTHERA INC.",
