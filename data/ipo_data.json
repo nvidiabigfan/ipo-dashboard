@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T13:25:40+09:00",
+  "updated_at": "2026-11-11T11:25:53+09:00",
   "domestic": [
     {
       "name": "KTE",
@@ -49,6 +49,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "10,000~13,000",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "마더스제약",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-12-08",
+      "subscription_end": "2026-12-09",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "11,000~14,500",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -205,7 +218,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "9,600~11,700",
-      "offer_price": null,
+      "offer_price": "7,000",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -376,19 +389,6 @@
       "price_band": "14,000~17,000",
       "offer_price": "17,000",
       "competition_ratio": "684.73:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "인텔리빅스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-10-21",
-      "subscription_end": "2026-10-22",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "7,600~9,000",
-      "offer_price": "9,000",
-      "competition_ratio": "1410.87:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
@@ -573,6 +573,150 @@
       "raised": "$1,000,000,000",
       "description": "IPO Status: Filed · Expected: Nov 2026 (valuation as of May 28, 2026)",
       "source_url": "https://stockanalysis.com/private/anthropic/"
+    },
+    {
+      "name": "Narragansett Bancorp, Inc.",
+      "ticker": "NARA",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-11-02",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$90,988,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "WINDWARD BIO GROUP AG",
+      "ticker": "WWB",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-23",
+      "price": null,
+      "valuation": null,
+      "raised": "$213,088,212",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "vVARDIS Holding AG",
+      "ticker": "VVVV",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$262,857,144",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Rezera Inc.",
+      "ticker": "RZRA",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-10-21",
+      "price": null,
+      "valuation": null,
+      "raised": "$249,166,671",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Research Alliance Corp V",
+      "ticker": "RACV",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$62,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "ZA Acquisition Corp. I",
+      "ticker": "ZACAU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$86,250,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "UC Automotive Holdings Inc.",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-06",
+      "price": null,
+      "valuation": null,
+      "raised": "$28,750,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "AParadise III Acquisition Corp.",
+      "ticker": "APCDU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-06",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "BEHNEH Ltd",
+      "ticker": "BENE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-06",
+      "price": null,
+      "valuation": null,
+      "raised": "$28,750,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Guitar Group Ltd",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$31,050,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Kartoon Studios Acquisition Corp",
+      "ticker": "KACQU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$345,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Churchill Capital Corp XIV",
+      "ticker": "CXIVU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$345,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
     {
       "name": "Bambusa Therapeutics, Inc.",
@@ -839,30 +983,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
-      "name": "WINDWARD BIO GROUP AG",
-      "ticker": "WWB",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-10-23",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "Rezera Inc.",
-      "ticker": "RZRA",
-      "exchange": "NASDAQ Global",
-      "sector": "",
-      "ipo_date": "2026-11-12",
-      "price": null,
-      "valuation": null,
-      "raised": "$249,166,671",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
       "name": "Sensing4D AI Ltd",
       "ticker": null,
       "exchange": "TBD",
@@ -931,18 +1051,6 @@
       "price": null,
       "valuation": null,
       "raised": "$386,400,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "vVARDIS Holding AG",
-      "ticker": "VVVV",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-10-09",
-      "price": null,
-      "valuation": null,
-      "raised": "$262,857,144",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
@@ -1053,90 +1161,6 @@
       "raised": "$115,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "Narragansett Bancorp, Inc.",
-      "ticker": "NARA",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-11-02",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$90,988,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "UC Automotive Holdings Inc.",
-      "ticker": null,
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$28,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "AParadise III Acquisition Corp.",
-      "ticker": "APCDU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "BEHNEH Ltd",
-      "ticker": "BENE",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$28,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Guitar Group Ltd",
-      "ticker": null,
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-05",
-      "price": null,
-      "valuation": null,
-      "raised": "$31,050,000.00",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Kartoon Studios Acquisition Corp",
-      "ticker": "KACQU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-05",
-      "price": null,
-      "valuation": null,
-      "raised": "$345,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Churchill Capital Corp XIV",
-      "ticker": "CXIVU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-04",
-      "price": null,
-      "valuation": null,
-      "raised": "$345,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
     {
       "name": "NODTHERA INC.",
@@ -1751,42 +1775,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "Londian Wason New Energy Tech Inc.",
-      "ticker": "FOIL",
-      "exchange": "NYSE",
-      "sector": "",
-      "ipo_date": "2026-08-12",
-      "price": 22.0,
-      "valuation": null,
-      "raised": "$94,285,708",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Vogenx, Inc.",
-      "ticker": "VOGX",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-08-12",
-      "price": 13.0,
-      "valuation": null,
-      "raised": "$81,250,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "SunScout Holding Ltd",
-      "ticker": "SNSC",
-      "exchange": "NYSE MKT",
-      "sector": "",
-      "ipo_date": "2026-08-12",
-      "price": 5.0,
-      "valuation": null,
-      "raised": "$15,500,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Kainan Holding Group Ltd",
       "ticker": "KHG",
       "exchange": "TBD",
@@ -1975,18 +1963,6 @@
       "price": null,
       "valuation": null,
       "raised": "$48,300,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "BirchBioMed Inc.",
-      "ticker": "BRBM",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-12",
-      "price": null,
-      "valuation": null,
-      "raised": "",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
