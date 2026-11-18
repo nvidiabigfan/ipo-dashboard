@@ -1,6 +1,19 @@
 {
-  "updated_at": "2026-11-17T13:54:20+09:00",
+  "updated_at": "2026-11-18T12:58:33+09:00",
   "domestic": [
+    {
+      "name": "이나인페이",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-12-16",
+      "subscription_end": "2026-12-17",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "7,500~10,500",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
     {
       "name": "제논",
       "market": "KOSDAQ",
@@ -23,6 +36,19 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "17,500~20,200",
+      "offer_price": null,
+      "competition_ratio": null,
+      "source_url": "http://www.38.co.kr/html/fund/?o=k"
+    },
+    {
+      "name": "엠디에스코리아",
+      "market": "KOSDAQ",
+      "sector": "",
+      "subscription_start": "2026-12-14",
+      "subscription_end": "2026-12-15",
+      "refund_date": null,
+      "listing_date": null,
+      "price_band": "9,500~11,500",
       "offer_price": null,
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
@@ -197,19 +223,6 @@
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
     {
-      "name": "에스에프씨",
-      "market": "KOSPI",
-      "sector": "",
-      "subscription_start": "2026-11-18",
-      "subscription_end": "2026-11-19",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "31,600~36,100",
-      "offer_price": null,
-      "competition_ratio": null,
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
       "name": "유캐스트",
       "market": "KOSDAQ",
       "sector": "",
@@ -218,7 +231,7 @@
       "refund_date": null,
       "listing_date": null,
       "price_band": "19,000~23,000",
-      "offer_price": null,
+      "offer_price": "19,000",
       "competition_ratio": null,
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     },
@@ -376,19 +389,6 @@
       "price_band": "14,000~17,000",
       "offer_price": "17,000",
       "competition_ratio": "684.73:1",
-      "source_url": "http://www.38.co.kr/html/fund/?o=k"
-    },
-    {
-      "name": "인텔리빅스",
-      "market": "KOSDAQ",
-      "sector": "",
-      "subscription_start": "2026-10-21",
-      "subscription_end": "2026-10-22",
-      "refund_date": null,
-      "listing_date": null,
-      "price_band": "7,600~9,000",
-      "offer_price": "9,000",
-      "competition_ratio": "1410.87:1",
       "source_url": "http://www.38.co.kr/html/fund/?o=k"
     }
   ],
@@ -619,6 +619,18 @@
       "price": 10.0,
       "valuation": null,
       "raised": "$90,988,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Core Specialty Insurance Holdings, Inc.",
+      "ticker": "CORE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-16",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
@@ -1795,18 +1807,6 @@
       "price": null,
       "valuation": null,
       "raised": "",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
-      "name": "Lyntris Inc.",
-      "ticker": "LYNX",
-      "exchange": "NYSE",
-      "sector": "",
-      "ipo_date": "2026-08-19",
-      "price": 17.5,
-      "valuation": null,
-      "raised": "$297,500,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
