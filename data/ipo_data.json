@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T12:58:33+09:00",
+  "updated_at": "2026-11-19T12:55:04+09:00",
   "domestic": [
     {
       "name": "이나인페이",
@@ -575,198 +575,6 @@
       "source_url": "https://stockanalysis.com/private/anthropic/"
     },
     {
-      "name": "Modern Mining Technology Corp.",
-      "ticker": "MDRN",
-      "exchange": "NYSE MKT",
-      "sector": "",
-      "ipo_date": "2026-11-13",
-      "price": 4.25,
-      "valuation": null,
-      "raised": "$39,999,997",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "vVARDIS Holding AG",
-      "ticker": "VVVV",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-10-09",
-      "price": null,
-      "valuation": null,
-      "raised": "$175,000,014",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "WINDWARD BIO GROUP AG",
-      "ticker": "WWB",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-10-23",
-      "price": null,
-      "valuation": null,
-      "raised": "$174,999,989",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
-    },
-    {
-      "name": "Narragansett Bancorp, Inc.",
-      "ticker": "NARA",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-11-02",
-      "price": 10.0,
-      "valuation": null,
-      "raised": "$90,988,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Core Specialty Insurance Holdings, Inc.",
-      "ticker": "CORE",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-16",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "CloudDepots Holdings Inc.",
-      "ticker": null,
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-13",
-      "price": null,
-      "valuation": null,
-      "raised": "$20,700,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Compute AI Acquisition Corp.",
-      "ticker": "AICPU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-13",
-      "price": null,
-      "valuation": null,
-      "raised": "$86,250,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "American Barrick Gold Corp",
-      "ticker": "ABGC",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-10",
-      "price": null,
-      "valuation": null,
-      "raised": "$100,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Research Alliance Corp V",
-      "ticker": "RACV",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-09",
-      "price": null,
-      "valuation": null,
-      "raised": "$62,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "ZA Acquisition Corp. I",
-      "ticker": "ZACAU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-09",
-      "price": null,
-      "valuation": null,
-      "raised": "$86,250,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "UC Automotive Holdings Inc.",
-      "ticker": null,
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$28,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "AParadise III Acquisition Corp.",
-      "ticker": "APCDU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "BEHNEH Ltd",
-      "ticker": "BENE",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-06",
-      "price": null,
-      "valuation": null,
-      "raised": "$28,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Guitar Group Ltd",
-      "ticker": null,
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-05",
-      "price": null,
-      "valuation": null,
-      "raised": "$31,050,000.00",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Kartoon Studios Acquisition Corp",
-      "ticker": "KACQU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-05",
-      "price": null,
-      "valuation": null,
-      "raised": "$345,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
-      "name": "Churchill Capital Corp XIV",
-      "ticker": "CXIVU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-11-04",
-      "price": null,
-      "valuation": null,
-      "raised": "$345,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
-    },
-    {
       "name": "Bambusa Therapeutics, Inc.",
       "ticker": "BBTX",
       "exchange": "TBD",
@@ -1031,6 +839,18 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
     },
     {
+      "name": "WINDWARD BIO GROUP AG",
+      "ticker": "WWB",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-11-13",
+      "price": 17.0,
+      "valuation": null,
+      "raised": "$174,999,989",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
       "name": "Rezera Inc.",
       "ticker": "RZRA",
       "exchange": "TBD",
@@ -1113,6 +933,18 @@
       "raised": "$386,400,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "vVARDIS Holding AG",
+      "ticker": "VVVV",
+      "exchange": "NYSE",
+      "sector": "",
+      "ipo_date": "2026-11-13",
+      "price": 18.0,
+      "valuation": null,
+      "raised": "$175,000,014",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
     {
       "name": "Simwon America Corp.",
@@ -1221,6 +1053,186 @@
       "raised": "$115,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-10"
+    },
+    {
+      "name": "Modern Mining Technology Corp.",
+      "ticker": "MDRN",
+      "exchange": "NYSE MKT",
+      "sector": "",
+      "ipo_date": "2026-11-13",
+      "price": 4.25,
+      "valuation": null,
+      "raised": "$39,999,997",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Narragansett Bancorp, Inc.",
+      "ticker": "NARA",
+      "exchange": "NASDAQ Capital",
+      "sector": "",
+      "ipo_date": "2026-11-02",
+      "price": 10.0,
+      "valuation": null,
+      "raised": "$90,988,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Football Manager SPAC Inc.",
+      "ticker": "FBLLU",
+      "exchange": "NASDAQ Global",
+      "sector": "",
+      "ipo_date": "2026-11-20",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Core Specialty Insurance Holdings, Inc.",
+      "ticker": "CORE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-16",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "CloudDepots Holdings Inc.",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-13",
+      "price": null,
+      "valuation": null,
+      "raised": "$20,700,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Compute AI Acquisition Corp.",
+      "ticker": "AICPU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-13",
+      "price": null,
+      "valuation": null,
+      "raised": "$86,250,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "American Barrick Gold Corp",
+      "ticker": "ABGC",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-10",
+      "price": null,
+      "valuation": null,
+      "raised": "$100,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Research Alliance Corp V",
+      "ticker": "RACV",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$62,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "ZA Acquisition Corp. I",
+      "ticker": "ZACAU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-09",
+      "price": null,
+      "valuation": null,
+      "raised": "$86,250,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "UC Automotive Holdings Inc.",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-06",
+      "price": null,
+      "valuation": null,
+      "raised": "$28,750,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "AParadise III Acquisition Corp.",
+      "ticker": "APCDU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-06",
+      "price": null,
+      "valuation": null,
+      "raised": "$115,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "BEHNEH Ltd",
+      "ticker": "BENE",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-06",
+      "price": null,
+      "valuation": null,
+      "raised": "$28,750,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Guitar Group Ltd",
+      "ticker": null,
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$31,050,000.00",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Kartoon Studios Acquisition Corp",
+      "ticker": "KACQU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-05",
+      "price": null,
+      "valuation": null,
+      "raised": "$345,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
+    },
+    {
+      "name": "Churchill Capital Corp XIV",
+      "ticker": "CXIVU",
+      "exchange": "TBD",
+      "sector": "",
+      "ipo_date": "2026-11-04",
+      "price": null,
+      "valuation": null,
+      "raised": "$345,000,000",
+      "description": "",
+      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-11"
     },
     {
       "name": "Tracx Logis Ltd.",
@@ -1607,18 +1619,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
     },
     {
-      "name": "Football Manager SPAC Inc.",
-      "ticker": "FBLLU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-09-09",
-      "price": null,
-      "valuation": null,
-      "raised": "$115,000,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
       "name": "Harbour Island Acquisition Corp. I",
       "ticker": "HRIAU",
       "exchange": "TBD",
@@ -1799,18 +1799,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "First Breach, Inc.",
-      "ticker": "FBDT",
-      "exchange": "NASDAQ Capital",
-      "sector": "",
-      "ipo_date": "2026-08-20",
-      "price": null,
-      "valuation": null,
-      "raised": "",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Kainan Holding Group Ltd",
       "ticker": "KHG",
       "exchange": "TBD",
@@ -1943,18 +1931,6 @@
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     },
     {
-      "name": "D. Boral ARC Acquisition III Corp.",
-      "ticker": "CLMZU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-20",
-      "price": null,
-      "valuation": null,
-      "raised": "$120,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
-    },
-    {
       "name": "Holtec Nuclear Corp",
       "ticker": "HNUC",
       "exchange": "NASDAQ",
@@ -1977,18 +1953,6 @@
       "raised": "$100,000,000",
       "description": "",
       "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-09"
-    },
-    {
-      "name": "ARC Group Acquisition II Corp.",
-      "ticker": "CLMZU",
-      "exchange": "TBD",
-      "sector": "",
-      "ipo_date": "2026-08-20",
-      "price": null,
-      "valuation": null,
-      "raised": "$120,750,000",
-      "description": "",
-      "source_url": "https://api.nasdaq.com/api/ipo/calendar?date=2026-08"
     }
   ]
 }
